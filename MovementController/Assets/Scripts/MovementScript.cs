@@ -8,6 +8,8 @@ public class MovementScript : MonoBehaviour
 	public float moveSpeed;
 	// force at which the player jumps
 	public float jumpForce;
+	// used to enable/disable the player's zero gravity movement
+	public bool isZeroGravityMovement;
 	// get a reference to the camera
 	public Camera cam;
 	// reference to the player's rigidbody component
