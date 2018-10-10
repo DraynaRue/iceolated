@@ -18,6 +18,7 @@ public class GravityControlScript : MonoBehaviour {
 		if (other.collider.tag == "Player")
 		{
 			other.collider.GetComponent<MovementScript>().isZeroGravity = !other.collider.GetComponent<MovementScript>().isZeroGravity;
+			other.collider.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
 		}
 	}
 }
