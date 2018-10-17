@@ -32,5 +32,6 @@ public class CameraScript : MonoBehaviour
 
 		// rotate the camera
 		cam.transform.eulerAngles = new Vector3(lookY, lookX, 0f);
+		
 	}
 }
