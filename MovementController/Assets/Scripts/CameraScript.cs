@@ -31,6 +31,6 @@ public class CameraScript : MonoBehaviour
 		lookY -= speedY * Input.GetAxis("Mouse Y");
 
 		// rotate the camera
-		cam.transform.eulerAngles = new Vector3(lookY, lookX, 0);
+		cam.transform.eulerAngles = new Vector3(lookY, lookX, 0f);
 	}
 }
