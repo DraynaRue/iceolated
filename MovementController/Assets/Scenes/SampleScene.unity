@@ -226,6 +226,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42a1882452831e74680740af6cc88ede, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &430952694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1843257558955002, guid: 42a1882452831e74680740af6cc88ede,
+    type: 2}
+  m_PrefabInternal: {fileID: 359701495}
 --- !u!1 &452978820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuelGage: {fileID: 0}
+  player: {fileID: 430952694}
   fuelPercentage: 100
   animator: {fileID: 1904656957}
 --- !u!95 &1904656957
