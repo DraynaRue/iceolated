@@ -14,6 +14,8 @@ public class MovementScript : MonoBehaviour
 	public bool isZeroGravity;
 	// get a reference to the camera
 	public Camera cam;
+	// get a reference to the fuel gauge
+	public GameObject fuelGauge;
 	// reference to the player's rigidbody component
 	protected Rigidbody _rb;
 	protected bool isJumping;
@@ -80,62 +82,49 @@ public class MovementScript : MonoBehaviour
 		// yaw the player
 		_rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
 
-		// roll the player right
-		//if (Input.GetAxis("Roll") > 0)
-		//{
-			//Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
-		//	_rb.AddTorque(_rb.transform.forward * jetpackForce);
-			//Debug.Log("Rotating Right with Force: " + force);
-		//}
-
-		// roll the player left
-		//if (Input.GetAxis("Roll") < 0)
-		//{
-			//Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
-		//	_rb.AddTorque(-_rb.transform.forward * jetpackForce);
-			//Debug.Log("Rotating Left with Force: " + force);
-		//}
-
-		// moving forwards
-		if (Input.GetAxis("Vertical") > 0)
+		// checking to see if player has fuel to move in zero gravity
+		if (fuelGauge.GetComponent<Fuel>().isOutOfFuel != true)
 		{
-			Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
-			_rb.AddForce(force, ForceMode.Acceleration);
-		}
+			// moving forwards
+			if (Input.GetAxis("Vertical") > 0)
+			{
+				Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
+				_rb.AddForce(force, ForceMode.Acceleration);
+			}
+			// moving backwards
+			if (Input.GetAxis("Vertical") < 0)
+			{
+				Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
+				_rb.AddForce(-force, ForceMode.Acceleration);
+			}
 
-		// moving backwards
-		if (Input.GetAxis("Vertical") < 0)
-		{
-			Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
-			_rb.AddForce(-force, ForceMode.Acceleration);
-		}
+			// moving right
+			if (Input.GetAxis("Horizontal") > 0)
+			{
+				Vector3 force = new Vector3(jetpackForce, 0, 0) + _rb.transform.right;
+				_rb.AddForce(force, ForceMode.Acceleration);
+			}
 
-		// moving right
-		if (Input.GetAxis("Horizontal") > 0)
-		{
-			Vector3 force = new Vector3(jetpackForce, 0, 0) + _rb.transform.right;
-			_rb.AddForce(force, ForceMode.Acceleration);
-		}
+			// moving left
+			if (Input.GetAxis("Horizontal") < 0)
+			{
+				Vector3 force = new Vector3(jetpackForce, 0, 0) + _rb.transform.right;
+				_rb.AddForce(-force, ForceMode.Acceleration);
+			}
 
-		// moving left
-		if (Input.GetAxis("Horizontal") < 0)
-		{
-			Vector3 force = new Vector3(jetpackForce, 0, 0) + _rb.transform.right;
-			_rb.AddForce(-force, ForceMode.Acceleration);
-		}
+			// moving up
+			if (Input.GetAxis("Jump") > 0)
+			{
+				Vector3 force = new Vector3(0, jetpackForce, 0) + _rb.transform.up;
+				_rb.AddForce(force, ForceMode.Acceleration);
+			}
 
-		// moving up
-		if (Input.GetAxis("Jump") > 0)
-		{
-			Vector3 force = new Vector3(0, jetpackForce, 0) + _rb.transform.up;
-			_rb.AddForce(force, ForceMode.Acceleration);
-		}
-
-		// moving down
-		if (Input.GetAxis("Crouch") > 0)
-		{
-			Vector3 force = new Vector3(0, jetpackForce, 0) + _rb.transform.up;
-			_rb.AddForce(-force, ForceMode.Acceleration);
+			// moving down
+			if (Input.GetAxis("Crouch") > 0)
+			{
+				Vector3 force = new Vector3(0, jetpackForce, 0) + _rb.transform.up;
+				_rb.AddForce(-force, ForceMode.Acceleration);
+			}
 		}
 	}
 }
