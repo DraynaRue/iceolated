@@ -14,7 +14,11 @@ public class CameraScript : MonoBehaviour
 
 	// Use this for initialization
 	void Start () 
-	{
+	{	
+		//Confining the cursor to the game window and locking it in place
+		Cursor.lockState = CursorLockMode.Confined;
+		Cursor.lockState = CursorLockMode.Locked;
+
 		// get a reference to Camera
 		cam = GetComponent<Camera>();
 	}
