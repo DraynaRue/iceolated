@@ -239,16 +239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &37074334
 Mesh:
   m_ObjectHideFlags: 0
@@ -441,7 +431,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4569700101886570, guid: f294d416106f3424bb450b2b123c8116, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1886107970285276, guid: f294d416106f3424bb450b2b123c8116, type: 2}
       propertyPath: m_Name
@@ -950,16 +940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &67364476
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,16 +1431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &68310084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2490,16 +2460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &70446744
 GameObject:
   m_ObjectHideFlags: 0
@@ -3529,16 +3489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &71152255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3664,16 +3614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &80985885
 Mesh:
   m_ObjectHideFlags: 0
@@ -4858,16 +4798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &89950612
 Mesh:
   m_ObjectHideFlags: 0
@@ -5402,16 +5332,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &93188021 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1368807852536418, guid: f80a3f6d60d207d489ebb9270cd37409,
@@ -6327,16 +6247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &144001954
 GameObject:
   m_ObjectHideFlags: 0
@@ -6462,16 +6372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &160815527
 GameObject:
   m_ObjectHideFlags: 0
@@ -6568,7 +6468,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &160815533
 MonoBehaviour:
@@ -6581,16 +6481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &162056403
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,16 +6860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &205480604
 Mesh:
   m_ObjectHideFlags: 0
@@ -8319,16 +8199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &222088331
 GameObject:
   m_ObjectHideFlags: 0
@@ -8819,16 +8689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &224454689
 Mesh:
   m_ObjectHideFlags: 0
@@ -9109,16 +8969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &244529124
 GameObject:
   m_ObjectHideFlags: 0
@@ -9498,16 +9348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &258247290
 Mesh:
   m_ObjectHideFlags: 0
@@ -16147,16 +15987,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &284616167
 GameObject:
   m_ObjectHideFlags: 0
@@ -37383,16 +37213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &345293276
 GameObject:
   m_ObjectHideFlags: 0
@@ -38422,16 +38242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &361717125
 GameObject:
   m_ObjectHideFlags: 0
@@ -39461,16 +39271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &362186509
 GameObject:
   m_ObjectHideFlags: 0
@@ -39596,16 +39396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &366416918
 GameObject:
   m_ObjectHideFlags: 0
@@ -39731,16 +39521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &368577161
 GameObject:
   m_ObjectHideFlags: 0
@@ -40216,16 +39996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &370114132
 GameObject:
   m_ObjectHideFlags: 0
@@ -40922,16 +40692,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1001 &379721559
 Prefab:
   m_ObjectHideFlags: 0
@@ -40969,7 +40729,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4128457637075248, guid: a553cc6f6b92b9b4a933fe167230a3b6, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4128457637075248, guid: a553cc6f6b92b9b4a933fe167230a3b6, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -41474,16 +41234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &406670552
 GameObject:
   m_ObjectHideFlags: 0
@@ -41609,16 +41359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &412008990
 GameObject:
   m_ObjectHideFlags: 0
@@ -41744,16 +41484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &412518002
 GameObject:
   m_ObjectHideFlags: 0
@@ -41879,16 +41609,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &419187018
 GameObject:
   m_ObjectHideFlags: 0
@@ -41999,7 +41719,7 @@ Transform:
   m_Children:
   - {fileID: 1690149589}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &465707094
 Mesh:
@@ -43495,16 +43215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &520969773
 GameObject:
   m_ObjectHideFlags: 0
@@ -44534,16 +44244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &527371480
 GameObject:
   m_ObjectHideFlags: 0
@@ -45220,16 +44920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &548409916
 GameObject:
   m_ObjectHideFlags: 0
@@ -45609,16 +45299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &563189104
 GameObject:
   m_ObjectHideFlags: 0
@@ -45901,7 +45581,7 @@ Transform:
   m_Children:
   - {fileID: 2112086905}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &575970882
 GameObject:
@@ -46282,16 +45962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &593352429
 Mesh:
   m_ObjectHideFlags: 0
@@ -46572,16 +46242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &612711138
 GameObject:
   m_ObjectHideFlags: 0
@@ -46671,7 +46331,7 @@ RectTransform:
   - {fileID: 1745447517}
   - {fileID: 563189105}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -46803,16 +46463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &625729035
 GameObject:
   m_ObjectHideFlags: 0
@@ -48420,16 +48070,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &631480650
 GameObject:
   m_ObjectHideFlags: 0
@@ -48921,16 +48561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &632068171
 Mesh:
   m_ObjectHideFlags: 0
@@ -49465,16 +49095,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &664419863
 GameObject:
   m_ObjectHideFlags: 0
@@ -49854,16 +49474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &672486321
 Mesh:
   m_ObjectHideFlags: 0
@@ -50190,16 +49800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 10
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &691997903
 GameObject:
   m_ObjectHideFlags: 0
@@ -50675,16 +50275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &697066031
 Mesh:
   m_ObjectHideFlags: 0
@@ -51016,7 +50606,7 @@ Transform:
   m_Children:
   - {fileID: 763354055}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &702033789
 Mesh:
@@ -51233,7 +50823,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &747493333
 GameObject:
@@ -52264,16 +51854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &763354053
 GameObject:
   m_ObjectHideFlags: 0
@@ -53170,16 +52750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &805642421
 Mesh:
   m_ObjectHideFlags: 0
@@ -54364,16 +53934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &811859492
 GameObject:
   m_ObjectHideFlags: 0
@@ -55403,16 +54963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &822753749
 GameObject:
   m_ObjectHideFlags: 0
@@ -55888,16 +55438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &850635763
 GameObject:
   m_ObjectHideFlags: 0
@@ -56373,16 +55913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &859795443
 GameObject:
   m_ObjectHideFlags: 0
@@ -57412,16 +56942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &880736844
 GameObject:
   m_ObjectHideFlags: 0
@@ -57463,7 +56983,7 @@ Transform:
   m_Children:
   - {fileID: 284616169}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &887005575
 GameObject:
@@ -57844,16 +57364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &903086781
 GameObject:
   m_ObjectHideFlags: 0
@@ -57979,16 +57489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &914417566
 GameObject:
   m_ObjectHideFlags: 0
@@ -58368,16 +57868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &936801497
 Mesh:
   m_ObjectHideFlags: 0
@@ -58658,16 +58148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &944262945
 GameObject:
   m_ObjectHideFlags: 0
@@ -59047,16 +58527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &944680996
 Mesh:
   m_ObjectHideFlags: 0
@@ -60396,16 +59866,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1026612596
 Mesh:
   m_ObjectHideFlags: 0
@@ -61250,6 +60710,48 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!1001 &1090441715
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4340822803863012, guid: 03eaf27f1820fb544bfb1831df6f9b46, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 8.0404
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340822803863012, guid: 03eaf27f1820fb544bfb1831df6f9b46, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340822803863012, guid: 03eaf27f1820fb544bfb1831df6f9b46, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 11.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340822803863012, guid: 03eaf27f1820fb544bfb1831df6f9b46, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340822803863012, guid: 03eaf27f1820fb544bfb1831df6f9b46, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340822803863012, guid: 03eaf27f1820fb544bfb1831df6f9b46, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340822803863012, guid: 03eaf27f1820fb544bfb1831df6f9b46, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4340822803863012, guid: 03eaf27f1820fb544bfb1831df6f9b46, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 03eaf27f1820fb544bfb1831df6f9b46, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!43 &1103183293
 Mesh:
   m_ObjectHideFlags: 0
@@ -63012,16 +62514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1133077228
 GameObject:
   m_ObjectHideFlags: 0
@@ -64051,16 +63543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1138677239
 GameObject:
   m_ObjectHideFlags: 0
@@ -64186,16 +63668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1144628532
 Mesh:
   m_ObjectHideFlags: 0
@@ -64476,16 +63948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1147875966
 GameObject:
   m_ObjectHideFlags: 0
@@ -64611,16 +64073,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1148402490
 GameObject:
   m_ObjectHideFlags: 0
@@ -65650,16 +65102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1149509240
 Mesh:
   m_ObjectHideFlags: 0
@@ -66445,16 +65887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1183137304
 GameObject:
   m_ObjectHideFlags: 0
@@ -66865,16 +66297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1184656815
 GameObject:
   m_ObjectHideFlags: 0
@@ -70703,16 +70125,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1185677406
 GameObject:
   m_ObjectHideFlags: 0
@@ -71188,16 +70600,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1190481714
 Mesh:
   m_ObjectHideFlags: 0
@@ -72042,16 +71444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1224273931
 GameObject:
   m_ObjectHideFlags: 0
@@ -72431,16 +71823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1232927908
 Mesh:
   m_ObjectHideFlags: 0
@@ -74215,16 +73597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1339106772
 GameObject:
   m_ObjectHideFlags: 0
@@ -74350,16 +73722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1366054710
 GameObject:
   m_ObjectHideFlags: 0
@@ -74401,7 +73763,7 @@ Transform:
   m_Children:
   - {fileID: 700192497}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1368761371
 Mesh:
@@ -74689,7 +74051,7 @@ Transform:
   - {fileID: 625729036}
   - {fileID: 1185677407}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1387589688
 GameObject:
@@ -75166,16 +74528,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1390227077
 GameObject:
   m_ObjectHideFlags: 0
@@ -75301,16 +74653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1408302237
 GameObject:
   m_ObjectHideFlags: 0
@@ -75558,7 +74900,7 @@ Transform:
   - {fileID: 1866966549}
   - {fileID: 1855380201}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1440781604
 MonoBehaviour:
@@ -76021,16 +75363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1465986226
 Mesh:
   m_ObjectHideFlags: 0
@@ -77680,16 +77012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1518883191
 GameObject:
   m_ObjectHideFlags: 0
@@ -78165,16 +77487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1538600298
 GameObject:
   m_ObjectHideFlags: 0
@@ -79204,16 +78516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1553481550
 GameObject:
   m_ObjectHideFlags: 0
@@ -79689,16 +78991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1560582616
 Mesh:
   m_ObjectHideFlags: 0
@@ -80134,16 +79426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1616721966
 Mesh:
   m_ObjectHideFlags: 0
@@ -80678,16 +79960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1649850040
 GameObject:
   m_ObjectHideFlags: 0
@@ -80813,16 +80085,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1662793509
 GameObject:
   m_ObjectHideFlags: 0
@@ -81852,16 +81114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1669469028
 Mesh:
   m_ObjectHideFlags: 0
@@ -82507,16 +81759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1679994639
 GameObject:
   m_ObjectHideFlags: 0
@@ -82581,7 +81823,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690149587
 GameObject:
@@ -83028,16 +82270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1745447516
 GameObject:
   m_ObjectHideFlags: 0
@@ -83536,16 +82768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1764090242
 GameObject:
   m_ObjectHideFlags: 0
@@ -84221,16 +83443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1767163777
 Mesh:
   m_ObjectHideFlags: 0
@@ -84963,16 +84175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1818795466
 Mesh:
   m_ObjectHideFlags: 0
@@ -85603,16 +84805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1834849863
 GameObject:
   m_ObjectHideFlags: 0
@@ -85654,7 +84846,7 @@ Transform:
   m_Children:
   - {fileID: 111608109}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852303727
 GameObject:
@@ -85781,16 +84973,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1855380200
 GameObject:
   m_ObjectHideFlags: 0
@@ -86848,16 +86030,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1863290032
 GameObject:
   m_ObjectHideFlags: 0
@@ -88272,16 +87444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1001 &1901156896
 Prefab:
   m_ObjectHideFlags: 0
@@ -88319,7 +87481,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4160499324577022, guid: f80a3f6d60d207d489ebb9270cd37409, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4160499324577022, guid: f80a3f6d60d207d489ebb9270cd37409, type: 2}
       propertyPath: m_LocalScale.x
@@ -88720,16 +87882,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1908223119
 Mesh:
   m_ObjectHideFlags: 0
@@ -89847,16 +88999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1944030237
 GameObject:
   m_ObjectHideFlags: 0
@@ -90886,16 +90028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1958554521
 GameObject:
   m_ObjectHideFlags: 0
@@ -91275,16 +90407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1970933129
 GameObject:
   m_ObjectHideFlags: 0
@@ -91664,16 +90786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1984818749
 GameObject:
   m_ObjectHideFlags: 0
@@ -91799,16 +90911,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &1986351143
 Mesh:
   m_ObjectHideFlags: 0
@@ -92156,7 +91258,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4956681406397686, guid: 5500482991496824d92e2011ec41ebfc, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114832886090013524, guid: 5500482991496824d92e2011ec41ebfc,
         type: 2}
@@ -92208,7 +91310,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4181394496866848, guid: 85d43d633fe251c4481aa9f6d63d301e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4181394496866848, guid: 85d43d633fe251c4481aa9f6d63d301e, type: 2}
       propertyPath: m_LocalScale.x
@@ -93414,16 +92516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &2026285411
 Mesh:
   m_ObjectHideFlags: 0
@@ -94209,16 +93301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &2043205085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1299903637130022, guid: 5500482991496824d92e2011ec41ebfc,
@@ -94763,16 +93845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &2069324204
 GameObject:
   m_ObjectHideFlags: 0
@@ -95373,16 +94445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!43 &2108498416
 Mesh:
   m_ObjectHideFlags: 0
@@ -95729,16 +94791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &2138664482
 GameObject:
   m_ObjectHideFlags: 0
@@ -95864,16 +94916,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &2145514421
 GameObject:
   m_ObjectHideFlags: 0
@@ -97481,13 +96523,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  outlineWidth: 3
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
