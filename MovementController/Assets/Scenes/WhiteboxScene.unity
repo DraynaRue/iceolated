@@ -51030,7 +51030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   outlineWidth: 2.9
   precomputeOutline: 0
@@ -51470,6 +51470,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4958171499841020, guid: 066b96260fe755e4e86974bff4a78c65, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351093657811272, guid: 066b96260fe755e4e86974bff4a78c65,
+        type: 2}
+      propertyPath: outlineMode
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -52522,7 +52527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 0, g: 0, b: 0, a: 1}
   outlineWidth: 2.9
   precomputeOutline: 0
