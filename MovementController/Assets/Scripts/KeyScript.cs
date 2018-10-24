@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour {
 
-	// Use this for initialization
+	public GameObject keyUI;
 	void Start () {
 
 	}
@@ -14,7 +14,7 @@ public class KeyScript : MonoBehaviour {
 		
 	}
 
-	private void OnTriggerEnter(Collider other)
+	public void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Player")	
 		{
@@ -22,6 +22,7 @@ public class KeyScript : MonoBehaviour {
 			{
 				other.gameObject.GetComponent<InventoryScript>().inv.Add(this.gameObject);
 				this.gameObject.SetActive(false);
+				keyUI.SetActive(true);
 			}
 		}
 	}
