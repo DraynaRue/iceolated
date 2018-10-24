@@ -17,6 +17,8 @@ public class CameraScript : MonoBehaviour
 	{
 		// get a reference to Camera
 		cam = GetComponent<Camera>();
+		Cursor.lockState = CursorLockMode.Confined;
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 	
 	// Update is called once per frame

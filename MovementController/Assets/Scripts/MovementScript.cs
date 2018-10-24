@@ -14,18 +14,23 @@ public class MovementScript : MonoBehaviour
 	public bool isZeroGravity;
 	// get a reference to the camera
 	public Camera cam;
+
+	public GameObject camPosN;
 	// reference to the player's rigidbody component
 	protected Rigidbody _rb;
 	protected bool isJumping;
 	protected float hor;
 	protected float ver;
 
+	public AudioClip a_jetpack;
+	public AudioSource AS;
+
 	// Use this for initialization
 	void Start ()
 	{
 		_rb = GetComponent<Rigidbody>();
 		isJumping = false;
-		isZeroGravity = false;
+		isZeroGravity = true;
 	}
 	
 	// Update is called once per frame
@@ -48,7 +53,7 @@ public class MovementScript : MonoBehaviour
 		// check if player is on the ground
 		if (other.collider.tag == "Ground" && _rb.velocity.y < 1 /*|| other.collider.tag == "Ground" && _rb.velocity.y > -1*/)
 		{
-			Debug.Log("We hit the ground!");
+			//Debug.Log("We hit the ground!");
 			isJumping = false;
 		}
 	}
@@ -57,6 +62,10 @@ public class MovementScript : MonoBehaviour
 	{
 		// rotate the player
 		_rb.transform.eulerAngles = new Vector3(0,cam.transform.eulerAngles.y,0);
+
+		CapsuleCollider col = GetComponent<CapsuleCollider>();
+		col.height = 2; 
+		cam.transform.position = Vector3.Lerp(cam.transform.position, camPosN.transform.position, 1f);
 
 		// calculate player movement
 		hor = moveSpeed * Input.GetAxis("Horizontal");
@@ -80,6 +89,11 @@ public class MovementScript : MonoBehaviour
 		// yaw the player
 		_rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
 
+		//Make the collider a ball and move cam to center
+		CapsuleCollider col = GetComponent<CapsuleCollider>();
+		col.height = 1; 
+		cam.transform.position = Vector3.Lerp(cam.transform.position, this.transform.position, 1f);
+
 		// roll the player right
 		//if (Input.GetAxis("Roll") > 0)
 		//{
@@ -97,42 +111,42 @@ public class MovementScript : MonoBehaviour
 		//}
 
 		// moving forwards
-		if (Input.GetAxis("Vertical") > 0)
+		if (Input.GetAxis("Vertical") > 0 && GetComponent<Fuel>().fuelPercentage > 1)
 		{
 			Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
 			_rb.AddForce(force, ForceMode.Acceleration);
 		}
 
 		// moving backwards
-		if (Input.GetAxis("Vertical") < 0)
+		if (Input.GetAxis("Vertical") < 0 && GetComponent<Fuel>().fuelPercentage > 1)
 		{
 			Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
 			_rb.AddForce(-force, ForceMode.Acceleration);
 		}
 
 		// moving right
-		if (Input.GetAxis("Horizontal") > 0)
+		if (Input.GetAxis("Horizontal") > 0 && GetComponent<Fuel>().fuelPercentage > 1)
 		{
 			Vector3 force = new Vector3(jetpackForce, 0, 0) + _rb.transform.right;
 			_rb.AddForce(force, ForceMode.Acceleration);
 		}
 
 		// moving left
-		if (Input.GetAxis("Horizontal") < 0)
+		if (Input.GetAxis("Horizontal") < 0 && GetComponent<Fuel>().fuelPercentage > 1)
 		{
 			Vector3 force = new Vector3(jetpackForce, 0, 0) + _rb.transform.right;
 			_rb.AddForce(-force, ForceMode.Acceleration);
 		}
 
 		// moving up
-		if (Input.GetAxis("Jump") > 0)
+		if (Input.GetAxis("Jump") > 0 && GetComponent<Fuel>().fuelPercentage > 1)
 		{
 			Vector3 force = new Vector3(0, jetpackForce, 0) + _rb.transform.up;
 			_rb.AddForce(force, ForceMode.Acceleration);
 		}
 
 		// moving down
-		if (Input.GetAxis("Crouch") > 0)
+		if (Input.GetAxis("Crouch") > 0 && GetComponent<Fuel>().fuelPercentage > 1)
 		{
 			Vector3 force = new Vector3(0, jetpackForce, 0) + _rb.transform.up;
 			_rb.AddForce(-force, ForceMode.Acceleration);
