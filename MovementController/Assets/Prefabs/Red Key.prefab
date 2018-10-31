@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114832886090013524}
   - component: {fileID: 54895430342521764}
   - component: {fileID: 136443361175884340}
+  - component: {fileID: 114966599797459342}
   m_Layer: 0
   m_Name: Red Key
   m_TagString: Key
@@ -39,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1299903637130022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.414547, y: 8.587, z: 4.705}
+  m_LocalPosition: {x: -16.64, y: 0.844, z: 10.58}
   m_LocalScale: {x: 0.13375801, y: 0.13375801, z: 0.13375801}
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,6 +115,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyUI: {fileID: 0}
+--- !u!114 &114966599797459342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1299903637130022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422c5f1ea3cd6854ab70abfcd0a8b0ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIElement: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!136 &136443361175884340
 CapsuleCollider:
   m_ObjectHideFlags: 1

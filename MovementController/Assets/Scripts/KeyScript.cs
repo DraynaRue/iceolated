@@ -14,16 +14,10 @@ public class KeyScript : MonoBehaviour {
 		
 	}
 
-	public void OnTriggerEnter(Collider other)
+	public void Interact ()
 	{
-		if (other.gameObject.tag == "Player")	
-		{
-			if (other.gameObject.GetComponent<InventoryScript>() != null)
-			{
-				other.gameObject.GetComponent<InventoryScript>().inv.Add(this.gameObject);
-				this.gameObject.SetActive(false);
-				keyUI.SetActive(true);
-			}
-		}
+		GetComponent<InteractScript>().Player.GetComponent<InventoryScript>().inv.Add(this.gameObject);
+		this.gameObject.SetActive(false);
+		keyUI.SetActive(true);
 	}
 }

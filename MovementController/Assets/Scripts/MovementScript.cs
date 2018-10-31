@@ -30,7 +30,11 @@ public class MovementScript : MonoBehaviour
 	{
 		_rb = GetComponent<Rigidbody>();
 		isJumping = false;
+/*
+		We really don't need this to be set to true everytime we hit play
+		it makes testing stuff really annoying ~ DraynaRue [Lead Programmer]
 		isZeroGravity = true;
+*/
 	}
 	
 	// Update is called once per frame
