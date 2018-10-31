@@ -32,6 +32,11 @@ public class InteractScript : MonoBehaviour {
 				GetComponent<KeyScript>().Interact();
 				UIElement.SetActive(false);
 			}
+			else if (this.GetComponent<AudioLogScript>() != null && Input.GetButton("Interact") == true)
+			{
+				GetComponent<AudioLogScript>().Interact();
+				UIElement.SetActive(false);
+			}
 		}
 	}
 }
