@@ -133,9 +133,35 @@ ModelImporter:
     4300044: pCylinder17
     4300046: pCylinder18
     4300048: pCylinder19
-    7400000: Take 001
+    6400000: pCube70
+    6400002: pCube71
+    6400004: pCube72
+    6400006: pCube73
+    6400008: pCube74
+    6400010: pCube75
+    6400012: pCube76
+    6400014: pCube77
+    6400016: pCube78
+    6400018: pCube79
+    6400020: pCube80
+    6400022: pCube81
+    6400024: pCube82
+    6400026: pCube83
+    6400028: pCube84
+    6400030: pCube85
+    6400032: pCylinder14
+    6400034: pCylinder15
+    6400036: pCylinder16
+    6400038: pCylinder17
+    6400040: pCylinder18
+    6400042: pCylinder19
+    6400044: polySurface76
+    6400046: polySurface77
+    6400048: pTorus2
+    7400000: Door
     9500000: //RootNode
     11100000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -165,7 +191,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Door
       takeName: Take 001
       firstFrame: 2.5
       lastFrame: 460
@@ -197,7 +223,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
