@@ -17,8 +17,8 @@ public class DoorScript : MonoBehaviour {
 		
 	}
 
-	private void OnCollisionEnter(Collision other) {
-		if (other.collider.tag == "Player")
+	private void OnTriggerEnter(Collider other) {
+		if (other.tag == "Player")
 		{
 			if (other.gameObject.GetComponent<InventoryScript>().inv.Contains(this.key))
 			{
@@ -30,7 +30,7 @@ public class DoorScript : MonoBehaviour {
 		}
 	}
 
-	private void OnCollisionExit(Collision other) {
+	private void OnTriggerExit(Collider other) {
 		_ani.SetTrigger("Close");
 	}
 }
