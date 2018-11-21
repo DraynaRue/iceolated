@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour {
 	public GameObject key;
-
-	protected Animator _ani;
+	protected Vector3 startPos;
+	protected Vector3 endPos;
 	
 	// Use this for initialization
 	void Start () {
-		_ani = GetComponent<Animator>();
+		startPos = GetComponent<Rigidbody>().transform.position;
 	}
 	
 	// Update is called once per frame
