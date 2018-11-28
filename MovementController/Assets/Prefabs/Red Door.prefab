@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 23914718917456626}
   - component: {fileID: 65088931813171950}
   - component: {fileID: 114504003722224822}
-  - component: {fileID: 95891139282748788}
   - component: {fileID: 65380889151516248}
   m_Layer: 0
   m_Name: Red Door
@@ -111,24 +110,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6535432, y: 0.2882731, z: 22.728386}
   m_Center: {x: -0.32677126, y: -0.0298805, z: 0.06887436}
---- !u!95 &95891139282748788
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1059539105190978}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f1d79a3db0cf0004388cb5f4a603af1f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114504003722224822
 MonoBehaviour:
   m_ObjectHideFlags: 1
