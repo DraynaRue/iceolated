@@ -20,7 +20,7 @@ public class DoorTrigger : MonoBehaviour {
 	void Update(){
 		if(opening){
 			Door.Play("Door");
-		}
+		} 
 	}
 
 	void OnTriggerEnter(Collider other){
