@@ -344,6 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedX: 3
   speedY: 3
+  mov: {fileID: 342691173}
 --- !u!81 &65072340
 AudioListener:
   m_ObjectHideFlags: 0
@@ -707,7 +708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuelGage: {fileID: 1926107495}
   fuelPercentage: 100
-  animator: {fileID: 0}
+  animator: {fileID: 1926107497}
 --- !u!114 &342691169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,7 +844,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 2
 --- !u!114 &342691173
 MonoBehaviour:
@@ -860,7 +861,8 @@ MonoBehaviour:
   moveSpeed: 0.05
   jumpForce: 6
   jetpackForce: 0.1
-  isZeroGravity: 0
+  rollVal: 0
+  isZeroGravity: 1
   cam: {fileID: 65072337}
   camPosN: {fileID: 1393923655}
   a_jetpack: {fileID: 8300000, guid: fa5d0f85d2dd39849994af988cecb222, type: 3}

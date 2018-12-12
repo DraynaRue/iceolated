@@ -8,9 +8,11 @@ public class CameraScript : MonoBehaviour
 	public float speedX;
 	// speed at which the camera moves in the y axis
 	public float speedY;
+	public MovementScript mov;
 	protected Camera cam;
 	protected float lookX;
 	protected float lookY;
+	protected float lookZ;
 
 	// Use this for initialization
 	void Start () 
@@ -27,8 +29,19 @@ public class CameraScript : MonoBehaviour
 		// calculate the movement of the camera
 		lookX += speedX * Input.GetAxis("Mouse X");
 		lookY -= speedY * Input.GetAxis("Mouse Y");
+		//lookZ += mov.rollVal;
 
-		// rotate the camera
-		cam.transform.eulerAngles = new Vector3(lookY, lookX, 0);
+		// rotate the camera	
+		if (mov.isZeroGravity == true)
+		{
+			//Quaternion qn = Quaternion.EulerAngles(lookY, lookX, lookZ);
+			//cam.transform.rotation = cam.transform.rotation * qn;
+			cam.transform.rotation = Quaternion.Slerp(mov.transform.rotation, Quaternion.Euler(lookY, lookX, 0), 0.9f);
+			//cam.transform.rotation = Quaternion.Euler(lookY, lookX, lookZ);
+		}
+		else 
+		{
+			//cam.transform.rotation = Quaternion.Euler(lookY, lookX, 0);
+		}
 	}
 }
