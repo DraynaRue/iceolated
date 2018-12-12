@@ -11,17 +11,16 @@ public class MovementScript : MonoBehaviour
 	// force provided by the jetpack in zero gravity movement
 	public float jetpackForce;
 	// used to enable/disable the player's zero gravity movement
+	public float rollVal;
 	public bool isZeroGravity;
 	// get a reference to the camera
 	public Camera cam;
-
 	public GameObject camPosN;
 	// reference to the player's rigidbody component
 	protected Rigidbody _rb;
 	protected bool isJumping;
 	protected float hor;
 	protected float ver;
-
 	public AudioClip a_jetpack;
 	public AudioSource AS;
 
@@ -30,7 +29,11 @@ public class MovementScript : MonoBehaviour
 	{
 		_rb = GetComponent<Rigidbody>();
 		isJumping = false;
+/*
+		We really don't need this to be set to true everytime we hit play
+		it makes testing stuff really annoying ~ DraynaRue [Lead Programmer]
 		isZeroGravity = true;
+*/
 	}
 	
 	// Update is called once per frame
@@ -61,7 +64,7 @@ public class MovementScript : MonoBehaviour
 	private void NormalMovement() 
 	{
 		// rotate the player
-		_rb.transform.eulerAngles = new Vector3(0,cam.transform.eulerAngles.y,0);
+		_rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
 
 		CapsuleCollider col = GetComponent<CapsuleCollider>();
 		col.height = 2; 
@@ -87,7 +90,9 @@ public class MovementScript : MonoBehaviour
 	private void ZeroGravityMovement()
 	{
 		// yaw the player
-		_rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
+	//	_rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
+
+		_rb.transform.rotation = cam.transform.rotation;
 
 		//Make the collider a ball and move cam to center
 		CapsuleCollider col = GetComponent<CapsuleCollider>();
@@ -95,19 +100,10 @@ public class MovementScript : MonoBehaviour
 		cam.transform.position = Vector3.Lerp(cam.transform.position, this.transform.position, 1f);
 
 		// roll the player right
-		//if (Input.GetAxis("Roll") > 0)
+		//rollVal = Input.GetAxis("Roll");
+		//if (Input.GetAxis("Roll") != 0)
 		//{
-			//Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
-		//	_rb.AddTorque(_rb.transform.forward * jetpackForce);
-			//Debug.Log("Rotating Right with Force: " + force);
-		//}
-
-		// roll the player left
-		//if (Input.GetAxis("Roll") < 0)
-		//{
-			//Vector3 force = new Vector3(0, 0, jetpackForce) + _rb.transform.forward;
-		//	_rb.AddTorque(-_rb.transform.forward * jetpackForce);
-			//Debug.Log("Rotating Left with Force: " + force);
+		//	Debug.Log("Rotating");
 		//}
 
 		// moving forwards

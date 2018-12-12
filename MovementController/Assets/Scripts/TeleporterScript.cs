@@ -20,7 +20,7 @@ public class TeleporterScript : MonoBehaviour {
 		
 	}
 
-	void Interact ()
+	public void Interact ()
 	{
 		Vector3 newPos = new Vector3 (TargetPad.transform.position.x, TargetPad.transform.position.y + VerticalOffset, TargetPad.transform.position.z);
 		Player.transform.SetPositionAndRotation(newPos, Player.transform.rotation);
