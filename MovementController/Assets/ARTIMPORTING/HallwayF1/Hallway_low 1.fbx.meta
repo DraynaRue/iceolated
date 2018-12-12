@@ -181,6 +181,10 @@ ModelImporter:
     4300002: Hwall_low
     4300004: Hframe_low
     4300006: Hpanel_low
+    6400000: Hframe_low
+    6400002: Hpanel_low
+    6400004: Hroof_low
+    6400006: Hwall_low
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -214,7 +218,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
