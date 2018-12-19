@@ -41,6 +41,8 @@ ModelImporter:
     3300002: StairS_low
     4300000: StairS_low
     4300002: StairH_low
+    6400000: StairH_low
+    6400002: StairS_low
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -74,7 +76,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
