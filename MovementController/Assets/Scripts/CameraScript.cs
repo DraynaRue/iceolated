@@ -32,16 +32,6 @@ public class CameraScript : MonoBehaviour
 		//lookZ += mov.rollVal;
 
 		// rotate the camera	
-		if (mov.isZeroGravity == true)
-		{
-			//Quaternion qn = Quaternion.EulerAngles(lookY, lookX, lookZ);
-			//cam.transform.rotation = cam.transform.rotation * qn;
-			cam.transform.rotation = Quaternion.Slerp(mov.transform.rotation, Quaternion.Euler(lookY, lookX, 0), 0.9f);
-			//cam.transform.rotation = Quaternion.Euler(lookY, lookX, lookZ);
-		}
-		else 
-		{
-			//cam.transform.rotation = Quaternion.Euler(lookY, lookX, 0);
-		}
+		cam.transform.rotation = Quaternion.Slerp(mov.transform.rotation, Quaternion.Euler(lookY, lookX, 0), 0.9f);
 	}
 }

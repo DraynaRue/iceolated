@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114205163383970604}
   - component: {fileID: 114717590881421052}
   - component: {fileID: 114867448883380438}
+  - component: {fileID: 114502118590700852}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -60,7 +61,7 @@ GameObject:
   - component: {fileID: 82624482570984192}
   - component: {fileID: 136485424679688922}
   - component: {fileID: 114385901199685198}
-  - component: {fileID: 114138720107402136}
+  - component: {fileID: 114219589843836696}
   m_Layer: 0
   m_Name: FP Controller
   m_TagString: Player
@@ -75,7 +76,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1216729611799400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4832217080186362}
@@ -88,7 +89,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1213187324669046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4832217080186362}
@@ -101,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1801268212756932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.47, y: 6.784, z: 7.71}
+  m_LocalPosition: {x: 52.48, y: 6.784, z: 7.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4008282159720192}
@@ -163,7 +164,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 2
+  m_CollisionDetection: 0
 --- !u!81 &81083869987010222
 AudioListener:
   m_ObjectHideFlags: 1
@@ -277,28 +278,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf32dd867f85b2145ae53b3af80d0670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.05
+  moveSpeed: 0.075
   jumpForce: 6
   jetpackForce: 0.1
+  rollVal: 0
   isZeroGravity: 0
   cam: {fileID: 20691039566144166}
   camPosN: {fileID: 1213187324669046}
   a_jetpack: {fileID: 8300000, guid: fa5d0f85d2dd39849994af988cecb222, type: 3}
   AS: {fileID: 0}
---- !u!114 &114138720107402136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1801268212756932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47f9792bf4e0f634aa8f90408a6ce9f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuelGage: {fileID: 0}
-  fuelPercentage: 100
-  animator: {fileID: 0}
 --- !u!114 &114205163383970604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,6 +300,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedX: 3
   speedY: 3
+  mov: {fileID: 114104210973334556}
+--- !u!114 &114219589843836696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1801268212756932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942f565ea41278b4999c6771a38fb8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuelGage: {fileID: 0}
+  fuelPercentage: 100
+  animator: {fileID: 0}
 --- !u!114 &114385901199685198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -324,6 +327,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: []
+--- !u!114 &114502118590700852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1216729611799400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 03a3887a8a1ccf341b3814abbeeadab9, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!114 &114717590881421052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,10 +395,12 @@ MonoBehaviour:
       colorBlindnessType: 0
       colorBlindnessStrength: 1
   m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
+  m_ShowToolkit: 1
+  m_ShowCustomSorter: 1
   breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
+  m_BeforeTransparentBundles:
+  - assemblyQualifiedName: EdgeDetectPostProcessing, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
 --- !u!114 &114867448883380438
@@ -410,7 +431,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.25
+  m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
