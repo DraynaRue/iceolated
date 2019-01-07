@@ -33,6 +33,8 @@ ModelImporter:
     3300002: PipeS_low
     4300000: PipeS_low
     4300002: PipeC_low
+    6400000: PipeC_low
+    6400002: PipeS_low
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -66,7 +68,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
