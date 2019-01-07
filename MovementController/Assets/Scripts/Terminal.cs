@@ -18,6 +18,8 @@ public class Terminal : MonoBehaviour
 	protected string twist="twist", aware="aware", mayor="mayor", swarm="swarm", smell="smell", video="video", blast="blast", shave="shave", youth="youth", peace="peace", 
 					 shift="shift", donor="donor", awful="awful", tough="tough", hobby="hobby", wheel="wheel", style="style", tight="tight", drown="drown", abuse="abuse", 
 					 stick="stick", sweet="sweet", elect="elect", brave="brave", split="split", crime="crime", clerk="clerk", penny="penny", tribe="tribe", pound="pound";
+	protected int WordToAdd;
+	protected bool isWordSame;
 	protected List<Text> TextArray;
 	protected List<string> WordArray; 
 
@@ -37,9 +39,16 @@ public class Terminal : MonoBehaviour
 		WordArray = new List<string> {twist, aware, mayor, swarm, smell, video, blast, shave, youth, peace,
 								      shift, donor, awful, tough, hobby, wheel, style, tight, drown, abuse, 
 									  stick, sweet, elect, brave, split, crime, clerk, penny, tribe, pound};
-		for (int i = 0; i <= TextArray.Count; i++)
+
+		for (int i = 0; i < TextArray.Count; i++)
 		{
-			TextArray[i].text = WordArray[Random.Range(0, WordArray.Count)];
+			isWordSame = false;
+			while (isWordSame == false)
+			{
+				WordToAdd = Random.Range(0, WordArray.Count);
+				isWordSame = CheckWord(WordToAdd);
+			}
+			TextArray[i].text = WordArray[WordToAdd];
 		}
 	}
 	void OnTriggerStay(Collider other) 
@@ -64,4 +73,17 @@ public class Terminal : MonoBehaviour
 			Cursor.lockState = CursorLockMode.Locked;
 		}
 	}	
+	bool CheckWord(int index)
+	{
+		for (int i = 0; i < TextArray.Count; i++)
+		{
+			if (WordArray[index] == TextArray[i].text)
+			{
+				Debug.Log("Word is invalid!");
+				return false;
+			}
+		}
+		Debug.Log("Word is valid!");
+		return true;
+	}
 }
