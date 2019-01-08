@@ -90,7 +90,7 @@ public class Terminal : MonoBehaviour
 					SimilarityRating++;
 				}
 			}
-			SimilarityRatingText.text = ("Similarity Rating: " + SimilarityRating);
+			SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
 			Debug.Log("Similiarity Rating " + SimilarityRating);
 		}
 	}
