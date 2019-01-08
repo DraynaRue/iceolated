@@ -21,9 +21,11 @@ public class Dialouge : MonoBehaviour {
 		if(other.gameObject.tag == "Part1"){
 			partActivated = true;
 			currentPart = part1;
+			Destroy(other.gameObject);
 		} else if(other.gameObject.tag == "Part2"){
 			partActivated = true;
 			currentPart = part2;
+			Destroy(other.gameObject);
 		}
 	}
 

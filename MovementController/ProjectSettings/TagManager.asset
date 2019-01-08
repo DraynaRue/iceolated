@@ -11,6 +11,8 @@ TagManager:
   - Ice
   - Word List
   - Terminal
+  - Part1
+  - Part2
   layers:
   - Default
   - TransparentFX
