@@ -9,8 +9,8 @@ TagManager:
   - Door
   - DoorTrigger
   - Ice
-  - Part1
-  - Part2
+  - Word List
+  - Terminal
   layers:
   - Default
   - TransparentFX
