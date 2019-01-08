@@ -9,8 +9,10 @@ public class Terminal : MonoBehaviour
 	public GameObject terminalInterface;
 	public CameraScript camScript;
 	public MovementScript movScript;
+	public TextClickScript txtScript;
 	public GameObject player;
 	public GameObject cam;
+	public GameObject wordList;
 	public Text A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
 				B1, B2, B3, B4, B5, B6, B7, B8, B9, B10,
 				C1, C2, C3, C4, C5, C6, C7, C8, C9, C10;
@@ -63,7 +65,12 @@ public class Terminal : MonoBehaviour
 				}
 				TextArray[i].text = WordArray[WordToAdd];
 			}
+			targetWord = WordArray[Random.Range(0, WordArray.Count)];
+			Debug.Log("Target word is " + targetWord + "!!");
 		}
+
+		txtScript = wordList.GetComponent<TextClickScript>();
+		selectedWord = txtScript.Word;
 	}
 
 	void OnTriggerExit(Collider other)

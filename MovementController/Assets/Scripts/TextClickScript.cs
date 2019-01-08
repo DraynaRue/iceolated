@@ -1,5 +1,4 @@
-﻿
-//Attach this script to your Canvas GameObject.
+﻿//Attach this script to your Canvas GameObject.
 //Also attach a GraphicsRaycaster component to your canvas by clicking the Add Component button in the Inspector window.
 //Also make sure you have an EventSystem in your hierarchy.
 
@@ -10,10 +9,10 @@ using System.Collections.Generic;
 
 public class TextClickScript : MonoBehaviour
 {
+	public string Word;
     GraphicRaycaster m_Raycaster;
     PointerEventData m_PointerEventData;
     EventSystem m_EventSystem;
-
     void Start()
     {
         //Fetch the Raycaster from the GameObject (the Canvas)
@@ -40,7 +39,9 @@ public class TextClickScript : MonoBehaviour
 
             //For every result returned, output the name of the GameObject on the Canvas hit by the Ray
             
-            Debug.Log("Hit " + results[0].gameObject.GetComponent<Text>().text);
+           
+			Word = results[0].gameObject.GetComponent<Text>().text;
+			Debug.Log("Hit " + Word);
         }
     }
 }
