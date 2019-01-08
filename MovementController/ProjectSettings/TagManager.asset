@@ -9,6 +9,8 @@ TagManager:
   - Door
   - DoorTrigger
   - Ice
+  - Part1
+  - Part2
   layers:
   - Default
   - TransparentFX
