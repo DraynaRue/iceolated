@@ -13,6 +13,7 @@ public class Terminal : MonoBehaviour
 	public GameObject player;
 	public GameObject cam;
 	public GameObject wordList;
+	public Text SimilarityRatingText;
 	public Text A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
 				B1, B2, B3, B4, B5, B6, B7, B8, B9, B10,
 				C1, C2, C3, C4, C5, C6, C7, C8, C9, C10;
@@ -21,11 +22,14 @@ public class Terminal : MonoBehaviour
 					 shift="shift", donor="donor", awful="awful", tough="tough", hobby="hobby", wheel="wheel", style="style", tight="tight", drown="drown", abuse="abuse", 
 					 stick="stick", sweet="sweet", elect="elect", brave="brave", split="split", crime="crime", clerk="clerk", penny="penny", tribe="tribe", pound="pound";
 	protected int WordToAdd;
+	protected int SimilarityRating;
 	protected bool isWordSame;
 	protected string targetWord;
 	protected string selectedWord;
 	protected List<Text> TextArray;
-	protected List<string> WordArray; 
+	protected List<string> WordArray;
+	protected char[] tWordArray;
+	protected char[] sWordArray;
 
 	void Start()
 	{
@@ -34,6 +38,8 @@ public class Terminal : MonoBehaviour
 
 		cam = GameObject.FindGameObjectWithTag("MainCamera");
 		camScript = cam.GetComponent<CameraScript>();
+
+		txtScript = wordList.GetComponent<TextClickScript>();
 	}
 	void OnTriggerEnter(Collider other) 
 	{
@@ -68,9 +74,25 @@ public class Terminal : MonoBehaviour
 			targetWord = WordArray[Random.Range(0, WordArray.Count)];
 			Debug.Log("Target word is " + targetWord + "!!");
 		}
+		if (selectedWord != txtScript.Word)
+		{
+			selectedWord = txtScript.Word;
 
-		txtScript = wordList.GetComponent<TextClickScript>();
-		selectedWord = txtScript.Word;
+			SimilarityRating = 0;
+
+			tWordArray = targetWord.ToCharArray();
+			sWordArray = selectedWord.ToCharArray();
+
+			for (int i = 0; i < tWordArray.Length; i++)
+			{
+				if (tWordArray[i] == sWordArray[i])
+				{
+					SimilarityRating++;
+				}
+			}
+			SimilarityRatingText.text = ("Similarity Rating: " + SimilarityRating);
+			Debug.Log("Similiarity Rating " + SimilarityRating);
+		}
 	}
 
 	void OnTriggerExit(Collider other)
