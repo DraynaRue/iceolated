@@ -14,7 +14,7 @@ public class IceMelt : MonoBehaviour
 
 		if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)) 
 		{
-			if(hit.transform.gameObject.tag == "Ice" && Input.GetKey(KeyCode.F)) 
+			if(hit.transform.gameObject.tag == "Ice" && Input.GetMouseButton(0)) 
 			{
 				gun["Take 001"].speed = 10f;
 				Debug.Log("ok hit ice");

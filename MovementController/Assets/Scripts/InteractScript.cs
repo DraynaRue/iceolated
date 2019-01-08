@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class InteractScript : MonoBehaviour {
 
-	public GameObject UIElement;
+	public GameObject InteractUI;
 	public GameObject Player;
 
 	// Use this for initialization
 	void Start ()
 	{
-		UIElement.SetActive(false);
+		InteractUI.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -23,7 +23,7 @@ public class InteractScript : MonoBehaviour {
 	{
 		if (other.tag == "Player")
 		{
-			UIElement.SetActive(true);
+			InteractUI.SetActive(true);
 		}
 	}
 
@@ -34,12 +34,12 @@ public class InteractScript : MonoBehaviour {
 			if (this.GetComponent<KeyScript>() != null && Input.GetButton("Interact") == true)
 			{
 				GetComponent<KeyScript>().Interact();
-				UIElement.SetActive(false);
+				InteractUI.SetActive(false);
 			}
 			else if (this.GetComponent<AudioLogScript>() != null && Input.GetButton("Interact") == true)
 			{
 				GetComponent<AudioLogScript>().Interact();
-				UIElement.SetActive(false);
+				InteractUI.SetActive(false);
 			}
 			else if (this.GetComponent<TeleporterScript>() != null && Input.GetButton("Interact") == true )
 			{

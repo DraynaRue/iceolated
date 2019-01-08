@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Terminal : MonoBehaviour
 {
 	public GameObject terminalInterface;
+	public GameObject interactUI;
 	public CameraScript camScript;
 	public MovementScript movScript;
 	public TextClickScript txtScript;
@@ -42,13 +43,14 @@ public class Terminal : MonoBehaviour
 	}
 	void OnTriggerEnter(Collider other) 
 	{
-		
+		interactUI.SetActive(true);
 	}
 	void OnTriggerStay(Collider other) 
 	{
-		if(other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Return) && terminalInterface.activeSelf == false && success == false)
+		if(other.gameObject.tag == "Player" && Input.GetButton("Interact") && terminalInterface.activeSelf == false && success == false)
 		{
 			terminalInterface.SetActive(true);
+			interactUI.SetActive(false);
 			camScript.enabled = false;
 			movScript.enabled = false;
 			Cursor.lockState = CursorLockMode.None;
@@ -114,6 +116,7 @@ public class Terminal : MonoBehaviour
 			Cursor.lockState = CursorLockMode.Confined;
 			Cursor.lockState = CursorLockMode.Locked;
 		}
+		interactUI.SetActive(false);
 	}	
 	bool CheckWord(int index)
 	{

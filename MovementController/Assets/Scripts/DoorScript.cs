@@ -17,17 +17,13 @@ public class DoorScript : MonoBehaviour {
 		
 	}
 
-	private void OnTriggerEnter(Collider other) {
-		if (other.tag == "Player")
+	private void OnCollisionEnter(Collision other) {
+		if (other.gameObject.tag == "Player")
 		{
 			if (other.gameObject.GetComponent<InventoryScript>().inv.Contains(this.key))
 			{
-				
+				Destroy(this.gameObject);
 			}
 		}
-	}
-
-	private void OnTriggerExit(Collider other) {
-		
 	}
 }
