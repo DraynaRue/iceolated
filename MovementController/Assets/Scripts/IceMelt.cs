@@ -6,7 +6,6 @@ public class IceMelt : MonoBehaviour
 {
 
 	public GameObject laser;
-	public Animation gun;
 
 	void Update () 
 	{
@@ -16,7 +15,6 @@ public class IceMelt : MonoBehaviour
 		{
 			if(hit.transform.gameObject.tag == "Ice" && Input.GetKey(KeyCode.F)) 
 			{
-				gun["Take 001"].speed = 10f;
 				Debug.Log("ok hit ice");
 				laser.gameObject.SetActive(true);
 				hit.transform.localScale -= Vector3.right * Time.deltaTime * 0.1f;
@@ -27,7 +25,6 @@ public class IceMelt : MonoBehaviour
 			} 
 			else 
 			{
-				gun["Take 001"].speed = 1f;
 				laser.gameObject.SetActive(false);
 			}
 		}
