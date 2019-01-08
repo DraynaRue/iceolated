@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Terminal : MonoBehaviour
 {
-
 	public GameObject terminalInterface;
 	public CameraScript camScript;
 	public MovementScript movScript;
@@ -17,7 +16,7 @@ public class Terminal : MonoBehaviour
 	public Text A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
 				B1, B2, B3, B4, B5, B6, B7, B8, B9, B10,
 				C1, C2, C3, C4, C5, C6, C7, C8, C9, C10;
-
+	public bool success;
 	protected string twist="twist", aware="aware", mayor="mayor", swarm="swarm", smell="smell", video="video", blast="blast", shave="shave", youth="youth", peace="peace", 
 					 shift="shift", donor="donor", awful="awful", tough="tough", hobby="hobby", wheel="wheel", style="style", tight="tight", drown="drown", abuse="abuse", 
 					 stick="stick", sweet="sweet", elect="elect", brave="brave", split="split", crime="crime", clerk="clerk", penny="penny", tribe="tribe", pound="pound";
@@ -47,7 +46,7 @@ public class Terminal : MonoBehaviour
 	}
 	void OnTriggerStay(Collider other) 
 	{
-		if(other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Return) && terminalInterface.activeSelf == false)
+		if(other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.Return) && terminalInterface.activeSelf == false && success == false)
 		{
 			terminalInterface.SetActive(true);
 			camScript.enabled = false;
@@ -92,6 +91,16 @@ public class Terminal : MonoBehaviour
 			}
 			SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
 			Debug.Log("Similiarity Rating " + SimilarityRating);
+		}
+		if (SimilarityRating == 5)
+		{
+			success = true;
+
+			terminalInterface.SetActive(false);
+			camScript.enabled = true;
+			movScript.enabled = true;
+			Cursor.lockState = CursorLockMode.Confined;
+			Cursor.lockState = CursorLockMode.Locked;
 		}
 	}
 

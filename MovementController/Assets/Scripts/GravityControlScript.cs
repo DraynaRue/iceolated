@@ -2,23 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GravityControlScript : MonoBehaviour {
-
+public class GravityControlScript : MonoBehaviour
+{
+	public MovementScript movScript;
+	public GameObject player;
 	public static bool GR = false;
+	public Terminal hackedTerminal;
 
-	void OnCollisionEnter(Collision other)
+	void Start()
 	{
-		if (other.collider.tag == "Player")
+		player = GameObject.FindGameObjectWithTag("Player");
+		movScript = player.GetComponent<MovementScript>();
+	}
+
+	void Update()
+	{
+		if (hackedTerminal.success == true)
 		{	
-			if(GR == false){
-				other.collider.GetComponent<MovementScript>().isZeroGravity = !other.collider.GetComponent<MovementScript>().isZeroGravity;
-				other.collider.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-				GR = true;
-			} else if(GR == true){
-				other.collider.GetComponent<MovementScript>().isZeroGravity = !other.collider.GetComponent<MovementScript>().isZeroGravity;
-				other.collider.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-				GR = false;
-			}
+			movScript.isZeroGravity = false;
+			GR = true;
 		}
 	}
 }
