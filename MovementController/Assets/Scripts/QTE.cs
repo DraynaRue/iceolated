@@ -65,7 +65,7 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(done5 == true && done6 == false){
-			QTE5 = (TimerScript.timeLeft / 10f);
+			QTE6 = (TimerScript.timeLeft / 10f);
 			QTENum.text = QTE6.ToString();
 			QTEKey.text = "Down";
 			if(Input.GetKeyDown(KeyCode.DownArrow) && QTE6 > 0f){
@@ -74,7 +74,7 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(done6 == true && done7 == false){
-			QTE6 = (TimerScript.timeLeft / 10f);
+			QTE7 = (TimerScript.timeLeft / 10f);
 			QTENum.text = QTE7.ToString();
 			QTEKey.text = "Left";
 			if(Input.GetKeyDown(KeyCode.LeftArrow) && QTE7 > 0f){
