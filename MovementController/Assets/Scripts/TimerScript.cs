@@ -6,12 +6,10 @@ using System.Threading;
 
 public class TimerScript : MonoBehaviour
 {
-	public float timeLeft = 60f;
+	public static float timeLeft = 60f;
 	public Text countdown;
 	public GameObject timerObj;
 	public bool TimerTrigger;
-
-	public Text tQTE1, tQTE2, tQTE3, tQTE4, tQTE5, tQTE6;
 
 
 	void OnTriggerEnter(Collider other){
@@ -30,12 +28,7 @@ public class TimerScript : MonoBehaviour
 				Debug.Log("Engines Blew Up!");
 			}
 
-			QTE();
+			
 		}
 	}
-
-	public void QTE(){
-		
-	}
-
 }
