@@ -95,6 +95,7 @@ public class QTE : MonoBehaviour {
 			Destroy(timerTriggerObj);
 			qteNumObj.SetActive(false);
 			qteKeyObj.SetActive(false);
+			TimerScript.timeLeft = 0f;
 		}
 	}
 
