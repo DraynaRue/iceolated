@@ -75,6 +75,11 @@ public class MovementScript : MonoBehaviour
 		hor = moveSpeed * Input.GetAxis("Horizontal");
 		ver = moveSpeed * Input.GetAxis("Vertical");
 
+		if (Input.GetKey(KeyCode.C))
+		{
+			ver *= 2.00f;
+		}
+
 		// move the player
 		_rb.transform.position += _rb.transform.forward * ver;
 		_rb.transform.position += _rb.transform.right * hor;
