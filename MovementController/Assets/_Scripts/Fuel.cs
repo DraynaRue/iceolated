@@ -13,7 +13,7 @@ public class Fuel : MonoBehaviour {
 		animator.Play("fuel", -1, fuelPercentage);
 	}
 
-	void Update(){
+	void FixedUpdate(){
 		if( GetComponent<MovementScript>().isZeroGravity == true && (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.S)) && fuelPercentage > 0){
 			fuelPercentage -= 3f * Time.deltaTime;
 			animator.Play("fuel", -1, (1f / 100) * fuelPercentage);
