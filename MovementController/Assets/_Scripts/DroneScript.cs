@@ -31,14 +31,15 @@ public class DroneScript : MonoBehaviour
 			transform.rotation = Quaternion.Slerp(transform.rotation, rot, Time.deltaTime * 10f);
 
 			RaycastHit hit;
+			Debug.DrawRay(transform.position, transform.forward * 100, Color.red);
 			if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity))
 			{
 				float bufferDist = 0.5f;
-				if (hit.distance >= bufferDist - 0.01f && hit.distance <= bufferDist + 0.01f)
-				{
+			//	if (hit.distance >= bufferDist - 0.01f && hit.distance <= bufferDist + 0.01f)
+			//	{
 					// Stops jittering
-				}
-				else if (hit.distance <= bufferDist)
+			//	}
+				if (hit.distance <= bufferDist)
 				{
 					transform.position += transform.forward * -HorizonalSpeed;
 				}
