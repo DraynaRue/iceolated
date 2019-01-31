@@ -1,0 +1,2232 @@
+fileFormatVersion: 2
+guid: dd85aa20dda7aba49ba747d4d6312dad
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fuel_Fuel Gage_0-100_0
+    21300002: fuel_Fuel Gage_0-100_1
+    21300004: fuel_Fuel Gage_0-100_2
+    21300006: fuel_Fuel Gage_0-100_3
+    21300008: fuel_Fuel Gage_0-100_4
+    21300010: fuel_Fuel Gage_0-100_5
+    21300012: fuel_Fuel Gage_0-100_6
+    21300014: fuel_Fuel Gage_0-100_7
+    21300016: fuel_Fuel Gage_0-100_8
+    21300018: fuel_Fuel Gage_0-100_9
+    21300020: fuel_Fuel Gage_0-100_10
+    21300022: fuel_Fuel Gage_0-100_11
+    21300024: fuel_Fuel Gage_0-100_12
+    21300026: fuel_Fuel Gage_0-100_13
+    21300028: fuel_Fuel Gage_0-100_14
+    21300030: fuel_Fuel Gage_0-100_15
+    21300032: fuel_Fuel Gage_0-100_16
+    21300034: fuel_Fuel Gage_0-100_17
+    21300036: fuel_Fuel Gage_0-100_18
+    21300038: fuel_Fuel Gage_0-100_19
+    21300040: fuel_Fuel Gage_0-100_20
+    21300042: fuel_Fuel Gage_0-100_21
+    21300044: fuel_Fuel Gage_0-100_22
+    21300046: fuel_Fuel Gage_0-100_23
+    21300048: fuel_Fuel Gage_0-100_24
+    21300050: fuel_Fuel Gage_0-100_25
+    21300052: fuel_Fuel Gage_0-100_26
+    21300054: fuel_Fuel Gage_0-100_27
+    21300056: fuel_Fuel Gage_0-100_28
+    21300058: fuel_Fuel Gage_0-100_29
+    21300060: fuel_Fuel Gage_0-100_30
+    21300062: fuel_Fuel Gage_0-100_31
+    21300064: fuel_Fuel Gage_0-100_32
+    21300066: fuel_Fuel Gage_0-100_33
+    21300068: fuel_Fuel Gage_0-100_34
+    21300070: fuel_Fuel Gage_0-100_35
+    21300072: fuel_Fuel Gage_0-100_36
+    21300074: fuel_Fuel Gage_0-100_37
+    21300076: fuel_Fuel Gage_0-100_38
+    21300078: fuel_Fuel Gage_0-100_39
+    21300080: fuel_Fuel Gage_0-100_40
+    21300082: fuel_Fuel Gage_0-100_41
+    21300084: fuel_Fuel Gage_0-100_42
+    21300086: fuel_Fuel Gage_0-100_43
+    21300088: fuel_Fuel Gage_0-100_44
+    21300090: fuel_Fuel Gage_0-100_45
+    21300092: fuel_Fuel Gage_0-100_46
+    21300094: fuel_Fuel Gage_0-100_47
+    21300096: fuel_Fuel Gage_0-100_48
+    21300098: fuel_Fuel Gage_0-100_49
+    21300100: fuel_Fuel Gage_0-100_50
+    21300102: fuel_Fuel Gage_0-100_51
+    21300104: fuel_Fuel Gage_0-100_52
+    21300106: fuel_Fuel Gage_0-100_53
+    21300108: fuel_Fuel Gage_0-100_54
+    21300110: fuel_Fuel Gage_0-100_55
+    21300112: fuel_Fuel Gage_0-100_56
+    21300114: fuel_Fuel Gage_0-100_57
+    21300116: fuel_Fuel Gage_0-100_58
+    21300118: fuel_Fuel Gage_0-100_59
+    21300120: fuel_Fuel Gage_0-100_60
+    21300122: fuel_Fuel Gage_0-100_61
+    21300124: fuel_Fuel Gage_0-100_62
+    21300126: fuel_Fuel Gage_0-100_63
+    21300128: fuel_Fuel Gage_0-100_64
+    21300130: fuel_Fuel Gage_0-100_65
+    21300132: fuel_Fuel Gage_0-100_66
+    21300134: fuel_Fuel Gage_0-100_67
+    21300136: fuel_Fuel Gage_0-100_68
+    21300138: fuel_Fuel Gage_0-100_69
+    21300140: fuel_Fuel Gage_0-100_70
+    21300142: fuel_Fuel Gage_0-100_71
+    21300144: fuel_Fuel Gage_0-100_72
+    21300146: fuel_Fuel Gage_0-100_73
+    21300148: fuel_Fuel Gage_0-100_74
+    21300150: fuel_Fuel Gage_0-100_75
+    21300152: fuel_Fuel Gage_0-100_76
+    21300154: fuel_Fuel Gage_0-100_77
+    21300156: fuel_Fuel Gage_0-100_78
+    21300158: fuel_Fuel Gage_0-100_79
+    21300160: fuel_Fuel Gage_0-100_80
+    21300162: fuel_Fuel Gage_0-100_81
+    21300164: fuel_Fuel Gage_0-100_82
+    21300166: fuel_Fuel Gage_0-100_83
+    21300168: fuel_Fuel Gage_0-100_84
+    21300170: fuel_Fuel Gage_0-100_85
+    21300172: fuel_Fuel Gage_0-100_86
+    21300174: fuel_Fuel Gage_0-100_87
+    21300176: fuel_Fuel Gage_0-100_88
+    21300178: fuel_Fuel Gage_0-100_89
+    21300180: fuel_Fuel Gage_0-100_90
+    21300182: fuel_Fuel Gage_0-100_91
+    21300184: fuel_Fuel Gage_0-100_92
+    21300186: fuel_Fuel Gage_0-100_93
+    21300188: fuel_Fuel Gage_0-100_94
+    21300190: fuel_Fuel Gage_0-100_95
+    21300192: fuel_Fuel Gage_0-100_96
+    21300194: fuel_Fuel Gage_0-100_97
+    21300196: fuel_Fuel Gage_0-100_98
+    21300198: fuel_Fuel Gage_0-100_99
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5632
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7c9fb95d576e44393120ccf185d380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 5632
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dbd237a37f1b04dba3a0edf2950937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_2
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 5632
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cd11439e2d345439b5d2f25ff5e6b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_3
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 5632
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b89b28a45d77074093cd22d56842d22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_4
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 5632
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a40b2e0adb8544297865ec6e700a6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_5
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 5632
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd5b15cdf22e9742b2436542cd612fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5280
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfc349e7fda7e34baaeab824a6f6583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 5280
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bbd5fc9564fb34a95080d58364ae95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_8
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 5280
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57fff80408027e468d80db48ea52c59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_9
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 5280
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcdf5b00b4fab14da6cc89816a3ed56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_10
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 5280
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569d66b9ac67dc6409effd7257270b6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_11
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 5280
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c191b68b6ce5249b722d222f54bfee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4928
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c58936c513e074a8c0b55cecac4b69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_13
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 4928
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e5b193850c0054daf3fff2044d8820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_14
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 4928
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd05e63ed9845b7418005d1460eae53b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_15
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 4928
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04426c3b5ee367c4b8ed22588c2fb2e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_16
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 4928
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d3f8cea4f55ad489cea31476f7d3f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_17
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 4928
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b8918b750030a48a31521dfa6dd45c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4576
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5f208b751d074479bd3623b7eee953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_19
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 4576
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceedf89572c339f40aeaf0239a9d2edd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_20
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 4576
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408ca69fbb7252849b4cda654e13d359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_21
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 4576
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ea435c4f9f08c4f9ddbe213849a4f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_22
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 4576
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03e8d8f00cd7164c8993ee4647f828d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_23
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 4576
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff4ab0bbaa0a6a4cb6464720144b9c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4224
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0f87d3022eb0f4493886ca55a38e50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 4224
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0c3a2ed24ec9b4cb45fd5e358499ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_26
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 4224
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b97fe0bf2dd6bb4fb6f3f1addc4cf42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_27
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 4224
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b5dd5c983afd14ba8eca3ad0929a25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_28
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 4224
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addb8b87c5bccd34eace6f1f343702d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_29
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 4224
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d1daf969262884e8ed94a1e4522a7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3872
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67470f34e8cfd2e4a96e0cab90d642af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_31
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3872
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0fc3978995a4f4aa91cc9c96ebe263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_32
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3872
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fd610c7bc8ffc4a98096fbbbcf7f81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_33
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3872
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2479aaab3506e648b53a2d8ed1371b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_34
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3872
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e782c8132db734faf260abe9878ef5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_35
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 3872
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6f824298fbd0646867c0b07365b60d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3520
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1522b8a8ba85f48a752dd912efc14f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_37
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3520
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2d85fa1a0884a4dbdaae40d7202c35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_38
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3520
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2377245086dbd4fb96f48bc493c251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_39
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3520
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678885fc92d8d154cb7b8ebc76d538a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_40
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3520
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7540e72151adc0d49878c32ff4381ea8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_41
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 3520
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11d484cdf931454291f3b2c7906308a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3168
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e8ee8ae1e9d6f4fbdb9e2a33d05227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_43
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3168
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9779e91869f1e98408bab4a1f1a5ba65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_44
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3168
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea906d64e368fa4087522995d6e83eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_45
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3168
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f571f1aef404d594db4564c35ff330a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_46
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3168
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb42aacff48de1b4a938082eeb66c5a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_47
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 3168
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9608554e6ac5b64093601bc0af87aad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2816
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ec3f33fee4ef04c9b6b8f2e6a783a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_49
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2816
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10fc4cb62640024492a316b4769b1ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_50
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2816
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbb46bcc14d18a4aa8a84f9a94952f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_51
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2816
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d814b8484cde4bf45ad0be67e86346d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_52
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2816
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38b3e3ae4461964aa7eaf934fcc6809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_53
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 2816
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a054b3de3fa1c44b52973d1055581f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2464
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f89c76ad221ea84284115036bb8fe6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_55
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2464
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d7c55e3540977478263e0182f490f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_56
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2464
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f3f8e4212d2eb4b9da39742bb6fd61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_57
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2464
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cfe6e1a3e8560498e92d7fa5e439cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_58
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2464
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fcad7f2819f774583d81d15216ae38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_59
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 2464
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa36102977bd3844a8f5f2383d22ac7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2112
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775fc7ee540c07f4ca48ad801344c2ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_61
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2112
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3a466f83855454090c04068de56e36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_62
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2112
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e718c33feab028c4389412c1e1ede8a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_63
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2112
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca9a12749e17c447915f3982a086f72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_64
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2112
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f6fcba83bda8e4f9fbfd87f985f1ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_65
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 2112
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5577f0df23a79cb48804dff94b9dc7d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1760
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56552abf9f5e86642a96e50a3c9b2a04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_67
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1760
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd03340734525c14cabec4c785480520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_68
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1760
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53018f48013d2ad4d871451d5395ba57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_69
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1760
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6b9710303c6844793f88dbed6aef57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_70
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1760
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fac4ad867e1dc44a553e99515f0bf1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_71
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1760
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4515b12aab9b1874fb031e36ab89e8a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1408
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c52114b1854ae42ac9ec05730bede7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_73
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1408
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb98ca2a280745a43bbb27b152ffa606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_74
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1408
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aaf3472d364ed74880a138d8a173ae2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_75
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1408
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbc5142234e6c24ca141390597f5a48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_76
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1408
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207877df72595aa4187ee477a61b80eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_77
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1408
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dea340cb515f6241be5d622a0ad3629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52753cf19edd3214495e12c4e10e93a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_79
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1056
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99abf387e5de5149b2263a302302617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_80
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1056
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fe12c4609e2184aa5b64459316c92b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_81
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1056
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93c5009d7beb9b418a7f665293204a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_82
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1056
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa5a6f1c83d8b844a2878894c946299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_83
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1056
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813b643e2d7834c4d8f093363a7b95a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fe9c16a776153469b6abe24aa53503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_85
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 704
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b764f1b33c0fd649a1b9459380a9e61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_86
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 704
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37bfc7a843e54914eb0cff51a0da767b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_87
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 704
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142bfe804043f4742b56bff1a8af51ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_88
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 704
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640e1f896ad2fb14c992187f0319ba43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_89
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 704
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a266a7ff613f5488a4ab79dc1a886f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef686bafd58267349b3d7bb8ce77d0ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_91
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef2968dcafbf344ba697b7a6d3905d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_92
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 352
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a8fce639c33b34498d3ee59e28a6ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_93
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 352
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387ed28dbd5cdb348b2c8337799764ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_94
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 352
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37185cdd2c731064c9cda1f00b3795d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_95
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 352
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734fb680d92cbd240b901216c340eb17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097f7884796204445a0598c8d18bf479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_97
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc20f88469e29e4cb6afd6c30ac9be2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_98
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3984a35a97f02a43b736fbd042b61f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fuel_Fuel Gage_0-100_99
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 352
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d5f2774d89c7f4398583a365ae8316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8a8b451ff5a253943b68b6b43544ced0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
