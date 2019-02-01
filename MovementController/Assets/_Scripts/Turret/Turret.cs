@@ -8,6 +8,7 @@ public class Turret : MonoBehaviour {
 	public GameObject bullet;
 	private bool isShooting = false;
 	public GameObject spawn;
+	public static float turretHealth = 100;
 
 
 	void Update(){
@@ -24,6 +25,10 @@ public class Turret : MonoBehaviour {
 			if(hit.transform.gameObject.tag == "Player" && isShooting == false){
 				StartCoroutine(SHOOTING());			
 			}
+		}
+		Debug.Log(turretHealth);
+		if(turretHealth <= 0f){
+			Destroy(this.gameObject);
 		}
 	}
 

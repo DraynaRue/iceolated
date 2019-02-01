@@ -24,7 +24,11 @@ public class IceMelt : MonoBehaviour
 				{
 					Destroy(hit.transform.gameObject);
 				}
-			} 
+			}
+
+			if(hit.transform.gameObject.tag == "turret"){
+				Turret.turretHealth -= 5f * Time.deltaTime;
+			}
 			else 
 			{
 				gun["Take 001"].speed = 1f;
