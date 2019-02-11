@@ -13,6 +13,7 @@ public class MovementScript : MonoBehaviour
 	// used to enable/disable the player's zero gravity movement
 	public float rollVal;
 	public bool isZeroGravity;
+	public bool jetpackToggle;
 	// get a reference to the camera
 	public Camera cam;
 	public GameObject camPosN;
@@ -84,11 +85,20 @@ public class MovementScript : MonoBehaviour
 		_rb.transform.position += _rb.transform.forward * ver;
 		_rb.transform.position += _rb.transform.right * hor;
 
+		if (Input.GetKeyDown(KeyCode.T))
+		{
+			jetpackToggle = !jetpackToggle;
+		}
+
 		// jumping
-		if (Input.GetAxis("Jump") > 0 && isJumping == false)
+		if (Input.GetAxis("Jump") > 0 && isJumping == false && jetpackToggle == false)
 		{
 			_rb.velocity = new Vector2(0, jumpForce);
 			isJumping = true;
+		}
+		else if (Input.GetAxis("Jump") > 0 && jetpackToggle == true)
+		{
+			_rb.velocity = new Vector2(0, jetpackForce);
 		}
 		//Debug.Log(_rb.velocity.y);
 	}
