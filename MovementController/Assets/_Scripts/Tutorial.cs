@@ -10,13 +10,14 @@ public class Tutorial : MonoBehaviour {
     public GameObject rightM;
     public GameObject upM;
     public GameObject downM;
+	public GameObject tutUI;
 
-    public void OnTriggerEnter(Collider other)
+	void update()
     {
-        if (other.name == "_Player")
-        {
+			
             if(Input.GetKeyDown(KeyCode.W))
             {
+				Debug.Log ("test");
                 forwardM.SetActive(false);
                 backwardsM.SetActive(true);
                 leftM.SetActive(false);
@@ -62,9 +63,8 @@ public class Tutorial : MonoBehaviour {
             }
             if (Input.GetKeyDown(KeyCode.LeftControl))
             {
-               Destroy (this.gameObject);
+				tutUI.SetActive (false); 
             }
 
         }
-    }
 }
