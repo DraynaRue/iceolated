@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IceMelt : MonoBehaviour 
+public class Gun : MonoBehaviour 
 {
 
 	public GameObject laser;
 	public Animation gun;
+	Turret turret;
 
 	void Update () 
 	{
@@ -28,8 +29,8 @@ public class IceMelt : MonoBehaviour
 				gun["Take 001"].speed = 10f;
 				Debug.Log("ok hit turret");
 				laser.gameObject.SetActive(true);
-				
-				
+				turret = hit.transform.gameObject.GetComponent<Turret>();
+				turret.Take_Damage(1f);
 			}
 			else 
 			{

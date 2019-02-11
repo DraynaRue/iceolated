@@ -34,8 +34,8 @@ public class Turret : MonoBehaviour {
 		}
 	}
 
-	public void Take_Damage(){
-		
+	public void Take_Damage(float amount){
+		turretHealth -= amount;
 	}
 
 	IEnumerator SHOOTING (){
