@@ -28,6 +28,9 @@ public class Bullet : MonoBehaviour {
 			PlayerHealth.health -= 10f;
 			Destroy(this.gameObject);
 		}	
+		if(other.gameObject.tag == "Shield"){
+			Destroy(this.gameObject);
+		}
 	}
 
 	void OnCollisionEnter(Collision collision){
