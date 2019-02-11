@@ -98,7 +98,7 @@ public class MovementScript : MonoBehaviour
 		}
 		else if (Input.GetAxis("Jump") > 0 && jetpackToggle == true)
 		{
-			_rb.velocity = new Vector2(0, jetpackForce);
+			_rb.velocity = new Vector2(0, jetpackForce * 10);
 		}
 		//Debug.Log(_rb.velocity.y);
 	}
