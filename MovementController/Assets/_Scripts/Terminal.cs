@@ -10,8 +10,16 @@ public class Terminal : MonoBehaviour
 	public CameraScript camScript;
 	public MovementScript movScript;
 	public TextClickScript txtScript;
+	public KeyScript xScript;
+	public Button loginButton;
+	public Button bypassButton;
+	public InputField usernameField;
+	public InputField passwordField;
 	public GameObject player;
 	public GameObject cam;
+	public bool doesRequireLogin;
+	public string username;
+	public string password;
 	public GameObject wordList;
 	public Text SimilarityRatingText;
 	public Text A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
@@ -49,60 +57,74 @@ public class Terminal : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player" && Input.GetButton("Interact") && terminalInterface.activeSelf == false && success == false)
 		{
+			usernameField.text = "";
+			passwordField.text = "";
+
 			terminalInterface.SetActive(true);
 			interactUI.SetActive(false);
 			camScript.enabled = false;
 			movScript.enabled = false;
 			Cursor.lockState = CursorLockMode.None;
 
-			TextArray = new List<Text> {A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
-										B1, B2, B3, B4, B5, B6, B7, B8, B9, B10,
-										C1, C2, C3, C4, C5, C6, C7, C8, C9, C10};
-			WordArray = new List<string> {twist, aware, mayor, swarm, smell, video, blast, shave, youth, peace,
-								     	  shift, donor, awful, tough, hobby, wheel, style, tight, drown, abuse, 
-										  stick, sweet, elect, brave, split, crime, clerk, penny, tribe, pound};
-
-			for (int i = 0; i < TextArray.Count; i++)
+			if (doesRequireLogin == true)
 			{
-				isWordSame = false;
-				while (isWordSame == false)
-				{
-					WordToAdd = Random.Range(0, WordArray.Count);
-					isWordSame = CheckWord(WordToAdd);
-				}
-				TextArray[i].text = WordArray[WordToAdd];
+				bypassButton.interactable = false;
 			}
-			targetWord = WordArray[Random.Range(0, WordArray.Count)];
-			Debug.Log("Target word is " + targetWord + "!!");
-		}
-		if (selectedWord != txtScript.Word)
-		{
-			selectedWord = txtScript.Word;
-
-			SimilarityRating = 0;
-
-			tWordArray = targetWord.ToCharArray();
-			sWordArray = selectedWord.ToCharArray();
-
-			for (int i = 0; i < tWordArray.Length; i++)
+			else if (doesRequireLogin == false)
 			{
-				if (tWordArray[i] == sWordArray[i])
-				{
-					SimilarityRating++;
-				}
-			}
-			SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
-			Debug.Log("Similiarity Rating " + SimilarityRating);
-		}
-		if (SimilarityRating == 5)
-		{
-			success = true;
+				
+				TextArray = new List<Text> {A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
+											B1, B2, B3, B4, B5, B6, B7, B8, B9, B10,
+											C1, C2, C3, C4, C5, C6, C7, C8, C9, C10};
+				WordArray = new List<string> {twist, aware, mayor, swarm, smell, video, blast, shave, youth, peace,
+									     	  shift, donor, awful, tough, hobby, wheel, style, tight, drown, abuse, 
+											  stick, sweet, elect, brave, split, crime, clerk, penny, tribe, pound};
 
-			terminalInterface.SetActive(false);
-			camScript.enabled = true;
-			movScript.enabled = true;
-			Cursor.lockState = CursorLockMode.Confined;
-			Cursor.lockState = CursorLockMode.Locked;
+				for (int i = 0; i < TextArray.Count; i++)
+				{
+					isWordSame = false;
+					while (isWordSame == false)
+					{
+						WordToAdd = Random.Range(0, WordArray.Count);
+						isWordSame = CheckWord(WordToAdd);
+					}
+					TextArray[i].text = WordArray[WordToAdd];
+				}
+				targetWord = WordArray[Random.Range(0, WordArray.Count)];
+				Debug.Log("Target word is " + targetWord + "!!");
+			}
+			if (selectedWord != txtScript.Word)
+			{
+				selectedWord = txtScript.Word;
+
+				SimilarityRating = 0;
+
+				tWordArray = targetWord.ToCharArray();
+				sWordArray = selectedWord.ToCharArray();
+
+				for (int i = 0; i < tWordArray.Length; i++)
+				{
+					if (tWordArray[i] == sWordArray[i])
+					{
+						SimilarityRating++;
+					}
+				}
+				SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
+				Debug.Log("Similiarity Rating " + SimilarityRating);
+			}
+			if (SimilarityRating == 5)
+			{
+				success = true;
+
+				usernameField.text = "";
+				passwordField.text = "";
+
+				terminalInterface.SetActive(false);
+				camScript.enabled = true;
+				movScript.enabled = true;
+				Cursor.lockState = CursorLockMode.Confined;
+				Cursor.lockState = CursorLockMode.Locked;
+			}
 		}
 	}
 
@@ -130,5 +152,24 @@ public class Terminal : MonoBehaviour
 		}
 		Debug.Log("Word is valid!");
 		return true;
+	}
+
+	public void Login()
+	{
+		if (usernameField.text == username && passwordField.text == password)
+		{
+			success = true;
+
+			xScript.usernamePassword.SetActive(false);
+
+			usernameField.text = "";
+			passwordField.text = "";
+
+			terminalInterface.SetActive(false);
+			camScript.enabled = true;
+			movScript.enabled = true;
+			Cursor.lockState = CursorLockMode.Confined;
+			Cursor.lockState = CursorLockMode.Locked;
+		}
 	}
 }
