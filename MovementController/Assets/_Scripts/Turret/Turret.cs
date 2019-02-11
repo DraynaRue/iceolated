@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Turret : MonoBehaviour {
 
@@ -9,11 +10,17 @@ public class Turret : MonoBehaviour {
 	private bool isShooting = false;
 	public GameObject spawn, spawnL, spawnR;
 
-	public float turretHealth = 50f;
+	public float turretHealth = 100f;
 
 	private int leftNotRight;
 
+	public Text tHealth;
+	public Slider sHealth;
+
 	void Update(){
+		tHealth.text = turretHealth.ToString() + " / 100";
+		sHealth.value = turretHealth;
+
 		Vector3 targetDir = target.position - transform.position;
 
 		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 4f, 0f);
