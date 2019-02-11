@@ -2949,9 +2949,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4831140076771134}
+  - component: {fileID: 135550712030302616}
   m_Layer: 0
   m_Name: Turret
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9226,3 +9227,15 @@ MonoBehaviour:
   spawn: {fileID: 1626614059855140}
   spawnL: {fileID: 1594059221359598}
   spawnR: {fileID: 1626614059855140}
+--- !u!135 &135550712030302616
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669857184843934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Center: {x: -19.4, y: -3.64, z: 3.5}

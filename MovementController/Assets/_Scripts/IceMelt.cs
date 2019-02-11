@@ -24,7 +24,13 @@ public class IceMelt : MonoBehaviour
 				{
 					Destroy(hit.transform.gameObject);
 				}
-			} 
+			} else if(hit.transform.gameObject.tag == "Turret" && Input.GetMouseButton(0)){
+				gun["Take 001"].speed = 10f;
+				Debug.Log("ok hit turret");
+				laser.gameObject.SetActive(true);
+				Turret.turretHealth -= 10 * Time.deltaTime;
+				
+			}
 			else 
 			{
 				gun["Take 001"].speed = 1f;

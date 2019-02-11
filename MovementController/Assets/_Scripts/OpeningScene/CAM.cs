@@ -6,6 +6,7 @@ public class CAM : MonoBehaviour {
 
 	public GameObject pod;
 	public GameObject pos1, pos2;
+	public GameObject canvas;
 
 	float t;
 	float timetoreach = 6f;
@@ -14,6 +15,7 @@ public class CAM : MonoBehaviour {
 	
 	void Start(){
 		cam = gameObject.GetComponent<Camera>();
+		canvas.SetActive(false);
 	}
 	void Update () {
 		t += Time.deltaTime / timetoreach;
@@ -28,10 +30,16 @@ public class CAM : MonoBehaviour {
 		if(transform.position == pos2.transform.position){
 			StartCoroutine(CAMMOVE());
 		}
+
+		if(Input.GetKeyDown(KeyCode.Escape)){
+			cam.depth = -1f;
+			canvas.SetActive(true);
+		}
 	}
 
 	IEnumerator CAMMOVE(){
 		yield return new WaitForSeconds(4f);
 		cam.depth = -1f;
+		canvas.SetActive(true);
 	}
 }

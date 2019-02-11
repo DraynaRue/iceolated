@@ -15,6 +15,7 @@ TagManager:
   - Part2
   - Engine1
   - Shield
+  - Turret
   layers:
   - Default
   - TransparentFX

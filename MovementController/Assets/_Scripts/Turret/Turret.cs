@@ -9,6 +9,8 @@ public class Turret : MonoBehaviour {
 	private bool isShooting = false;
 	public GameObject spawn, spawnL, spawnR;
 
+	public float turretHealth = 50f;
+
 	private int leftNotRight;
 
 	void Update(){
@@ -26,6 +28,14 @@ public class Turret : MonoBehaviour {
 				StartCoroutine(SHOOTING());			
 			}
 		}
+
+		if(turretHealth <= 0f){
+			Destroy(this.gameObject);
+		}
+	}
+
+	public void Take_Damage(){
+		
 	}
 
 	IEnumerator SHOOTING (){
