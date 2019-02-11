@@ -3,27 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorScript : MonoBehaviour {
-	public GameObject key;
-	protected Vector3 startPos;
-	protected Vector3 endPos;
-	
-	// Use this for initialization
-	void Start () {
-		startPos = GetComponent<Rigidbody>().transform.position;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	private Animation anim;
+
+	void Start(){
+		anim = GetComponent<Animation>();
 	}
 
-	private void OnCollisionEnter(Collision other) {
-		if (other.gameObject.tag == "Player")
-		{
-			if (other.gameObject.GetComponent<InventoryScript>().inv.Contains(this.key))
-			{
-				Destroy(this.gameObject);
-			}
+	void OnTriggerEnter(Collider other){
+		if(other.gameObject.tag == "Player"){
+			anim.Play("Door");
+			StartCoroutine(OpenDoor());
 		}
+	}
+
+	IEnumerator OpenDoor(){
+		yield return new WaitForSeconds(2.2f);
+		anim["Door"].time = 2.2f;
 	}
 }
