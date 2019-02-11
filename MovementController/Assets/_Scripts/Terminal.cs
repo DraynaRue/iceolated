@@ -10,6 +10,7 @@ public class Terminal : MonoBehaviour
 	public CameraScript camScript;
 	public MovementScript movScript;
 	public TextClickScript txtScript;
+	public KeyScript xScript;
 	public Button loginButton;
 	public Button bypassButton;
 	public InputField usernameField;
@@ -158,6 +159,8 @@ public class Terminal : MonoBehaviour
 		if (usernameField.text == username && passwordField.text == password)
 		{
 			success = true;
+
+			xScript.usernamePassword.SetActive(false);
 
 			usernameField.text = "";
 			passwordField.text = "";
