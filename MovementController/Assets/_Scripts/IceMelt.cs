@@ -28,7 +28,7 @@ public class IceMelt : MonoBehaviour
 				gun["Take 001"].speed = 10f;
 				Debug.Log("ok hit turret");
 				laser.gameObject.SetActive(true);
-				Turret.turretHealth -= 10 * Time.deltaTime;
+				
 				
 			}
 			else 
