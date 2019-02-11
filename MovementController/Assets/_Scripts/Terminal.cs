@@ -56,6 +56,9 @@ public class Terminal : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player" && Input.GetButton("Interact") && terminalInterface.activeSelf == false && success == false)
 		{
+			usernameField.text = "";
+			passwordField.text = "";
+
 			terminalInterface.SetActive(true);
 			interactUI.SetActive(false);
 			camScript.enabled = false;
@@ -112,6 +115,9 @@ public class Terminal : MonoBehaviour
 			{
 				success = true;
 
+				usernameField.text = "";
+				passwordField.text = "";
+
 				terminalInterface.SetActive(false);
 				camScript.enabled = true;
 				movScript.enabled = true;
@@ -152,6 +158,9 @@ public class Terminal : MonoBehaviour
 		if (usernameField.text == username && passwordField.text == password)
 		{
 			success = true;
+
+			usernameField.text = "";
+			passwordField.text = "";
 
 			terminalInterface.SetActive(false);
 			camScript.enabled = true;
