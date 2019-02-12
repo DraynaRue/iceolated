@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -14,7 +15,7 @@ public class PlayerHealth : MonoBehaviour {
 		sHealth.value = health;
 				
 		if(health <= 0){
-			Debug.Log("Player Dead");
+			SceneManager.LoadScene("MainMenu");
 		}
 	}
 }
