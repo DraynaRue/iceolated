@@ -16,6 +16,7 @@ TagManager:
   - Engine1
   - Shield
   - Turret
+  - hitpoint
   layers:
   - Default
   - TransparentFX

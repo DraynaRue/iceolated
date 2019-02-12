@@ -17,6 +17,7 @@ public class Turret : MonoBehaviour {
 	public Text tHealth;
 	public Slider sHealth;
 
+
 	void Update(){
 		tHealth.text = turretHealth.ToString() + " / 100";
 		sHealth.value = turretHealth;

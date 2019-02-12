@@ -12,59 +12,59 @@ public class Tutorial : MonoBehaviour {
     public GameObject downM;
 	public GameObject tutUI;
 
-	void update()
+	void Update()
     {
 			
-            if(Input.GetKeyDown(KeyCode.W))
-            {
-				Debug.Log ("test");
-                forwardM.SetActive(false);
-                backwardsM.SetActive(true);
-                leftM.SetActive(false);
-                rightM.SetActive(false);
-                upM.SetActive(false);
-                downM.SetActive(false);
-            }
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                forwardM.SetActive(false);
-                backwardsM.SetActive(false);
-                leftM.SetActive(true);
-                rightM.SetActive(false);
-                upM.SetActive(false);
-                downM.SetActive(false);
-            }
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                forwardM.SetActive(false);
-                backwardsM.SetActive(false);
-                leftM.SetActive(false);
-                rightM.SetActive(true);
-                upM.SetActive(false);
-                downM.SetActive(false);
-            }
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                forwardM.SetActive(false);
-                backwardsM.SetActive(true);
-                leftM.SetActive(false);
-                rightM.SetActive(false);
-                upM.SetActive(true);
-                downM.SetActive(false);
-            }
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                forwardM.SetActive(false);
-                backwardsM.SetActive(true);
-                leftM.SetActive(false);
-                rightM.SetActive(false);
-                upM.SetActive(false);
-                downM.SetActive(true);
-            }
-            if (Input.GetKeyDown(KeyCode.LeftControl))
-            {
-				tutUI.SetActive (false); 
-            }
-
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            Debug.Log ("test");
+            forwardM.SetActive(false);
+            backwardsM.SetActive(true);
+            leftM.SetActive(false);
+            rightM.SetActive(false);
+            upM.SetActive(false);
+            downM.SetActive(false);
         }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            forwardM.SetActive(false);
+            backwardsM.SetActive(false);
+            leftM.SetActive(true);
+            rightM.SetActive(false);
+            upM.SetActive(false);
+            downM.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            forwardM.SetActive(false);
+            backwardsM.SetActive(false);
+            leftM.SetActive(false);
+            rightM.SetActive(true);
+            upM.SetActive(false);
+            downM.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            forwardM.SetActive(false);
+            backwardsM.SetActive(true);
+            leftM.SetActive(false);
+            rightM.SetActive(false);
+            upM.SetActive(true);
+            downM.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            forwardM.SetActive(false);
+            backwardsM.SetActive(true);
+            leftM.SetActive(false);
+            rightM.SetActive(false);
+            upM.SetActive(false);
+            downM.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            tutUI.SetActive (false); 
+        }
+
+    }
 }
