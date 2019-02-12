@@ -13,6 +13,9 @@ public class MenuManager : MonoBehaviour {
 	public int[] screenWidths;
 	public Toggle fullscreenToggle;
 	int activeScreenResIndex;
+	public GameObject loadingScreen;
+	public Slider slider;
+	public Text progressPercentage;
 
 	void Start(){
 		activeScreenResIndex = PlayerPrefs.GetInt ("screen res index");
@@ -29,8 +32,9 @@ public class MenuManager : MonoBehaviour {
 
 	}
 
-	public void Play(){
-		SceneManager.LoadScene ("Master");
+	public void Play(int sceneIndex){
+		mainMenuHolder.SetActive (false);
+		StartCoroutine (LoadAsynchronously(sceneIndex));
 	}
 	public void Quit(){
 		Application.Quit ();
@@ -85,4 +89,17 @@ public class MenuManager : MonoBehaviour {
 	public void SetSfxVolume (float value){
         AudioManager.Instance.SetVolume(value, AudioManager.AudioChannel.Sfx);
     }
+
+	IEnumerator LoadAsynchronously(int sceneIndex){
+		AsyncOperation operation = SceneManager.LoadSceneAsync (sceneIndex);
+
+		loadingScreen.SetActive (true);
+
+		while (!operation.isDone) {
+			float progress = Mathf.Clamp01 (operation.progress / 0.9f);
+			slider.value = progress;
+			progressPercentage.text = progress * 100f + (" %");
+			yield return null;
+		}
+	}
 }

@@ -46,7 +46,7 @@ public class Tutorial : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.D))
         {
             forwardM.SetActive(false);
-            backwardsM.SetActive(true);
+            backwardsM.SetActive(false);
             leftM.SetActive(false);
             rightM.SetActive(false);
             upM.SetActive(true);
