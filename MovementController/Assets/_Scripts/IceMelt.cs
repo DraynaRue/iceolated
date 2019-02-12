@@ -19,7 +19,7 @@ public class IceMelt : MonoBehaviour
 				gun["Take 001"].speed = 10f;
 				Debug.Log("ok hit ice");
 				laser.gameObject.SetActive(true);
-				hit.transform.localScale -= Vector3.right * Time.deltaTime * 0.1f;
+				hit.transform.localScale -= Vector3.one * Time.deltaTime * 2000f;
 				if (hit.transform.localScale.x <= 0.00f)
 				{
 					Destroy(hit.transform.gameObject);
