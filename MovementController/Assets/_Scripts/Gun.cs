@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gun : MonoBehaviour 
 {
@@ -8,8 +9,9 @@ public class Gun : MonoBehaviour
 	public GameObject laser;
 	public Animation gun;
 	Turret turret;
+	public Text hitPoint;
 
-	void Update () 
+	void FixedUpdate () 
 	{
 		RaycastHit hit;
 
@@ -18,7 +20,7 @@ public class Gun : MonoBehaviour
 			if(hit.transform.gameObject.tag == "Ice" && Input.GetMouseButton(0)) 
 			{
 				gun["Take 001"].speed = 10f;
-				Debug.Log("ok hit ice");
+				//Debug.Log("ok hit ice");
 				laser.gameObject.SetActive(true);
 				hit.transform.localScale -= Vector3.one * Time.deltaTime * 2000f;
 				if (hit.transform.localScale.x <= 0.00f)
@@ -27,10 +29,19 @@ public class Gun : MonoBehaviour
 				}
 			} else if(hit.transform.gameObject.tag == "Turret" && Input.GetMouseButton(0)){
 				gun["Take 001"].speed = 10f;
-				Debug.Log("ok hit turret");
+				//Debug.Log("ok hit turret");
 				laser.gameObject.SetActive(true);
 				turret = hit.transform.gameObject.GetComponent<Turret>();
-				turret.Take_Damage(1f);
+				
+				Text hitPoints;
+				Transform spawn = hit.transform.GetChild(1);
+				hitPoints = Instantiate(hitPoint, spawn.position, Quaternion.identity);
+				hitPoints.transform.SetParent(spawn.transform);
+				hitPoints.transform.localScale = new Vector3(1,1,1);
+				float dmg = Random.Range(0f, 1f);
+				hitPoint.text = dmg.ToString();
+				turret.Take_Damage(dmg); 
+				
 			}
 			else 
 			{
