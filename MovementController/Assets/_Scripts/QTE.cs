@@ -18,7 +18,7 @@ public class QTE : MonoBehaviour {
 
 	void Update () {
 		if(QTE1Start == true && done1 == false){
-			QTE1 = (TimerScript.timeLeft / 10f);
+			QTE1 = (TimerScript.timeLeft / 100f);
 			QTENum.text = QTE1.ToString();
 			QTEKey.text = "Up";
 			qteNumObj.SetActive(true);
@@ -29,7 +29,7 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(done1 == true && done2 == false){
-			QTE2 = (TimerScript.timeLeft / 10f);
+			QTE2 = (TimerScript.timeLeft / 120f);
 			QTENum.text = QTE2.ToString();
 			QTEKey.text = "Down";
 			if(Input.GetKeyDown(KeyCode.DownArrow) && QTE2 > 0f){
@@ -38,7 +38,7 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(done2 == true && done3 == false){
-			QTE3 = (TimerScript.timeLeft / 10f);
+			QTE3 = (TimerScript.timeLeft / 140f);
 			QTENum.text = QTE3.ToString();
 			QTEKey.text = "Right";
 			if(Input.GetKeyDown(KeyCode.RightArrow) && QTE3 > 0f){
@@ -47,7 +47,7 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(done3 == true && done4 == false){
-			QTE4 = (TimerScript.timeLeft / 10f);
+			QTE4 = (TimerScript.timeLeft / 160f);
 			QTENum.text = QTE4.ToString();
 			QTEKey.text = "Down";
 			if(Input.GetKeyDown(KeyCode.DownArrow) && QTE4 > 0f){
@@ -56,7 +56,7 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(done4 == true && done5 == false){
-			QTE5 = (TimerScript.timeLeft / 10f);
+			QTE5 = (TimerScript.timeLeft / 180f);
 			QTENum.text = QTE5.ToString();
 			QTEKey.text = "Left";
 			if(Input.GetKeyDown(KeyCode.LeftArrow) && QTE5 > 0f){
@@ -65,7 +65,7 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(done5 == true && done6 == false){
-			QTE6 = (TimerScript.timeLeft / 10f);
+			QTE6 = (TimerScript.timeLeft / 200f);
 			QTENum.text = QTE6.ToString();
 			QTEKey.text = "Down";
 			if(Input.GetKeyDown(KeyCode.DownArrow) && QTE6 > 0f){
@@ -74,7 +74,7 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(done6 == true && done7 == false){
-			QTE7 = (TimerScript.timeLeft / 10f);
+			QTE7 = (TimerScript.timeLeft / 220f);
 			QTENum.text = QTE7.ToString();
 			QTEKey.text = "Left";
 			if(Input.GetKeyDown(KeyCode.LeftArrow) && QTE7 > 0f){
@@ -83,7 +83,7 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(done7 == true && done8 == false){
-			QTE8 = (TimerScript.timeLeft / 10f);
+			QTE8 = (TimerScript.timeLeft / 240f);
 			QTENum.text = QTE8.ToString();
 			QTEKey.text = "Up";
 			if(Input.GetKeyDown(KeyCode.UpArrow) && QTE8 > 0f){
