@@ -13,6 +13,7 @@ public class TextClickScript : MonoBehaviour
     GraphicRaycaster m_Raycaster;
     PointerEventData m_PointerEventData;
     EventSystem m_EventSystem;
+	public AudioSource button2;
     void Start()
     {
         //Fetch the Raycaster from the GameObject (the Canvas)
@@ -37,10 +38,12 @@ public class TextClickScript : MonoBehaviour
             //Raycast using the Graphics Raycaster and mouse click position
             m_Raycaster.Raycast(m_PointerEventData, results);
 
+
             //For every result returned, output the name of the GameObject on the Canvas hit by the Ray
             
            
 			Word = results[0].gameObject.GetComponent<Text>().text;
+			button2.Play (0);
 			Debug.Log("Hit " + Word);
         }
     }
