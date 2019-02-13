@@ -18,9 +18,12 @@ public class AudioManager : MonoBehaviour {
 	Transform audioListener;
 	Transform playerT;
 
+	GameObject player;
+
 	SoundLibrary library;
 
 	void Awake(){
+		player = GameObject.Find ("_Player");
 		if (Instance != null) {
 			Destroy (gameObject);
 		}
@@ -34,8 +37,8 @@ public class AudioManager : MonoBehaviour {
 				newMusicSource.transform.parent = transform;
 			}
 			audioListener = FindObjectOfType <AudioListener> ().transform;
-           // if (FindObjectOfType<Player>() != null) { 
-			   // playerT = FindObjectOfType <Player> ().transform;
+          // if (FindObjectOfType<player>() != null) { 
+			    //playerT = FindObjectOfType <Player> ().transform;
             //}
 			library = GetComponent <SoundLibrary>();
 
@@ -79,9 +82,14 @@ public class AudioManager : MonoBehaviour {
 		StartCoroutine (AnimateMusicCrossfade (fadeDuration)); 
 	}
 
-	//public void PlaySound (string soundName, Vector3 pos){
-	//	PlaySound (library.GetClipFromName (soundName), pos);
-	//}
+	public void Playsound (AudioClip clip, Vector3 pos ){
+		if (clip != null){
+			AudioSource.PlayClipAtPoint (clip, pos, sfxVolumePercent *masterVolumePercent);
+		}
+	}
+	public void PlaySound (string soundName, Vector3 pos){
+		Playsound (library.GetClipFromName (soundName), pos);
+	}
 
 
 
@@ -95,4 +103,8 @@ public class AudioManager : MonoBehaviour {
 			yield return null;
 		}
 	}
+
+//	public void playNow(){
+		
+	//}
 }

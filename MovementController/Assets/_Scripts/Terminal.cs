@@ -60,8 +60,16 @@ public class Terminal : MonoBehaviour
 			usernameField.text = "";
 			passwordField.text = "";
 
-			terminalInterface.SetActive(true);
-			interactUI.SetActive(false);
+			if(terminalInterface != null)
+			{
+				terminalInterface.SetActive(true);
+			}
+
+			if(interactUI != null)
+			{
+				interactUI.SetActive(false);
+			}
+
 			camScript.enabled = false;
 			movScript.enabled = false;
 			Cursor.lockState = CursorLockMode.None;

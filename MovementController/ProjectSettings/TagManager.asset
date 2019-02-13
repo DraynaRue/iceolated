@@ -17,6 +17,7 @@ TagManager:
   - Shield
   - Turret
   - hitpoint
+  - AudioManager
   layers:
   - Default
   - TransparentFX
