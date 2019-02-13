@@ -32,7 +32,7 @@ public class MovementScript : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	void FixedUpdate ()
 	{
 		if (isZeroGravity == false)
 		{
@@ -53,15 +53,17 @@ public class MovementScript : MonoBehaviour
 		{
 			isJumping = false;
 		}
+		
 	}
 
 	private void NormalMovement() 
 	{
+		
 		// rotate the player
 		_rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
 
 		CapsuleCollider col = GetComponent<CapsuleCollider>();
-		col.height = 1; 
+		col.height = 1.8f; 
 		cam.transform.position = Vector3.Lerp(cam.transform.position, camPosN.transform.position, 1f);
 
 		// calculate player movement
@@ -100,7 +102,7 @@ public class MovementScript : MonoBehaviour
 
 		//Make the collider a ball and move cam to center
 		CapsuleCollider col = GetComponent<CapsuleCollider>();
-		col.height = 1;
+		col.height = 0.5f;
 		cam.transform.position = Vector3.Lerp(cam.transform.position, this.transform.position, 1f);
 
 		// moving forwards

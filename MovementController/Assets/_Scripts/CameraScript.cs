@@ -29,6 +29,6 @@ public class CameraScript : MonoBehaviour
 		lookY -= speedY * Mathf.Clamp(Input.GetAxis("Mouse Y"), -90.0f , 90.0f);
 		
 		// rotate the camera	
-		cam.transform.rotation = Quaternion.Slerp(mov.transform.rotation, Quaternion.Euler(Mathf.Clamp(lookY, -90.0f, 90.0f), lookX, 0), 0.9f);
+		cam.transform.rotation = Quaternion.Slerp(mov.transform.rotation, Quaternion.Euler(Mathf.Clamp(lookY, -90.0f, 90.0f), lookX, 0), 0.5f);
 	}
 }
