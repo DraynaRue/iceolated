@@ -11,7 +11,6 @@ public class MovementScript : MonoBehaviour
 	// force provided by the jetpack in zero gravity movement
 	public float jetpackForce;
 	// used to enable/disable the player's zero gravity movement
-	public float rollVal;
 	public bool isZeroGravity;
 	public bool jetpackToggle;
 	// get a reference to the camera
@@ -30,12 +29,6 @@ public class MovementScript : MonoBehaviour
 	{
 		_rb = GetComponent<Rigidbody>();
 		isJumping = false;
-		//isZeroGravity = true;
-/*
-		We really don't need this to be set to true everytime we hit play
-		it makes testing stuff really annoying ~ DraynaRue [Lead Programmer]
-		isZeroGravity = true;
-*/
 	}
 	
 	// Update is called once per frame
@@ -56,9 +49,8 @@ public class MovementScript : MonoBehaviour
 	private void OnCollisionEnter(Collision other)
 	{
 		// check if player is on the ground
-		if (other.collider.tag == "Ground" && _rb.velocity.y < 1 /*|| other.collider.tag == "Ground" && _rb.velocity.y > -1*/)
+		if (other.collider.tag == "Ground" && _rb.velocity.y < 1)
 		{
-			//Debug.Log("We hit the ground!");
 			isJumping = false;
 		}
 	}
@@ -100,27 +92,16 @@ public class MovementScript : MonoBehaviour
 		{
 			_rb.velocity = new Vector2(0, jetpackForce * 10);
 		}
-		//Debug.Log(_rb.velocity.y);
 	}
 
 	private void ZeroGravityMovement()
 	{
-		// yaw the player
-	//	_rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
-
 		_rb.transform.rotation = cam.transform.rotation;
 
 		//Make the collider a ball and move cam to center
 		CapsuleCollider col = GetComponent<CapsuleCollider>();
 		col.height = 1;
 		cam.transform.position = Vector3.Lerp(cam.transform.position, this.transform.position, 1f);
-
-		// roll the player right
-		//rollVal = Input.GetAxis("Roll");
-		//if (Input.GetAxis("Roll") != 0)
-		//{
-		//	Debug.Log("Rotating");
-		//}
 
 		// moving forwards
 		if (Input.GetAxis("Vertical") > 0 && GetComponent<Fuel>().fuelPercentage > 1)

@@ -12,7 +12,6 @@ public class CameraScript : MonoBehaviour
 	protected Camera cam;
 	protected float lookX;
 	protected float lookY;
-	protected float lookZ;
 
 	// Use this for initialization
 	void Start () 
