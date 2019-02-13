@@ -35,20 +35,24 @@ public class MenuManager : MonoBehaviour {
 	public void Play(int sceneIndex){
 		mainMenuHolder.SetActive (false);
 		StartCoroutine (LoadAsynchronously(sceneIndex));
+		AudioManager.Instance.PlaySound("Buttons", transform.position);
 	}
 	public void Quit(){
 		Application.Quit ();
+		AudioManager.Instance.PlaySound("Buttons", transform.position);
 	}
 
 	public void OptionsMenu(){
 		mainMenuHolder.SetActive (false);
 		optionsMenuHolder.SetActive (true);
+		AudioManager.Instance.PlaySound("Sound Effect Buttons", transform.position);
 
 	}
 
 	public void MainMenu(){
 		mainMenuHolder.SetActive (true);
 		optionsMenuHolder.SetActive (false);
+		AudioManager.Instance.PlaySound("Sound Effect Buttons", transform.position);
 	}
 
 

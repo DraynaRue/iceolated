@@ -17,7 +17,7 @@ public class Tutorial : MonoBehaviour {
 			
         if(Input.GetKeyDown(KeyCode.W))
         {
-            Debug.Log ("test");
+            //Debug.Log ("test");
             forwardM.SetActive(false);
             backwardsM.SetActive(true);
             leftM.SetActive(false);
@@ -55,13 +55,13 @@ public class Tutorial : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             forwardM.SetActive(false);
-            backwardsM.SetActive(true);
+            backwardsM.SetActive(false);
             leftM.SetActive(false);
             rightM.SetActive(false);
             upM.SetActive(false);
             downM.SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             tutUI.SetActive (false); 
         }

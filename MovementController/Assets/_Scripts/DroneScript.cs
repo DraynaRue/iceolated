@@ -9,15 +9,23 @@ public class DroneScript : MonoBehaviour
 	public float HoverHeight;
 	public float VerticalSpeed;
 	public float HorizonalSpeed;
+
+
+	private AudioSource button;
 	// Use this for initialization
-	void Start () 
+	void Awake () 
 	{
-		
+		button = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+
+		if(Input.GetKeyDown(KeyCode.UpArrow))
+		{
+			button.Play(0);
+		}
 		Hover();
 
 		Vector3 targetDir = Target.transform.position - transform.position;
@@ -42,10 +50,13 @@ public class DroneScript : MonoBehaviour
 				if (hit.distance <= bufferDist)
 				{
 					transform.position += transform.forward * -HorizonalSpeed;
+					button.Play(0);
+					//AudioManager.Instance.PlaySound("AI_Finding", transform.position);
 				}
 				else
 				{
 					transform.position += transform.forward * HorizonalSpeed;
+					//AudioManager.Instance.PlaySound("AI_Finding", transform.position);
 				}
 			}
 		}
