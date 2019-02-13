@@ -34,7 +34,7 @@ public class MusicManager : MonoBehaviour {
 	}
 
 	void ChangeSong(){
-		if(lastScene == "Marcus"){
+		if(lastScene == "MainMenu"){
 			AudioManager.Instance.PlayMusic (menuTheme, 0.5f);
 		}
 		else if(lastScene == "Master"){
