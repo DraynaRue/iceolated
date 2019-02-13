@@ -31,7 +31,7 @@ public class Gun : MonoBehaviour
 				gun["Take 001"].speed = 10f;
 				//Debug.Log("ok hit ice");
 				laser.gameObject.SetActive(true);
-				hit.transform.localScale -= Vector3.one * Time.deltaTime * 250f;
+				hit.transform.localScale -= Vector3.one * Time.deltaTime * 500f;
 				if (hit.transform.localScale.x <= 0.00f)
 				{
 					Destroy(hit.transform.gameObject);
