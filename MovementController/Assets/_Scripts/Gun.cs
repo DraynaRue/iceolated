@@ -10,24 +10,33 @@ public class Gun : MonoBehaviour
 	public Animation gun;
 	Turret turret;
 	public Text hitPoint;
+	public Fuel fuelHolder;
+	
 
+	public static bool isShooting = false;
+
+	void Start(){
+		fuelHolder.GetComponent<Fuel>();
+	}
 	void FixedUpdate () 
 	{
 		RaycastHit hit;
 
+	
+
 		if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)) 
 		{
-			if(hit.transform.gameObject.tag == "Ice" && Input.GetMouseButton(0)) 
+			if(hit.transform.gameObject.tag == "Ice" && Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1) 
 			{
 				gun["Take 001"].speed = 10f;
 				//Debug.Log("ok hit ice");
 				laser.gameObject.SetActive(true);
-				hit.transform.localScale -= Vector3.one * Time.deltaTime * 2000f;
+				hit.transform.localScale -= Vector3.one * Time.deltaTime * 250f;
 				if (hit.transform.localScale.x <= 0.00f)
 				{
 					Destroy(hit.transform.gameObject);
 				}
-			} else if(hit.transform.gameObject.tag == "Turret" && Input.GetMouseButton(0)){
+			} else if(hit.transform.gameObject.tag == "Turret" && Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1){
 				gun["Take 001"].speed = 10f;
 				//Debug.Log("ok hit turret");
 				laser.gameObject.SetActive(true);
@@ -48,6 +57,16 @@ public class Gun : MonoBehaviour
 				gun["Take 001"].speed = 1f;
 				laser.gameObject.SetActive(false);
 			}
+
+		if(Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1){
+			isShooting = true;
+			gun["Take 001"].speed = 10f;
+			laser.gameObject.SetActive(true);
+		}else{
+			isShooting = false;
+			gun["Take 001"].speed = 1f;
+			laser.gameObject.SetActive(false);
+		}
 		}
 	}
 }
