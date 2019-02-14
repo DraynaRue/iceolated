@@ -9,6 +9,7 @@ public class QTE : MonoBehaviour {
 	public GameObject qteNumObj;
 	public GameObject qteKeyObj;
 	public GameObject timerTriggerObj;
+	public MovementScript player;
 	public bool QTE1Start;
 	public Text QTEKey;
 	public Text QTENum;
@@ -18,12 +19,14 @@ public class QTE : MonoBehaviour {
 
 	void Update () {
 		if(QTE1Start == true && done1 == false){
+			player.enabled = false;
+
 			QTE1 = (TimerScript.timeLeft / 100f);
 			QTENum.text = QTE1.ToString();
 			QTEKey.text = "Up";
 			qteNumObj.SetActive(true);
 			qteKeyObj.SetActive(true);
-			if(Input.GetKeyDown(KeyCode.UpArrow) && QTE1 > 0f){
+			if(Input.GetAxis("Vertical") > 0 && QTE1 > 0f){
 				done1 = true;
 			}
 		}
@@ -32,7 +35,7 @@ public class QTE : MonoBehaviour {
 			QTE2 = (TimerScript.timeLeft / 120f);
 			QTENum.text = QTE2.ToString();
 			QTEKey.text = "Down";
-			if(Input.GetKeyDown(KeyCode.DownArrow) && QTE2 > 0f){
+			if(Input.GetAxis("Vertical") < 0 && QTE2 > 0f){
 				done2 = true;
 			}
 		}
@@ -41,7 +44,7 @@ public class QTE : MonoBehaviour {
 			QTE3 = (TimerScript.timeLeft / 140f);
 			QTENum.text = QTE3.ToString();
 			QTEKey.text = "Right";
-			if(Input.GetKeyDown(KeyCode.RightArrow) && QTE3 > 0f){
+			if(Input.GetAxis("Horizontal") > 0 && QTE3 > 0f){
 				done3 = true;
 			}
 		}
@@ -50,7 +53,7 @@ public class QTE : MonoBehaviour {
 			QTE4 = (TimerScript.timeLeft / 160f);
 			QTENum.text = QTE4.ToString();
 			QTEKey.text = "Down";
-			if(Input.GetKeyDown(KeyCode.DownArrow) && QTE4 > 0f){
+			if(Input.GetAxis("Vertical") < 0 && QTE4 > 0f){
 				done4 = true;
 			}
 		}
@@ -59,7 +62,7 @@ public class QTE : MonoBehaviour {
 			QTE5 = (TimerScript.timeLeft / 180f);
 			QTENum.text = QTE5.ToString();
 			QTEKey.text = "Left";
-			if(Input.GetKeyDown(KeyCode.LeftArrow) && QTE5 > 0f){
+			if(Input.GetAxis("Horizontal") < 0 && QTE5 > 0f){
 				done5 = true;
 			}
 		}
@@ -68,7 +71,7 @@ public class QTE : MonoBehaviour {
 			QTE6 = (TimerScript.timeLeft / 200f);
 			QTENum.text = QTE6.ToString();
 			QTEKey.text = "Down";
-			if(Input.GetKeyDown(KeyCode.DownArrow) && QTE6 > 0f){
+			if(Input.GetAxis("Vertical") < 0 && QTE6 > 0f){
 				done6 = true;
 			}
 		}
@@ -77,7 +80,7 @@ public class QTE : MonoBehaviour {
 			QTE7 = (TimerScript.timeLeft / 220f);
 			QTENum.text = QTE7.ToString();
 			QTEKey.text = "Left";
-			if(Input.GetKeyDown(KeyCode.LeftArrow) && QTE7 > 0f){
+			if(Input.GetAxis("Horizontal") < 0 && QTE7 > 0f){
 				done7 = true;
 			}
 		}
@@ -86,12 +89,13 @@ public class QTE : MonoBehaviour {
 			QTE8 = (TimerScript.timeLeft / 240f);
 			QTENum.text = QTE8.ToString();
 			QTEKey.text = "Up";
-			if(Input.GetKeyDown(KeyCode.UpArrow) && QTE8 > 0f){
+			if(Input.GetAxis("Vertical") > 0 && QTE8 > 0f){
 				done8 = true;
 			}
 		}
 
 		if(done8){
+			player.enabled = true;
 			Destroy(timerTriggerObj);
 			qteNumObj.SetActive(false);
 			qteKeyObj.SetActive(false);
@@ -99,15 +103,16 @@ public class QTE : MonoBehaviour {
 		}
 	}
 
-	public void OnTriggerStay(Collider other){
-		if(other.gameObject.tag == "Player"){
+	public void OnTriggerStay(Collider other)
+	{
+		if(other.gameObject.tag == "Player")
+		{
 			interactUI.SetActive(true);
-				if(Input.GetKeyDown(KeyCode.F)){
-					QTE1Start = true;
-                interactUI.SetActive(false);
-            }
+			if(Input.GetKeyDown(KeyCode.F))
+			{
+				QTE1Start = true;
+				interactUI.SetActive(false);
 			}
 		}
-	
-
+	}
 }	
