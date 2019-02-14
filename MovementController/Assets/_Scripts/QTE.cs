@@ -104,14 +104,10 @@ public class QTE : MonoBehaviour {
 			interactUI.SetActive(true);
 				if(Input.GetKeyDown(KeyCode.F)){
 					QTE1Start = true;
-				}
+                interactUI.SetActive(false);
+            }
 			}
 		}
 	
 
-	public void OnTriggerExit(Collider other){
-		if(other.gameObject.tag == "Player"){
-			interactUI.SetActive(false);
-		}
-	}
 }	
