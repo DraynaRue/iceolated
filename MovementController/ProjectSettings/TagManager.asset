@@ -18,6 +18,8 @@ TagManager:
   - Turret
   - hitpoint
   - AudioManager
+  - Puzzle3
+  - out
   layers:
   - Default
   - TransparentFX

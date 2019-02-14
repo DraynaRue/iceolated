@@ -13,5 +13,10 @@ public class GravityReturns : MonoBehaviour {
 			if(this.gameObject.GetComponent<Rigidbody>().useGravity == true)
 				this.gameObject.GetComponent<Rigidbody>().useGravity = false;
 		}
+
+		if(this.gameObject.tag == "out"){
+			this.gameObject.GetComponent<Rigidbody>().useGravity = false;
+
+		}
 	}
 }

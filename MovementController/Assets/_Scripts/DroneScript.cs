@@ -43,13 +43,13 @@ public class DroneScript : MonoBehaviour
 				if (hit.distance <= bufferDist)
 				{
 					transform.position += transform.forward * -HorizonalSpeed;
-					found.Play(0);
+					//found.Play(0);
 
 				}
 				else
 				{
 					transform.position += transform.forward * HorizonalSpeed;
-					search.Play (0);
+					//search.Play (0);
 				}
 			}
 		}
