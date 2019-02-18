@@ -102,10 +102,14 @@ public class QTE : MonoBehaviour {
 	public void OnTriggerStay(Collider other){
 		if(other.gameObject.tag == "Player"){
 			interactUI.SetActive(true);
-				if(Input.GetKeyDown(KeyCode.F)){
+			if(Input.GetKeyDown(KeyCode.F)){
 					QTE1Start = true;
-                interactUI.SetActive(false);
             }
+		}
+	}
+			public void OnTriggerExit(Collider other){
+		if(other.gameObject.tag == "Player"){
+				interactUI.SetActive(false);
 			}
 		}
 	
