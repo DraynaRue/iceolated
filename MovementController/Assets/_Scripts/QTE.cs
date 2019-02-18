@@ -113,10 +113,11 @@ public class QTE : MonoBehaviour {
             }
 		}
 	}
-			public void OnTriggerExit(Collider other){
-		if(other.gameObject.tag == "Player"){
+			public void OnTriggerExit(Collider other)
+			{
+		if(other.gameObject.tag == "Player")
+		{
 				interactUI.SetActive(false);
 			}
 		}
-	}
 }	
