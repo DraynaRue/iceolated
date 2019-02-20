@@ -46,8 +46,6 @@ public class Terminal : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag("Player");
 		movScript = player.GetComponent<MovementScript>();
 
-
-
 		cam = GameObject.FindGameObjectWithTag("MainCamera");
 		camScript = cam.GetComponent<CameraScript>();
 
@@ -105,15 +103,19 @@ public class Terminal : MonoBehaviour
 				targetWord = WordArray[Random.Range(0, WordArray.Count)];
 				Debug.Log("Target word is " + targetWord + "!!");
 			}
-			if (selectedWord != txtScript.Word)
+		}
+		
+		if (selectedWord != txtScript.Word)
+		{
+			selectedWord = txtScript.Word;
+
+			SimilarityRating = 0;
+
+			tWordArray = targetWord.ToCharArray();
+			sWordArray = selectedWord.ToCharArray();
+
+			if (sWordArray.Length > 0)
 			{
-				selectedWord = txtScript.Word;
-
-				SimilarityRating = 0;
-
-				tWordArray = targetWord.ToCharArray();
-				sWordArray = selectedWord.ToCharArray();
-
 				for (int i = 0; i < tWordArray.Length; i++)
 				{
 					if (tWordArray[i] == sWordArray[i])
@@ -121,22 +123,22 @@ public class Terminal : MonoBehaviour
 						SimilarityRating++;
 					}
 				}
-				SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
-				Debug.Log("Similiarity Rating " + SimilarityRating);
 			}
-			if (SimilarityRating == 5)
-			{
-				success = true;
+			SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
+			Debug.Log("Similiarity Rating " + SimilarityRating);
+		}
+		if (SimilarityRating == 5)
+		{
+			success = true;
 
-				usernameField.text = "";
-				passwordField.text = "";
+			usernameField.text = "";
+			passwordField.text = "";
 
-				terminalInterface.SetActive(false);
-				camScript.enabled = true;
-				movScript.enabled = true;
-				Cursor.lockState = CursorLockMode.Confined;
-				Cursor.lockState = CursorLockMode.Locked;
-			}
+			terminalInterface.SetActive(false);
+			camScript.enabled = true;
+			movScript.enabled = true;
+			Cursor.lockState = CursorLockMode.Confined;
+			Cursor.lockState = CursorLockMode.Locked;
 		}
 	}
 
