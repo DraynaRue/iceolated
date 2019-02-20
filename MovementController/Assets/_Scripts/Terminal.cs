@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class Terminal : MonoBehaviour
 {
 	public GameObject terminalInterface;
+	public GameObject loginScreen;
+	public GameObject bypassScreen;
+	public GameObject terminalMenu;
 	public GameObject interactUI;
 	public CameraScript camScript;
 	public MovementScript movScript;
@@ -104,7 +107,7 @@ public class Terminal : MonoBehaviour
 				Debug.Log("Target word is " + targetWord + "!!");
 			}
 		}
-		
+
 		if (selectedWord != txtScript.Word)
 		{
 			selectedWord = txtScript.Word;
@@ -129,16 +132,11 @@ public class Terminal : MonoBehaviour
 		}
 		if (SimilarityRating == 5)
 		{
-			success = true;
-
 			usernameField.text = "";
 			passwordField.text = "";
 
-			terminalInterface.SetActive(false);
-			camScript.enabled = true;
-			movScript.enabled = true;
-			Cursor.lockState = CursorLockMode.Confined;
-			Cursor.lockState = CursorLockMode.Locked;
+			terminalMenu.SetActive(true);
+			bypassScreen.SetActive(false);
 		}
 	}
 
@@ -172,19 +170,30 @@ public class Terminal : MonoBehaviour
 	{
 		if (usernameField.text == username && passwordField.text == password)
 		{
-			button1.Play (0); 
-			success = true;
+			button1.Play (0);
 
 			xScript.usernamePassword.SetActive(false);
 
 			usernameField.text = "";
 			passwordField.text = "";
 
-			terminalInterface.SetActive(false);
-			camScript.enabled = true;
-			movScript.enabled = true;
-			Cursor.lockState = CursorLockMode.Confined;
-			Cursor.lockState = CursorLockMode.Locked;
+			loginScreen.SetActive(false);
+			terminalMenu.SetActive(true);
 		}
+	}
+	public void Logout()
+	{
+		terminalMenu.SetActive(false);
+		loginScreen.SetActive(true);
+		terminalInterface.SetActive(false);
+
+		camScript.enabled = true;
+		movScript.enabled = true;
+		Cursor.lockState = CursorLockMode.Confined;
+		Cursor.lockState = CursorLockMode.Locked;
+	}
+	public void EnableGravity()
+	{
+		success = true;
 	}
 }
