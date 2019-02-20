@@ -18,12 +18,10 @@ public class AudioManager : MonoBehaviour {
 	Transform audioListener;
 	Transform playerT;
 
-	GameObject player;
 
 	SoundLibrary library;
 
 	void Awake(){
-		player = GameObject.Find ("_Player");
 		if (Instance != null) {
 			Destroy (gameObject);
 		}
@@ -37,9 +35,8 @@ public class AudioManager : MonoBehaviour {
 				newMusicSource.transform.parent = transform;
 			}
 			audioListener = FindObjectOfType <AudioListener> ().transform;
-          // if (FindObjectOfType<player>() != null) { 
-			    //playerT = FindObjectOfType <Player> ().transform;
-            //}
+        
+			 
 			library = GetComponent <SoundLibrary>();
 
 			masterVolumePercent = PlayerPrefs.GetFloat ("master vol", 1);
@@ -49,9 +46,11 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	void Update (){
-		//if (playerT != null) {
-		//	audioListener.position = playerT.postion;
-		//}
+		playerT = GameObject.Find ("_Player").transform;
+
+		if (playerT != null) {
+			audioListener.position = playerT.position;
+		}
 	}
 
 	public void SetVolume (float volumePercent, AudioChannel channel){
