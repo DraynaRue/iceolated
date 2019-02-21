@@ -192,6 +192,27 @@ public class Terminal : MonoBehaviour
 		Cursor.lockState = CursorLockMode.Confined;
 		Cursor.lockState = CursorLockMode.Locked;
 	}
+	public void AccessScreen(string ScreenName)
+	{
+		Image[] ScreenImageArray = terminalInterface.GetComponentsInChildren<Image>(false);
+		for (int i = 0; i < ScreenImageArray.Length - 1; i++)
+		{
+			GameObject Screen = ScreenImageArray[i].gameObject;
+			if (Screen.gameObject.name == ScreenName)
+			{
+				Screen.SetActive(true);
+			}
+		}
+		ScreenImageArray[1].gameObject.SetActive(false);
+	}
+	public void BackToMenu()
+	{
+		Image[] ScreenImageArray = terminalInterface.GetComponentsInChildren<Image>(false);
+		GameObject Screen = ScreenImageArray[1].gameObject;
+		Debug.Log(Screen.name);
+		Screen.SetActive(false);
+		terminalMenu.SetActive(true);
+	}
 	public void EnableGravity()
 	{
 		success = true;
