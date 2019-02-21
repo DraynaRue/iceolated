@@ -10,26 +10,34 @@ public class QTE : MonoBehaviour {
 	public GameObject qteKeyObj;
 	public GameObject timerTriggerObj;
 	public MovementScript player;
-	public bool QTEPlaying;
 	public Text QTEKey;
 	public Text QTENum;
+	
+	public GameObject thisGen;
+	private bool started = false;
 
 	private float QTE1 = 2f, QTE2 = 1.75f, QTE3 = 1.5f, QTE4 = 1.25f, QTE5 = 1f, QTE6 = 0.75f, QTE7 = 0.5f;
-	private bool done1, done2, done3, done4, done5, done6, done7;
+	private bool done0, done1, done2, done3, done4, done5, done6, done7;
+
+	void Restart(){
+		QTE1 = 2f; QTE2 = 1.75f; QTE3 = 1.5f; QTE4 = 1.25f; QTE5 = 1f; QTE6 = 0.75f; QTE7 = 0.5f;
+		done0 = false;
+		done1 = false;
+		done2 = false;
+		done3 = false;
+		done4 = false;
+		done5 = false;
+		done6 = false;
+		done7 = false;
+	}
+
+	void Start(){
+		done0 = true;
+	}
 
 	void Update () {
-		if(QTEPlaying == false){
-			done2 = false;
-			done3 = false;
-			done4 = false;
-			done5 = false;
-			done6 = false;
-			done7 = false;
 
-			QTE1 = 2f; QTE2 = 1.75f; QTE3 = 1.5f; QTE4 = 1.4f; QTE5 = 1.3f; QTE6 = 1.2f; QTE7 = 1f;
-		}
-
-		if(QTEPlaying == true){
+		if(done0 == false){
 			E1();
 			QTE1 -= 0.9f * Time.deltaTime;
 		}
@@ -73,6 +81,7 @@ public class QTE : MonoBehaviour {
 			player.enabled = true;
 			qteNumObj.SetActive(false);
 			qteKeyObj.SetActive(false);
+			Destroy(thisGen);
 		}
 	}
 
@@ -86,14 +95,13 @@ public class QTE : MonoBehaviour {
 		
 		if(Input.GetKeyDown(KeyCode.D) && QTE1 > 0f){ //Win
 			done1 = true;
+			done0 = true;
 		} 
 		
-		if(Input.GetKeyDown(KeyCode.D) && QTE1 <= 0f){ //Fail
+		if(QTE1 <= 0f){ //Fail
 			QTEKey.text = "Fail, try again... Press 'E'";
-			QTEPlaying = false;
 			if(Input.GetKeyDown(KeyCode.E)){
-				done1 = false;
-				QTEPlaying = true;
+				Restart();
 			}
 		}	
 	}
@@ -104,14 +112,13 @@ public class QTE : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.K) && QTE2 > 0f){
 			done2 = true;
+			done1 = false;
 		}
 
-		if(Input.GetKeyDown(KeyCode.K) && QTE2 <= 0f){
+		if(QTE2 <= 0f){
 			QTEKey.text = "Fail, try again... Press 'E'";
-			QTEPlaying = false;
 			if(Input.GetKeyDown(KeyCode.E)){
-				done1 = false;
-				QTEPlaying = true;
+				Restart();
 			}
 		}
 	}
@@ -122,14 +129,13 @@ public class QTE : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.G) && QTE3 > 0f){
 			done3 = true;
+			done2 = false;
 		}
 
-		if(Input.GetKeyDown(KeyCode.G) && QTE3 <= 0f){
+		if(QTE3 <= 0f){
 			QTEKey.text = "Fail, try again... Press 'E'";
-			QTEPlaying = false;
 			if(Input.GetKeyDown(KeyCode.E)){
-				done1 = false;
-				QTEPlaying = true;
+				Restart();
 			}
 		}
 	}
@@ -140,14 +146,13 @@ public class QTE : MonoBehaviour {
 
 			if(Input.GetKeyDown(KeyCode.L) && QTE4 > 0f){
 				done4 = true;
+				done3 = false;
 			}
 
-			if(Input.GetKeyDown(KeyCode.L) && QTE4 <= 0f){
+			if(QTE4 <= 0f){
 				QTEKey.text = "Fail, try again... Press 'E'";
-				QTEPlaying = false;
 				if(Input.GetKeyDown(KeyCode.E)){
-					done1 = false;
-					QTEPlaying = true;
+					Restart();
 				}
 			}
 	}
@@ -159,14 +164,13 @@ public class QTE : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.Z) && QTE5 > 0f){
 			done5 = true;
+			done4 = false;
 		}
 
-		if(Input.GetKeyDown(KeyCode.Z) && QTE5 <= 0f){
+		if(QTE5 <= 0f){
 			QTEKey.text = "Fail, try again... Press 'E'";
-			QTEPlaying = false;
 			if(Input.GetKeyDown(KeyCode.E)){
-				done1 = false;
-				QTEPlaying = true;
+				Restart();
 			}
 		}
 	}
@@ -177,14 +181,13 @@ public class QTE : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.A) && QTE6 > 0f){
 			done6 = true;
+			done5 = false;
 		}
 
-		if(Input.GetKeyDown(KeyCode.A) && QTE6 <= 0f){
+		if(QTE6 <= 0f){
 			QTEKey.text = "Fail, try again... Press 'E'";
-			QTEPlaying = false;
 			if(Input.GetKeyDown(KeyCode.E)){
-				done1 = false;
-				QTEPlaying = true;
+				Restart();
 			}
 		}
 	}
@@ -195,14 +198,13 @@ public class QTE : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.V) && QTE7 > 0f){
 			done7 = true;
+			done6 = false;
 		}
 
-		if(Input.GetKeyDown(KeyCode.V) && QTE7 <= 0f){
+		if(QTE7 <= 0f){
 			QTEKey.text = "Fail, try again... Press 'E'";
-			QTEPlaying = false;
 			if(Input.GetKeyDown(KeyCode.E)){
-				done1 = false;
-				QTEPlaying = true;
+				Restart();
 			}
 		}
 		
@@ -213,14 +215,15 @@ public class QTE : MonoBehaviour {
 
 			if(Input.GetKeyDown(KeyCode.F)){
 					interactUI.SetActive(false);
-					QTEPlaying = true;
+					Restart();
             }
 		}
 	}
 
 	public void OnTriggerEnter(Collider other){
-		if(other.gameObject.tag == "Player"){
+		if(other.gameObject.tag == "Player" && started == false){
 			interactUI.SetActive(true);
+			started = true;
 		}
 	}
 	

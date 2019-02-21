@@ -6,10 +6,10 @@ using System.Threading;
 
 public class TimerScript : MonoBehaviour
 {
-	public static float timeLeft = 60f;
+	public static float timeLeft = 80f;
 	public Text countdown;
 	public GameObject timerObj;
-	public bool TimerTrigger;
+	public static bool TimerTrigger;
 
 
 	void OnTriggerEnter(Collider other){
@@ -26,6 +26,9 @@ public class TimerScript : MonoBehaviour
 
 			if(timeLeft <= 0){
 				Debug.Log("Engines Blew Up!");
+			}
+			if(!TimerTrigger){
+				timerObj.SetActive(false);
 			}
 
 			
