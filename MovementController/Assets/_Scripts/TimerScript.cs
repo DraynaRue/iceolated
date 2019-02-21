@@ -27,6 +27,9 @@ public class TimerScript : MonoBehaviour
 			if(timeLeft <= 0){
 				Debug.Log("Engines Blew Up!");
 			}
+			if(!TimerTrigger){
+				timerObj.SetActive(false);
+			}
 
 			
 		}
