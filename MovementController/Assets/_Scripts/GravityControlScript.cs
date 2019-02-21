@@ -7,7 +7,7 @@ public class GravityControlScript : MonoBehaviour
 	public MovementScript movScript;
 	public GameObject player;
 	public static bool GR = false;
-	public Terminal hackedTerminal;
+	public TerminalController server;
 
 	void Start()
 	{
@@ -17,7 +17,7 @@ public class GravityControlScript : MonoBehaviour
 
 	void Update()
 	{
-		if (hackedTerminal.success == true)
+		if (server.success == true)
 		{	
 			movScript.isZeroGravity = false;
 			GR = true;
