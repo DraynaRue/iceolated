@@ -23,8 +23,6 @@ public class TerminalController : MonoBehaviour {
 	public string username;
 	public string password;
 	public GameObject wordList;
-	public AudioSource button1;
-	public AudioSource button2;
 	public Text SimilarityRatingText;
 	public Text A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
 				B1, B2, B3, B4, B5, B6, B7, B8, B9, B10,

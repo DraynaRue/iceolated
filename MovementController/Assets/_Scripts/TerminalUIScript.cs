@@ -41,16 +41,21 @@ public class TerminalUIScript : MonoBehaviour {
 	}
 	public void AccessScreen(string ScreenName)
 	{
-		Image[] ScreenImageArray = server.terminalInterface.GetComponentsInChildren<Image>(false);
-		for (int i = 0; i < ScreenImageArray.Length - 1; i++)
+		Image[] ScreenImageArrayOn = server.terminalInterface.GetComponentsInChildren<Image>(true);
+
+		for (int i = 0; i < ScreenImageArrayOn.Length; i++)
 		{
-			GameObject Screen = ScreenImageArray[i].gameObject;
+			GameObject Screen = ScreenImageArrayOn[i].gameObject;
+			Debug.Log("Found: " + ScreenImageArrayOn[i].gameObject.name);
 			if (Screen.gameObject.name == ScreenName)
 			{
+				Debug.Log("Turning On: " + Screen);
 				Screen.SetActive(true);
 			}
 		}
-		ScreenImageArray[1].gameObject.SetActive(false);
+		Image[] ScreenImageArrayOff = server.terminalInterface.GetComponentsInChildren<Image>(false);
+		Debug.Log("Turning Off: " + ScreenImageArrayOff[1].gameObject.name);
+		ScreenImageArrayOff[1].gameObject.SetActive(false);
 	}
 	public void BackToMenu()
 	{

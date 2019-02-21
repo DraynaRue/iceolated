@@ -106,6 +106,8 @@ public class Terminal : MonoBehaviour
 
 			server.terminalMenu.SetActive(true);
 			server.bypassScreen.SetActive(false);
+
+			SimilarityRating = 0;
 		}
 	}
 
