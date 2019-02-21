@@ -12,6 +12,9 @@ public class QTE : MonoBehaviour {
 	public MovementScript player;
 	public Text QTEKey;
 	public Text QTENum;
+	
+	public GameObject thisGen;
+	private bool started = false;
 
 	private float QTE1 = 2f, QTE2 = 1.75f, QTE3 = 1.5f, QTE4 = 1.25f, QTE5 = 1f, QTE6 = 0.75f, QTE7 = 0.5f;
 	private bool done0, done1, done2, done3, done4, done5, done6, done7;
@@ -78,6 +81,7 @@ public class QTE : MonoBehaviour {
 			player.enabled = true;
 			qteNumObj.SetActive(false);
 			qteKeyObj.SetActive(false);
+			Destroy(thisGen);
 		}
 	}
 
@@ -217,8 +221,9 @@ public class QTE : MonoBehaviour {
 	}
 
 	public void OnTriggerEnter(Collider other){
-		if(other.gameObject.tag == "Player"){
+		if(other.gameObject.tag == "Player" && started == false){
 			interactUI.SetActive(true);
+			started = true;
 		}
 	}
 	
