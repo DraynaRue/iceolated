@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CargoBayDoor : MonoBehaviour {
 
-	private Animation anim;
+	public DoorScript doorscript;
 
 	void Start(){
-		anim = GetComponent<Animation>();
+		doorscript = this.GetComponent<DoorScript>();
+		doorscript.enabled = false;
+	}
+	public void OpenDoor(){
+		doorscript.enabled = true;
 	}
 
-	public void OpenDoor(){
-		anim["Door"].time = 2.2f;
-	}
 }
