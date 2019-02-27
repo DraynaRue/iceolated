@@ -25,7 +25,9 @@ public class Terminal : MonoBehaviour
 	}
 	void OnTriggerEnter(Collider other) 
 	{
-		server.interactUI.SetActive(true);
+		if(other.gameObject.tag == "Player"){
+			server.interactUI.SetActive(true);
+		}
 	}
 	void OnTriggerStay(Collider other) 
 	{

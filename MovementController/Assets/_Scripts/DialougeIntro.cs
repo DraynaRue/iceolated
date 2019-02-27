@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DialougeIntro : MonoBehaviour {
 
-	public Text UIText;
+	public TextMeshProUGUI UIText;
 	public GameObject part;
 	public string currentPart;
 	public float TimeToType = 3.0f;

@@ -99,7 +99,7 @@ public class QTEP2 : MonoBehaviour {
 		
 		if(Input.GetKeyDown(KeyCode.X) && QTE12 > 0f){ //Win
 			done12 = true;
-			done02 = true;
+			done02 = false;
 		} 
 		
 		if(QTE12 <= 0f){ //Fail

@@ -18,4 +18,12 @@ public class PlayerHealth : MonoBehaviour {
 			SceneManager.LoadScene("MainMenu");
 		}
 	}
+
+	void OnCollisionEnter(Collision other){
+		Debug.Log("hti");
+		if(other.gameObject.tag == "Ice"){
+			Debug.Log("hti");
+			health -= 50f;
+		}
+	}
 }
