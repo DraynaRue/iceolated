@@ -6,6 +6,9 @@ public class QuestManager : MonoBehaviour
 {
 	public QuestObjective[] quests;
 	public bool[] questCompleted;
+
+	public string itemCollected;
+	public int numberOfItemsCollected;
 	// Use this for initialization
 	void Start () 
 	{

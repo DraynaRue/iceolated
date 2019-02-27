@@ -1368,6 +1368,62 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279759845}
   m_CullTransparentMesh: 0
+--- !u!1 &286876651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286876654}
+  - component: {fileID: 286876653}
+  - component: {fileID: 286876652}
+  m_Layer: 0
+  m_Name: Quest1Item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &286876652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 286876651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92262d1e6d8e9b1438bca27d11539cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 1
+  theQM: {fileID: 608266327}
+  itemName: Item
+--- !u!65 &286876653
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 286876651}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &286876654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 286876651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.412, y: 7.327, z: 34.882}
+  m_LocalScale: {x: 0.25, y: 0.5, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &287188282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,6 +1993,62 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &537007846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 537007849}
+  - component: {fileID: 537007848}
+  - component: {fileID: 537007847}
+  m_Layer: 0
+  m_Name: Quest1Item (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &537007847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 537007846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92262d1e6d8e9b1438bca27d11539cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 1
+  theQM: {fileID: 608266327}
+  itemName: Item
+--- !u!65 &537007848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 537007846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &537007849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 537007846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.412, y: 7.327, z: 35.342}
+  m_LocalScale: {x: 0.25, y: 0.5, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &557281363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2456,8 @@ MonoBehaviour:
   - {fileID: 1252423737}
   - {fileID: 1451015257}
   questCompleted: 
+  itemCollected: 
+  numberOfItemsCollected: 0
 --- !u!1 &641453878
 GameObject:
   m_ObjectHideFlags: 0
@@ -3356,8 +3470,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -620.6, y: 0.000013351}
-  m_SizeDelta: {x: 586.6, y: 100}
+  m_AnchoredPosition: {x: -261.9, y: -43.2}
+  m_SizeDelta: {x: 1304, y: 186.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &795825067
 MonoBehaviour:
@@ -3857,6 +3971,62 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &940883850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 940883853}
+  - component: {fileID: 940883852}
+  - component: {fileID: 940883851}
+  m_Layer: 0
+  m_Name: Quest1Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &940883851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940883850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563b88ab8aec65f46a955d3abab8f9b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 1
+  startQuest: 1
+  endQuest: 0
+--- !u!65 &940883852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940883850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &940883853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 940883850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.614, y: 7.327, z: 34.882}
+  m_LocalScale: {x: 0.25, y: 0.5, z: 0.25}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &980370611
 GameObject:
   m_ObjectHideFlags: 0
@@ -3996,6 +4166,9 @@ MonoBehaviour:
   theQM: {fileID: 608266327}
   questText: {fileID: 795825067}
   questString: 
+  isItemQuest: 0
+  targetItem: 
+  numberOfItems: 0
 --- !u!1 &1014264236
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,7 +4367,10 @@ MonoBehaviour:
   questNumber: 1
   theQM: {fileID: 608266327}
   questText: {fileID: 795825067}
-  questString: 
+  questString: 'Collect 2 Items. Collected: '
+  isItemQuest: 1
+  targetItem: Item
+  numberOfItems: 2
 --- !u!1 &1051933890
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,6 +4810,9 @@ MonoBehaviour:
   theQM: {fileID: 608266327}
   questText: {fileID: 795825067}
   questString: Go to lift!
+  isItemQuest: 0
+  targetItem: 
+  numberOfItems: 0
 --- !u!1 &1150559725
 GameObject:
   m_ObjectHideFlags: 0
@@ -4857,6 +5036,9 @@ MonoBehaviour:
   theQM: {fileID: 608266327}
   questText: {fileID: 795825067}
   questString: 
+  isItemQuest: 0
+  targetItem: 
+  numberOfItems: 0
 --- !u!1 &1219882929
 GameObject:
   m_ObjectHideFlags: 0
@@ -5264,6 +5446,9 @@ MonoBehaviour:
   theQM: {fileID: 608266327}
   questText: {fileID: 795825067}
   questString: 
+  isItemQuest: 0
+  targetItem: 
+  numberOfItems: 0
 --- !u!1 &1316991493
 GameObject:
   m_ObjectHideFlags: 0
@@ -5763,7 +5948,7 @@ GameObject:
   - component: {fileID: 1407332764}
   - component: {fileID: 1407332763}
   m_Layer: 0
-  m_Name: QuestTrigger
+  m_Name: Quest0Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6170,6 +6355,9 @@ MonoBehaviour:
   theQM: {fileID: 608266327}
   questText: {fileID: 795825067}
   questString: 
+  isItemQuest: 0
+  targetItem: 
+  numberOfItems: 0
 --- !u!1 &1484701780
 GameObject:
   m_ObjectHideFlags: 0
@@ -8620,6 +8808,9 @@ MonoBehaviour:
   theQM: {fileID: 608266327}
   questText: {fileID: 795825067}
   questString: 
+  isItemQuest: 0
+  targetItem: 
+  numberOfItems: 0
 --- !u!1 &1964876239
 GameObject:
   m_ObjectHideFlags: 0
