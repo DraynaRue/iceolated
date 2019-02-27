@@ -3357,7 +3357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.33490568, g: 0.98760897, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3979,6 +3979,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 4
   theQM: {fileID: 608266327}
+  questText: {fileID: 795825067}
+  questString: 
 --- !u!1 &1014264236
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,6 +4178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 1
   theQM: {fileID: 608266327}
+  questText: {fileID: 795825067}
+  questString: 
 --- !u!1 &1051933890
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,6 +4617,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 0
   theQM: {fileID: 608266327}
+  questText: {fileID: 795825067}
+  questString: 
 --- !u!1 &1150559725
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,6 +4840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 2
   theQM: {fileID: 608266327}
+  questText: {fileID: 795825067}
+  questString: 
 --- !u!1 &1219882929
 GameObject:
   m_ObjectHideFlags: 0
@@ -5239,6 +5247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 5
   theQM: {fileID: 608266327}
+  questText: {fileID: 795825067}
+  questString: 
 --- !u!1 &1316991493
 GameObject:
   m_ObjectHideFlags: 0
@@ -6087,6 +6097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 6
   theQM: {fileID: 608266327}
+  questText: {fileID: 795825067}
+  questString: 
 --- !u!1 &1484701780
 GameObject:
   m_ObjectHideFlags: 0
@@ -8535,6 +8547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 3
   theQM: {fileID: 608266327}
+  questText: {fileID: 795825067}
+  questString: 
 --- !u!1 &1964876239
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuestObjective : MonoBehaviour {
+public class QuestObjective : MonoBehaviour 
+{
 	public int questNumber;
 	public QuestManager theQM;
 	public Text questText;
