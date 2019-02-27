@@ -30,6 +30,10 @@ public class QuestTrigger : MonoBehaviour
 					theQM.quests[questNumber].gameObject.SetActive(true);
 					theQM.quests[questNumber].StartQuest();
 				}
+				if (endQuest && theQM.quests[questNumber].gameObject.activeSelf)
+				{
+					theQM.quests[questNumber].EndQuest();
+				}
 			}
 		}
 	}
