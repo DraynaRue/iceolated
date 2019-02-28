@@ -19,7 +19,10 @@ public class TerminalUIScript : MonoBehaviour {
 	{
 		if (server.usernameField.text == server.username && server.passwordField.text == server.password)
 		{
-			server.xScript.usernamePassword.SetActive(false);
+			if (server.xScript != null)
+			{
+				server.xScript.usernamePassword.SetActive(false);
+			}
 
 			server.usernameField.text = "";
 			server.passwordField.text = "";
