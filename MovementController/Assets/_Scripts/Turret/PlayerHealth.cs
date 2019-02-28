@@ -22,8 +22,7 @@ public class PlayerHealth : MonoBehaviour {
 	void OnCollisionEnter(Collision other){
 		Debug.Log("hti");
 		if(other.gameObject.tag == "Ice"){
-			Debug.Log("hti");
-			health -= 50f;
+			health -= 25f;
 		}
 	}
 }
