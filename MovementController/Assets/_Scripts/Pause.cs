@@ -36,6 +36,6 @@ public class Pause : MonoBehaviour {
 		cScript.enabled = true;
 	}
 	public void ReturnMenu(){
-		SceneManager.LoadScene("Marcus");
+		SceneManager.LoadScene("MainMenu");
 	}
 }
