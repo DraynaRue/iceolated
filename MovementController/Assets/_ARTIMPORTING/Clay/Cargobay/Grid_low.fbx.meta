@@ -43,6 +43,7 @@ ModelImporter:
     2300000: polySurface165
     3300000: polySurface165
     4300000: polySurface165
+    6400000: polySurface165
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -74,9 +75,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 50
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
