@@ -5,29 +5,7 @@ using UnityEngine.UI;
 
 public class Terminal : MonoBehaviour
 {
-	public GameObject terminalInterface;
-	public GameObject interactUI;
-	public CameraScript camScript;
-	public MovementScript movScript;
-	public TextClickScript txtScript;
-	public KeyScript xScript;
-	public Button loginButton;
-	public Button bypassButton;
-	public InputField usernameField;
-	public InputField passwordField;
-	public GameObject player;
-	public GameObject cam;
-	public bool doesRequireLogin;
-	public string username;
-	public string password;
-	public GameObject wordList;
-	public AudioSource button1;
-	public AudioSource button2;
-	public Text SimilarityRatingText;
-	public Text A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
-				B1, B2, B3, B4, B5, B6, B7, B8, B9, B10,
-				C1, C2, C3, C4, C5, C6, C7, C8, C9, C10;
-	public bool success;
+	public TerminalController server;
 	protected string twist="twist", aware="aware", mayor="mayor", swarm="swarm", smell="smell", video="video", blast="blast", shave="shave", youth="youth", peace="peace", 
 					 shift="shift", donor="donor", awful="awful", tough="tough", hobby="hobby", wheel="wheel", style="style", tight="tight", drown="drown", abuse="abuse", 
 					 stick="stick", sweet="sweet", elect="elect", brave="brave", split="split", crime="crime", clerk="clerk", penny="penny", tribe="tribe", pound="pound";
@@ -43,51 +21,45 @@ public class Terminal : MonoBehaviour
 
 	void Start()
 	{
-		player = GameObject.FindGameObjectWithTag("Player");
-		movScript = player.GetComponent<MovementScript>();
-
-
-
-		cam = GameObject.FindGameObjectWithTag("MainCamera");
-		camScript = cam.GetComponent<CameraScript>();
-
-		txtScript = wordList.GetComponent<TextClickScript>();
+		
 	}
 	void OnTriggerEnter(Collider other) 
 	{
-		interactUI.SetActive(true);
+		if(other.gameObject.tag == "Player"){
+			server.interactUI.SetActive(true);
+		}
 	}
 	void OnTriggerStay(Collider other) 
 	{
-		if(other.gameObject.tag == "Player" && Input.GetButton("Interact") && terminalInterface.activeSelf == false && success == false)
+		if(other.gameObject.tag == "Player" && Input.GetButton("Interact") && server.terminalInterface.activeSelf == false && server.success == false)
 		{
-			usernameField.text = "";
-			passwordField.text = "";
+			server.usernameField.text = "";
+			server.passwordField.text = "";
 
-			if(terminalInterface != null)
+			if(server.terminalInterface != null)
 			{
-				terminalInterface.SetActive(true);
+				server.terminalInterface.SetActive(true);
 			}
 
-			if(interactUI != null)
+			if(server.interactUI != null)
 			{
-				interactUI.SetActive(false);
+				server.interactUI.SetActive(false);
 			}
 
-			camScript.enabled = false;
-			movScript.enabled = false;
+			server.camScript.enabled = false;
+			server.movScript.enabled = false;
 			Cursor.lockState = CursorLockMode.None;
 
-			if (doesRequireLogin == true)
+			if (server.doesRequireLogin == true)
 			{
-				bypassButton.interactable = false;
+				server.bypassButton.interactable = false;
 			}
-			else if (doesRequireLogin == false)
+			else if (server.doesRequireLogin == false)
 			{
 				
-				TextArray = new List<Text> {A1, A2, A3, A4, A5, A6, A7, A8, A9, A10,
-											B1, B2, B3, B4, B5, B6, B7, B8, B9, B10,
-											C1, C2, C3, C4, C5, C6, C7, C8, C9, C10};
+				TextArray = new List<Text> {server.A1, server.A2, server.A3, server.A4, server.A5, server.A6, server.A7, server.A8, server.A9, server.A10,
+											server.B1, server.B2, server.B3, server.B4, server.B5, server.B6, server.B7, server.B8, server.B9, server.B10,
+											server.C1, server.C2, server.C3, server.C4, server.C5, server.C6, server.C7, server.C8, server.C9, server.C10};
 				WordArray = new List<string> {twist, aware, mayor, swarm, smell, video, blast, shave, youth, peace,
 									     	  shift, donor, awful, tough, hobby, wheel, style, tight, drown, abuse, 
 											  stick, sweet, elect, brave, split, crime, clerk, penny, tribe, pound};
@@ -105,15 +77,19 @@ public class Terminal : MonoBehaviour
 				targetWord = WordArray[Random.Range(0, WordArray.Count)];
 				Debug.Log("Target word is " + targetWord + "!!");
 			}
-			if (selectedWord != txtScript.Word)
+		}
+
+		if (selectedWord != server.txtScript.Word)
+		{
+			selectedWord = server.txtScript.Word;
+
+			SimilarityRating = 0;
+
+			tWordArray = targetWord.ToCharArray();
+			sWordArray = selectedWord.ToCharArray();
+
+			if (sWordArray.Length > 0)
 			{
-				selectedWord = txtScript.Word;
-
-				SimilarityRating = 0;
-
-				tWordArray = targetWord.ToCharArray();
-				sWordArray = selectedWord.ToCharArray();
-
 				for (int i = 0; i < tWordArray.Length; i++)
 				{
 					if (tWordArray[i] == sWordArray[i])
@@ -121,22 +97,19 @@ public class Terminal : MonoBehaviour
 						SimilarityRating++;
 					}
 				}
-				SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
-				Debug.Log("Similiarity Rating " + SimilarityRating);
 			}
-			if (SimilarityRating == 5)
-			{
-				success = true;
+			server.SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
+			Debug.Log("Similiarity Rating " + SimilarityRating);
+		}
+		if (SimilarityRating == 5)
+		{
+			server.usernameField.text = "";
+			server.passwordField.text = "";
 
-				usernameField.text = "";
-				passwordField.text = "";
+			server.terminalMenu.SetActive(true);
+			server.bypassScreen.SetActive(false);
 
-				terminalInterface.SetActive(false);
-				camScript.enabled = true;
-				movScript.enabled = true;
-				Cursor.lockState = CursorLockMode.Confined;
-				Cursor.lockState = CursorLockMode.Locked;
-			}
+			SimilarityRating = 0;
 		}
 	}
 
@@ -144,13 +117,13 @@ public class Terminal : MonoBehaviour
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			terminalInterface.SetActive(false);
-			camScript.enabled = true;
-			movScript.enabled = true;
+			server.terminalInterface.SetActive(false);
+			server.camScript.enabled = true;
+			server.movScript.enabled = true;
 			Cursor.lockState = CursorLockMode.Confined;
 			Cursor.lockState = CursorLockMode.Locked;
 		}
-		interactUI.SetActive(false);
+		server.interactUI.SetActive(false);
 	}	
 	bool CheckWord(int index)
 	{
@@ -164,25 +137,5 @@ public class Terminal : MonoBehaviour
 		}
 		Debug.Log("Word is valid!");
 		return true;
-	}
-
-	public void Login()
-	{
-		if (usernameField.text == username && passwordField.text == password)
-		{
-			button1.Play (0); 
-			success = true;
-
-			xScript.usernamePassword.SetActive(false);
-
-			usernameField.text = "";
-			passwordField.text = "";
-
-			terminalInterface.SetActive(false);
-			camScript.enabled = true;
-			movScript.enabled = true;
-			Cursor.lockState = CursorLockMode.Confined;
-			Cursor.lockState = CursorLockMode.Locked;
-		}
 	}
 }

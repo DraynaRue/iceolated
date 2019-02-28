@@ -10,9 +10,6 @@ public class DroneScript : MonoBehaviour
 	public float VerticalSpeed;
 	public float HorizonalSpeed;
 
-
-	public AudioSource found;
-	public AudioSource search;
 	// Use this for initialization
 	
 	// Update is called once per frame

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TerminalTargetScript : MonoBehaviour
 {
-	public Terminal hackedTerminal;
+	public TerminalController server;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +13,7 @@ public class TerminalTargetScript : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		if (hackedTerminal.success == true)
+		if (server.success == true)
 		{
 			Destroy(this.gameObject);
 		}
