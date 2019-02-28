@@ -17,9 +17,17 @@ public class DialougeIntro : MonoBehaviour {
 
 	private string intro_MissionBrief = "A Pirate Mining Ship has crashed into an asteroid.\n We need you to enter the ship through the cargo bay and \n search for intel which can tell us more about this ship.\n Any survivors on the ship may be hostile so be careful!\n We also need you to deactivate the engines before they explode.\n Some areas of the ship may not be accessible on foot,\n so you must activate the teleportation system.\n Try checking the communications,\n see if they tried sending for help before they crashed.\n The AI core is corrupt but still active.\n Be aware.\n ~Captain.";
 
+	public CAM cam;
+	private bool doneDialog = false;
+
+	void Start(){
+		cam = this.GetComponent<CAM>();
+	}
+
 	public void GO(){
 			partActivated = true;
 			currentPart = intro_MissionBrief;
+			StartCoroutine(finshing());
 		}
 
 	void FixedUpdate(){
@@ -39,7 +47,11 @@ public class DialougeIntro : MonoBehaviour {
 				currentPart="";
 				textPercentage = 0f;
 			}
-			
 		}
+	}
+
+	IEnumerator finshing(){
+		yield return new WaitForSeconds(TimeToType);
+		cam.EndOfCutScene();
 	}
 }
