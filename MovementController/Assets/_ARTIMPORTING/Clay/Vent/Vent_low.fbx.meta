@@ -3,99 +3,42 @@ guid: 1685f86a9660ffc4bad129b7c3a2fa4b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: group
-    100002: pasted__pCylinder35
-    100004: pasted__pCylinder36
-    100006: pasted__pCylinder37
-    100008: pasted__pCylinder38
-    100010: pasted__pCylinder39
-    100012: pasted__pCylinder40
-    100014: pasted__pCylinder41
-    100016: pCylinder38
-    100018: pCylinder39
-    100020: pCylinder48
-    100022: pCylinder49
-    100024: pCylinder50
-    100026: pCylinder51
-    100028: pCylinder52
-    100030: pCylinder53
-    100032: pCylinder54
-    100034: pCylinder55
-    100036: transform177
-    100038: transform178
-    100040: transform179
-    100042: transform180
-    100044: transform181
-    100046: transform182
-    100048: transform183
-    100050: transform184
-    100052: //RootNode
-    400000: group
-    400002: pasted__pCylinder35
-    400004: pasted__pCylinder36
-    400006: pasted__pCylinder37
-    400008: pasted__pCylinder38
-    400010: pasted__pCylinder39
-    400012: pasted__pCylinder40
-    400014: pasted__pCylinder41
-    400016: pCylinder38
-    400018: pCylinder39
-    400020: pCylinder48
-    400022: pCylinder49
-    400024: pCylinder50
-    400026: pCylinder51
-    400028: pCylinder52
-    400030: pCylinder53
-    400032: pCylinder54
-    400034: pCylinder55
-    400036: transform177
-    400038: transform178
-    400040: transform179
-    400042: transform180
-    400044: transform181
-    400046: transform182
-    400048: transform183
-    400050: transform184
-    400052: //RootNode
+    100000: polySurface175
+    100002: polySurface176
+    100004: polySurface177
+    100006: polySurface179
+    100008: polySurface182
+    100010: //RootNode
+    400000: polySurface175
+    400002: polySurface176
+    400004: polySurface177
+    400006: polySurface179
+    400008: polySurface182
+    400010: //RootNode
     2100000: lambert12
-    2300000: pasted__pCylinder35
-    2300002: pasted__pCylinder36
-    2300004: pasted__pCylinder37
-    2300006: pasted__pCylinder38
-    2300008: pasted__pCylinder39
-    2300010: pasted__pCylinder40
-    2300012: pasted__pCylinder41
-    2300014: pCylinder38
-    2300016: pCylinder55
-    3300000: pasted__pCylinder35
-    3300002: pasted__pCylinder36
-    3300004: pasted__pCylinder37
-    3300006: pasted__pCylinder38
-    3300008: pasted__pCylinder39
-    3300010: pasted__pCylinder40
-    3300012: pasted__pCylinder41
-    3300014: pCylinder38
-    3300016: pCylinder55
-    4300000: pCylinder38
-    4300002: pasted__pCylinder35
-    4300004: pasted__pCylinder36
-    4300006: pasted__pCylinder37
-    4300008: pasted__pCylinder38
-    4300010: pasted__pCylinder39
-    4300012: pasted__pCylinder40
-    4300014: pasted__pCylinder41
-    4300016: pCylinder55
-    6400000: pasted__pCylinder35
-    6400002: pasted__pCylinder36
-    6400004: pasted__pCylinder37
-    6400006: pasted__pCylinder38
-    6400008: pasted__pCylinder39
-    6400010: pasted__pCylinder40
-    6400012: pasted__pCylinder41
-    6400014: pCylinder38
-    6400016: pCylinder55
+    2300000: polySurface175
+    2300002: polySurface176
+    2300004: polySurface177
+    2300006: polySurface179
+    2300008: polySurface182
+    3300000: polySurface175
+    3300002: polySurface176
+    3300004: polySurface177
+    3300006: polySurface179
+    3300008: polySurface182
+    4300000: polySurface182
+    4300002: polySurface177
+    4300004: polySurface175
+    4300006: polySurface176
+    4300008: polySurface179
+    6400000: polySurface175
+    6400002: polySurface176
+    6400004: polySurface177
+    6400006: polySurface179
+    6400008: polySurface182
     7400000: Take 001
     9500000: //RootNode
+    11100000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -123,7 +66,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 483
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -147,7 +118,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.5
+    previousCalculatedGlobalScale: 0.79999995
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
@@ -170,10 +141,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
