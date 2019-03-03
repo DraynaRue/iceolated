@@ -10,7 +10,7 @@ public class Audio_Logs : MonoBehaviour
 		audioLog = GetComponent<AudioSource>();
 	}
 
-	void OnTriggerStayS (Collider other)
+	void OnTriggerStay (Collider other)
 	{
 		if (other.gameObject.tag == "Player")
 		{
