@@ -55,7 +55,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Tex:
+<<<<<<< HEAD
         m_Texture: {fileID: 8900000, guid: b99595cd7a7585c4cb760b25b0a20fd6, type: 3}
+=======
+        m_Texture: {fileID: 8900000, guid: 5774ae534dab4d74bbb6c3d29fccefc5, type: 3}
+>>>>>>> H_N_P-Main_Menu
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:

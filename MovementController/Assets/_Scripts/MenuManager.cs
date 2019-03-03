@@ -16,6 +16,10 @@ public class MenuManager : MonoBehaviour {
 	public GameObject loadingScreen;
 	public Slider slider;
 	public Text progressPercentage;
+	public GameObject camera1;
+	public GameObject camera2;
+	public AudioSource forward;
+	public AudioSource back;
 
 	void Start(){
 		activeScreenResIndex = PlayerPrefs.GetInt ("screen res index");
@@ -35,7 +39,7 @@ public class MenuManager : MonoBehaviour {
 	public void Play(int sceneIndex){
 		mainMenuHolder.SetActive (false);
 		StartCoroutine (LoadAsynchronously(sceneIndex));
-		AudioManager.Instance.PlaySound("Buttons", transform.position);
+		forward.Play (0);
 	}
 	public void Quit(){
 		Application.Quit ();
@@ -43,6 +47,9 @@ public class MenuManager : MonoBehaviour {
 	}
 
 	public void OptionsMenu(){
+		forward.Play (0);
+		camera1.SetActive (false);
+		camera2.SetActive (true);
 		mainMenuHolder.SetActive (false);
 		optionsMenuHolder.SetActive (true);
 		AudioManager.Instance.PlaySound("Sound Effect Buttons", transform.position);
@@ -50,6 +57,9 @@ public class MenuManager : MonoBehaviour {
 	}
 
 	public void MainMenu(){
+		back.Play (0);
+		camera1.SetActive (true);
+		camera2.SetActive (false);
 		mainMenuHolder.SetActive (true);
 		optionsMenuHolder.SetActive (false);
 		AudioManager.Instance.PlaySound("Sound Effect Buttons", transform.position);
