@@ -26,6 +26,10 @@ public class ServerPuzzleScript : MonoBehaviour {
 				InteractUI.SetActive(true);
 				if (Input.GetAxis("Interact") > 0)
 				{
+					if (hit.transform.gameObject == ServerArray[ServerIndex].gameObject)
+					{
+						Debug.Log("Found Right Server");
+					}
 					Destroy(hit.transform.gameObject);
 				}
 			}
