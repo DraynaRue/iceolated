@@ -13,7 +13,6 @@ public class TextClickScript : MonoBehaviour
     GraphicRaycaster m_Raycaster;
     PointerEventData m_PointerEventData;
     EventSystem m_EventSystem;
-	public AudioSource button2;
     void Start()
     {
         //Fetch the Raycaster from the GameObject (the Canvas)
@@ -43,7 +42,7 @@ public class TextClickScript : MonoBehaviour
             
            
 			Word = results[0].gameObject.GetComponent<Text>().text;
-			button2.Play (0);
+			AudioManager.Instance.PlaySound ("Buttons", transform.position);
 			Debug.Log("Hit " + Word);
         }
     }
