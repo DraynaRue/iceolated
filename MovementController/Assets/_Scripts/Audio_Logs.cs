@@ -5,9 +5,10 @@ using UnityEngine;
 public class Audio_Logs : MonoBehaviour 
 {
 	 AudioSource audioLog;
+	 public GameObject Log_Audio;
 
 	void Start(){
-		audioLog = GetComponent<AudioSource>();
+		audioLog = Log_Audio.GetComponent<AudioSource>();
 	}
 
 	void OnTriggerStay (Collider other)
@@ -18,7 +19,7 @@ public class Audio_Logs : MonoBehaviour
 			{
 				Debug.Log ("In");
 				audioLog.Play ();
-				//Destroy (this.gameObject);
+				Destroy (this.gameObject);
 			}
 		}
 	}
