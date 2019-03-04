@@ -20,6 +20,7 @@ TagManager:
   - AudioManager
   - Puzzle3
   - out
+  - Server
   layers:
   - Default
   - TransparentFX
