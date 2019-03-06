@@ -3,117 +3,12 @@ guid: 84d596e44f5a68b4fa6106681434f1b7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: A_low
-    100002: D_low
-    100004: E_low
-    100006: F_low
-    100008: G_low
-    100010: H_low
-    100012: I_low
-    100014: J_low
-    100016: K_low
-    100018: //RootNode
-    100020: O_low
-    100022: P_low
-    100024: Q_low
-    100026: R_low
-    100028: S_low
-    100030: T_low
-    100032: U_low
-    100034: W_low
-    100036: Y_low
-    400000: A_low
-    400002: D_low
-    400004: E_low
-    400006: F_low
-    400008: G_low
-    400010: H_low
-    400012: I_low
-    400014: J_low
-    400016: K_low
-    400018: //RootNode
-    400020: O_low
-    400022: P_low
-    400024: Q_low
-    400026: R_low
-    400028: S_low
-    400030: T_low
-    400032: U_low
-    400034: W_low
-    400036: Y_low
-    2100000: lambert3
-    2300000: A_low
-    2300002: D_low
-    2300004: E_low
-    2300006: F_low
-    2300008: G_low
-    2300010: H_low
-    2300012: I_low
-    2300014: J_low
-    2300016: K_low
-    2300018: O_low
-    2300020: P_low
-    2300022: Q_low
-    2300024: R_low
-    2300026: S_low
-    2300028: T_low
-    2300030: U_low
-    2300032: W_low
-    2300034: Y_low
-    3300000: A_low
-    3300002: D_low
-    3300004: E_low
-    3300006: F_low
-    3300008: G_low
-    3300010: H_low
-    3300012: I_low
-    3300014: J_low
-    3300016: K_low
-    3300018: O_low
-    3300020: P_low
-    3300022: Q_low
-    3300024: R_low
-    3300026: S_low
-    3300028: T_low
-    3300030: U_low
-    3300032: W_low
-    3300034: Y_low
-    4300000: Q_low
-    4300002: W_low
-    4300004: E_low
-    4300006: R_low
-    4300008: T_low
-    4300010: Y_low
-    4300012: U_low
-    4300014: I_low
-    4300016: O_low
-    4300018: P_low
-    4300020: A_low
-    4300022: S_low
-    4300024: D_low
-    4300026: F_low
-    4300028: G_low
-    4300030: H_low
-    4300032: J_low
-    4300034: K_low
-    6400000: A_low
-    6400002: D_low
-    6400004: E_low
-    6400006: F_low
-    6400008: G_low
-    6400010: H_low
-    6400012: I_low
-    6400014: J_low
-    6400016: K_low
-    6400018: O_low
-    6400020: P_low
-    6400022: Q_low
-    6400024: R_low
-    6400026: S_low
-    6400028: T_low
-    6400030: U_low
-    6400032: W_low
-    6400034: Y_low
+    100000: //RootNode
+    400000: //RootNode
+    2100000: lambert4
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Crate_Box
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -145,15 +40,15 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 50
+    globalScale: 40
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

@@ -55,6 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4376545272393412}
   - component: {fileID: 65322479386526146}
+  - component: {fileID: 114401134797219658}
   m_Layer: 0
   m_Name: Sight
   m_TagString: Untagged
@@ -68,8 +69,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1328657685384766}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.305733, y: 5.852, z: 21.673975}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.894766, y: -22.800343, z: 14.94775}
   m_LocalScale: {x: 0.82648206, y: 0.82648206, z: 0.82648206}
   m_Children:
   - {fileID: 4376545272393412}
@@ -208,6 +209,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114401134797219658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436088470376952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70cf7a65e5aa5064f983446ac96e720e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114609120769617560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,5 +236,3 @@ MonoBehaviour:
   HoverHeight: 0.9
   VerticalSpeed: 0.008
   HorizonalSpeed: 0.02
-  found: {fileID: 0}
-  search: {fileID: 0}

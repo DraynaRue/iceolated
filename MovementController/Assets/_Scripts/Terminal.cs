@@ -12,6 +12,7 @@ public class Terminal : MonoBehaviour
 	protected int WordToAdd;
 	protected int SimilarityRating;
 	protected bool isWordSame;
+	protected bool isHacked;
 	protected string targetWord;
 	protected string selectedWord;
 	protected List<Text> TextArray;
@@ -21,7 +22,7 @@ public class Terminal : MonoBehaviour
 
 	void Start()
 	{
-		
+		isHacked = false;
 	}
 	void OnTriggerEnter(Collider other) 
 	{
@@ -31,7 +32,7 @@ public class Terminal : MonoBehaviour
 	}
 	void OnTriggerStay(Collider other) 
 	{
-		if(other.gameObject.tag == "Player" && Input.GetButton("Interact") && server.terminalInterface.activeSelf == false && server.success == false)
+		if(other.gameObject.tag == "Player" && Input.GetButton("Interact") && server.terminalInterface.activeSelf == false)
 		{
 			server.usernameField.text = "";
 			server.passwordField.text = "";
@@ -54,7 +55,7 @@ public class Terminal : MonoBehaviour
 			{
 				server.bypassButton.interactable = false;
 			}
-			else if (server.doesRequireLogin == false)
+			else if (server.doesRequireLogin == false && isHacked == false)
 			{
 				
 				TextArray = new List<Text> {server.A1, server.A2, server.A3, server.A4, server.A5, server.A6, server.A7, server.A8, server.A9, server.A10,
@@ -79,7 +80,7 @@ public class Terminal : MonoBehaviour
 			}
 		}
 
-		if (selectedWord != server.txtScript.Word)
+		if (selectedWord != server.txtScript.Word && isHacked == false)
 		{
 			selectedWord = server.txtScript.Word;
 
@@ -101,7 +102,7 @@ public class Terminal : MonoBehaviour
 			server.SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
 			Debug.Log("Similiarity Rating " + SimilarityRating);
 		}
-		if (SimilarityRating == 5)
+		if (SimilarityRating == 5 && isHacked == false)
 		{
 			server.usernameField.text = "";
 			server.passwordField.text = "";
@@ -109,7 +110,13 @@ public class Terminal : MonoBehaviour
 			server.terminalMenu.SetActive(true);
 			server.bypassScreen.SetActive(false);
 
+			isHacked = true;
 			SimilarityRating = 0;
+		}
+		if (isHacked == true && server.bypassScreen.activeSelf == true)
+		{
+			server.terminalMenu.SetActive(true);
+			server.bypassScreen.SetActive(false);
 		}
 	}
 
