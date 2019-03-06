@@ -67,6 +67,11 @@ public class Terminal : MonoBehaviour
 
 				for (int i = 0; i < TextArray.Count; i++)
 				{
+					TextArray[i].text = "";
+				}
+				
+				for (int i = 0; i < TextArray.Count; i++)
+				{
 					isWordSame = false;
 					while (isWordSame == false)
 					{
