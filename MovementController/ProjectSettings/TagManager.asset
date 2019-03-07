@@ -21,6 +21,8 @@ TagManager:
   - Puzzle3
   - out
   - Server
+  - TP1
+  - TP2
   layers:
   - Default
   - TransparentFX
