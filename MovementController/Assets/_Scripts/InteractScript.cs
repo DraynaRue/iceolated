@@ -41,10 +41,6 @@ public class InteractScript : MonoBehaviour {
 				GetComponent<AudioLogScript>().Interact();
 				InteractUI.SetActive(false);
 			}
-			else if (this.GetComponent<TeleporterScript>() != null && Input.GetButton("Interact") == true )
-			{
- 				GetComponent<TeleporterScript>().Interact();
-			}
 		}
 	}
 }
