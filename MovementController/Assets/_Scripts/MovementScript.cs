@@ -24,6 +24,8 @@ public class MovementScript : MonoBehaviour
     public AudioClip a_jetpack;
     public AudioSource AS;
 
+    public GameObject zeroGIcon;
+
     // Use this for initialization
     void Start()
     {
@@ -36,11 +38,13 @@ public class MovementScript : MonoBehaviour
     {
         if (isZeroGravity == false)
         {
+            zeroGIcon.SetActive(false);
             _rb.useGravity = true;
             NormalMovement();
         }
         else if (isZeroGravity == true)
-        {
+        {   
+            zeroGIcon.SetActive(true);
             _rb.useGravity = false;
             ZeroGravityMovement();
         }
