@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour {
 
 	public GameObject mainMenuHolder;
 	public GameObject optionsMenuHolder;
+	public GameObject controlsMenuHolder;
 	public Slider[] sliderVolumes;
 	public Toggle[] resolutionToggles;
 	public int[] screenWidths;
@@ -56,12 +57,19 @@ public class MenuManager : MonoBehaviour {
 
 	}
 
+	public void ControlsMenu(){
+		forward.Play (0);
+		mainMenuHolder.SetActive (false);
+		controlsMenuHolder.SetActive(true);
+	}
+
 	public void MainMenu(){
 		back.Play (0);
 		camera1.SetActive (true);
 		camera2.SetActive (false);
 		mainMenuHolder.SetActive (true);
 		optionsMenuHolder.SetActive (false);
+		controlsMenuHolder.SetActive(false);
 		AudioManager.Instance.PlaySound("Sound Effect Buttons", transform.position);
 	}
 
