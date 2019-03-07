@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Terminal : MonoBehaviour
 {
 	public TerminalController server;
+	public int hackingLives;
 	protected string twist="twist", aware="aware", mayor="mayor", swarm="swarm", smell="smell", video="video", blast="blast", shave="shave", youth="youth", peace="peace", 
 					 shift="shift", donor="donor", awful="awful", tough="tough", hobby="hobby", wheel="wheel", style="style", tight="tight", drown="drown", abuse="abuse", 
 					 stick="stick", sweet="sweet", elect="elect", brave="brave", split="split", crime="crime", clerk="clerk", penny="penny", tribe="tribe", pound="pound";
@@ -13,6 +14,7 @@ public class Terminal : MonoBehaviour
 	protected int SimilarityRating;
 	protected bool isWordSame;
 	protected bool isHacked;
+	protected bool hasFailedHack;
 	protected string targetWord;
 	protected string selectedWord;
 	protected List<Text> TextArray;
@@ -23,6 +25,7 @@ public class Terminal : MonoBehaviour
 	void Start()
 	{
 		isHacked = false;
+		hasFailedHack = false;
 	}
 	void OnTriggerEnter(Collider other) 
 	{
@@ -51,7 +54,7 @@ public class Terminal : MonoBehaviour
 			server.movScript.enabled = false;
 			Cursor.lockState = CursorLockMode.None;
 
-			if (server.doesRequireLogin == true)
+			if (server.doesRequireLogin == true || hasFailedHack == true)
 			{
 				server.bypassButton.interactable = false;
 			}
@@ -103,10 +106,24 @@ public class Terminal : MonoBehaviour
 						SimilarityRating++;
 					}
 				}
+				if (SimilarityRating == 0)
+				{
+					hackingLives--;
+					if (hackingLives < 0)
+					{
+						hasFailedHack = true;
+						server.bypassScreen.SetActive(false);
+						server.loginScreen.SetActive(true);
+						server.bypassButton.interactable = false;
+					}
+				}
 			}
-			server.SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
-			Debug.Log("Similiarity Rating " + SimilarityRating);
 		}
+
+		server.SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
+		Debug.Log("Similiarity Rating " + SimilarityRating);
+		server.HackingLivesText.text = ("Lives: " + hackingLives);
+
 		if (SimilarityRating == 5 && isHacked == false)
 		{
 			server.usernameField.text = "";
