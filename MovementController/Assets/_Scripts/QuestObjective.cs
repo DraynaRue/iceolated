@@ -9,13 +9,14 @@ public class QuestObjective : MonoBehaviour
 	public QuestManager theQM;
 	public Text questText;
 	public string questString;
+	public Text itemQuestProgress;
 	public bool isItemQuest;
 	public string targetItem;
 	public int numberOfItems;
 	// Use this for initialization
 	void Start () 
 	{
-		numberOfItems = 0;
+		
 	}
 	
 	// Update is called once per frame
@@ -23,6 +24,13 @@ public class QuestObjective : MonoBehaviour
 	{
 		if (isItemQuest)
 		{
+			if (itemQuestProgress.gameObject.activeSelf == false)
+			{
+				itemQuestProgress.gameObject.SetActive(true);
+			}
+
+			itemQuestProgress.text = theQM.numberOfItemsCollected + "/" + numberOfItems;
+
 			if (theQM.itemCollected == targetItem)
 			{
 				theQM.itemCollected = null;
@@ -32,18 +40,29 @@ public class QuestObjective : MonoBehaviour
 					EndQuest();
 				}
 			}
+		}
+		else if (isItemQuest == true)
+		{
+			itemQuestProgress.gameObject.SetActive(false);
 		}	
 	}
 
 	public void StartQuest ()
 	{
 		questText.text = questString;
+		if (isItemQuest)
+		{
+			theQM.numberOfItemsCollected = 0;
+		}
 	}
 	public void EndQuest ()
 	{
 		if (isItemQuest)
 		{
 			numberOfItems = 0;
+			theQM.numberOfItemsCollected = 0;
+			itemQuestProgress.text = "";
+			itemQuestProgress.gameObject.SetActive(false);
 		}
 		questText.text = null;
 		theQM.questCompleted[questNumber] = true;
