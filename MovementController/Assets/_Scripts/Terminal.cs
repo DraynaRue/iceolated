@@ -65,6 +65,11 @@ public class Terminal : MonoBehaviour
 									     	  shift, donor, awful, tough, hobby, wheel, style, tight, drown, abuse, 
 											  stick, sweet, elect, brave, split, crime, clerk, penny, tribe, pound};
 
+				for (int i = 0; i < TextArray.Count; i++) 
+				{ 
+					TextArray[i].text = ""; 
+				}
+				
 				for (int i = 0; i < TextArray.Count; i++)
 				{
 					isWordSame = false;
