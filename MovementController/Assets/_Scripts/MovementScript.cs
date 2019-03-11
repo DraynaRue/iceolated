@@ -74,7 +74,7 @@ public class MovementScript : MonoBehaviour
         hor = moveSpeed * Input.GetAxis("Horizontal");
         ver = moveSpeed * Input.GetAxis("Vertical");
 
-        if (Input.GetKey(KeyCode.C))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             ver *= 2.00f;
         }
