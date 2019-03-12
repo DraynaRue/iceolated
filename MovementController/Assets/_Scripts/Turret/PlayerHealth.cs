@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour {
 		sHealth.value = health;
 				
 		if(health <= 0){
-			SceneManager.LoadScene("MainMenu");
+			SceneManager.LoadScene("Death_Scene");
 		}
 	}
 
