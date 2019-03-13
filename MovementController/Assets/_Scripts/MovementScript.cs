@@ -38,13 +38,19 @@ public class MovementScript : MonoBehaviour
     {
         if (isZeroGravity == false)
         {
-            zeroGIcon.SetActive(false);
+            if (zeroGIcon != null)
+            {
+                zeroGIcon.SetActive(false);
+            }
             _rb.useGravity = true;
             NormalMovement();
         }
         else if (isZeroGravity == true)
         {   
-            zeroGIcon.SetActive(true);
+            if (zeroGIcon != null)
+            {
+                zeroGIcon.SetActive(true);
+            }
             _rb.useGravity = false;
             ZeroGravityMovement();
         }
