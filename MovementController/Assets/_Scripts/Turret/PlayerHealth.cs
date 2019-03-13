@@ -10,6 +10,9 @@ public class PlayerHealth : MonoBehaviour {
 	public Text tHealth;
 	public Slider sHealth;
 
+	void Start(){
+		health = 100;
+	}
 	void Update(){
 		tHealth.text = health.ToString() + " / 100";
 		sHealth.value = health;

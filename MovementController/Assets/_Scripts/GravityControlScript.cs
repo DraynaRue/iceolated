@@ -13,6 +13,7 @@ public class GravityControlScript : MonoBehaviour
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
 		movScript = player.GetComponent<MovementScript>();
+		GR = false;
 	}
 
 	void Update()
