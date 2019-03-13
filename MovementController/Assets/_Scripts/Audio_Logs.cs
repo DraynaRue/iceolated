@@ -8,35 +8,37 @@ public class Audio_Logs : MonoBehaviour
 	public GameObject Log_Audio;
 	public Animator anim;
 	public float timer;
+ 
+	private bool started = false;
 
 	void Start(){
 		audioLog = Log_Audio.GetComponent<AudioSource>();
+	}
+
+	void Update(){
+		if (timer <= 0)
+			{
+				anim.SetTrigger ("isOFF");
+				Destroy (this.gameObject);
+		}
+
+		if(started)
+			timer -= Time.deltaTime;
 	}
 
 	void OnTriggerStay (Collider other)
 	{
 		if (other.gameObject.tag == "Player")
 		{
-			timer -= Time.deltaTime;
+			
 			if (Input.GetKeyDown (KeyCode.F)) 
 			{
 				audioLog.Play ();
 				anim.SetTrigger ("isOn");
-				//Destroy (this.gameObject);
+				started = true;
 			}
-			if (timer <= 0)
-				{
-				anim.SetTrigger ("isOFF");
-				Destroy (this.gameObject);
-				}
+
 		}
 	}
-	void OnTriggerExit(Collider other)
-	{
-		if (other.gameObject.tag == "Player")
-		{
-			anim.SetTrigger ("isOFF");
-			Destroy (this.gameObject);
-		}
-	}
+
 }

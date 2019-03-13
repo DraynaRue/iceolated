@@ -23,7 +23,7 @@ public class DeathScene : MonoBehaviour
 	}
 	public void Retry()
 	{
-		SceneManager.LoadScene ("Master");
+		SceneManager.LoadScene ("MainMenu");
 	}
 	public void Credits()
 	{

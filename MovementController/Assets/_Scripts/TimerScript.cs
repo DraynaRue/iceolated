@@ -11,6 +11,11 @@ public class TimerScript : MonoBehaviour
 	public GameObject timerObj;
 	public static bool TimerTrigger;
 
+	void Start(){
+		timeLeft = 80f;
+		TimerTrigger = false;
+		timerObj.SetActive(false);
+	}
 
 	void OnTriggerEnter(Collider other){
 		if(other.gameObject.tag == "Player"){
