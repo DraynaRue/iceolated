@@ -49,9 +49,10 @@ public class Terminal : MonoBehaviour
 			{
 				server.interactUI.SetActive(false);
 			}
-
 			server.camScript.enabled = false;
 			server.movScript.enabled = false;
+			Rigidbody _rb = server.player.GetComponent<Rigidbody>();
+			_rb.velocity = new Vector3(0,0,0);
 			Cursor.lockState = CursorLockMode.None;
 
 			if (server.doesRequireLogin == true || hasFailedHack == true)
