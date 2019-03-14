@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4947902979038832}
   - component: {fileID: 198281820634304666}
   - component: {fileID: 199875113849705266}
+  - component: {fileID: 114569140142441842}
   m_Layer: 0
   m_Name: IceBreak_Particle
   m_TagString: Untagged
@@ -35,12 +36,24 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1021135214090834}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 32.53031, y: 9.01, z: 26.80573}
+  m_LocalPosition: {x: 5.7788086, y: -0.15993193, z: 4.735278}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &114569140142441842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1021135214090834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7942fe01eff48f84dbf2673a269cc3d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDie: 2
 --- !u!198 &198281820634304666
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -49,7 +62,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1021135214090834}
   serializedVersion: 5
   lengthInSec: 0.07
-  simulationSpeed: 1
+  simulationSpeed: 1.4
   stopAction: 0
   looping: 0
   prewarm: 0
@@ -120,7 +133,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.01
+      scalar: 1.35
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -173,7 +186,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 6.21
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -289,7 +302,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -342,7 +355,7 @@ ParticleSystem:
     startSizeY:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -395,7 +408,7 @@ ParticleSystem:
     startSizeZ:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -611,7 +624,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2.62
+      scalar: 2.44
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -814,7 +827,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 446.41
+      scalar: 1000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -867,7 +880,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2.1
+      scalar: 28.5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1253,7 +1266,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 0.046264656, b: 0, a: 1}
-        key1: {r: 0, g: 1, b: 0.9604409, a: 0.7921569}
+        key1: {r: 0.4292453, g: 1, b: 0.9776175, a: 0}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1261,7 +1274,7 @@ ParticleSystem:
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 22745
+        ctime1: 13107
         ctime2: 0
         ctime3: 0
         ctime4: 0
@@ -3648,9 +3661,9 @@ ParticleSystem:
       type: 0
       properties: 0
   LightsModule:
-    enabled: 0
-    ratio: 0
-    light: {fileID: 0}
+    enabled: 1
+    ratio: 0.66
+    light: {fileID: 108001913421040072, guid: 647de1d3a8e917b47806ad6da9cbc54d, type: 2}
     randomDistribution: 1
     color: 1
     range: 1
@@ -3658,7 +3671,7 @@ ParticleSystem:
     rangeCurve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.92
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -3711,7 +3724,7 @@ ParticleSystem:
     intensityCurve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 1.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4590,7 +4603,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1aecee9293ed6484d90831f1f8b364c2, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
