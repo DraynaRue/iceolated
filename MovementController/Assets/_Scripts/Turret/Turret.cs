@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Turret : MonoBehaviour {
+public class Turret : MonoBehaviour
+{
 
 	public Transform target;
 	public GameObject bullet;
@@ -18,7 +19,8 @@ public class Turret : MonoBehaviour {
 	public Slider sHealth;
 
 
-	void Update(){
+	void Update()
+	{
 		tHealth.text = turretHealth.ToString() + " / 100";
 		sHealth.value = turretHealth;
 
@@ -37,16 +39,19 @@ public class Turret : MonoBehaviour {
 			}
 		}
 
-		if(turretHealth <= 0f){
+		if(turretHealth <= 0f)
+		{
 			Destroy(this.gameObject);
 		}
 	}
 
-	public void Take_Damage(float amount){
+	public void Take_Damage(float amount)
+	{
 		turretHealth -= amount;
 	}
 
-	IEnumerator SHOOTING (){
+	IEnumerator SHOOTING ()
+	{
 		isShooting = true;
 		Instantiate(bullet, spawnL.transform.position, Quaternion.identity);
 		Instantiate(bullet, spawnR.transform.position, Quaternion.identity);
