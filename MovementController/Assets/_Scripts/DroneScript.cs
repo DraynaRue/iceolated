@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DroneScript : MonoBehaviour 
 {
+	public float droneHealth = 100f;
+	public Text tHealth;
+	public Slider sHealth;
 	public GameObject Target;
 	public float SightDistance;
 	public float HoverHeight;
@@ -11,12 +15,25 @@ public class DroneScript : MonoBehaviour
 	public float HorizonalSpeed;
 
 	// Use this for initialization
-	
+	void Start()
+	{
+		Target = GameObject.Find("_Player");
+		tHealth = GetComponentInChildren<Text>();
+		sHealth = GetComponentInChildren<Slider>();
+	}
+
 	// Update is called once per frame
 	void Update ()
 	{
-
 		Hover();
+
+		tHealth.text = droneHealth.ToString() + " / 100";
+		sHealth.value = droneHealth;
+
+		if(droneHealth <= 0f)
+		{
+			Destroy(this.gameObject);
+		}
 
 		Vector3 targetDir = Target.transform.position - transform.position;
 		float angle = Vector3.Angle(targetDir, transform.forward);
@@ -71,5 +88,9 @@ public class DroneScript : MonoBehaviour
 				transform.position += Vector3.up * -VerticalSpeed;
 			}
 		}
+	}
+	public void Take_Damage(float damageValue)
+	{
+		droneHealth--;
 	}
 }

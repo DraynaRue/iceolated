@@ -38,6 +38,7 @@ TagManager:
   - _cock
   - _conf
   - _capt
+  - Drone
   layers:
   - Default
   - TransparentFX
