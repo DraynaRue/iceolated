@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Gun : MonoBehaviour 
 {
 
-	public GameObject laser;
+	public GameObject laser, iceBreakParticle;
 	public Animation gun;
 	Turret turret;
 	public Text hitPoint;
@@ -14,6 +14,7 @@ public class Gun : MonoBehaviour
 
 	public static bool isShooting = false;
 	public static bool isMeltingIce = false;
+	
 	void Start(){
 		fuelHolder.GetComponent<Fuel>();
 	}
@@ -47,6 +48,7 @@ public class Gun : MonoBehaviour
 
 				if (currentProgress >= 1.0f)
 				{
+					Instantiate(iceBreakParticle, hit.transform.position, Quaternion.identity);
 					Destroy(hit.transform.gameObject);
 				}
 			} 
