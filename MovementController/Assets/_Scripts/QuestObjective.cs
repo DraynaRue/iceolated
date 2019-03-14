@@ -8,7 +8,9 @@ public class QuestObjective : MonoBehaviour
 	public int questNumber;
 	public QuestManager theQM;
 	public Text questText;
+	public Text subQuestText;
 	public string questString;
+	public string subQuestString;
 	public Text itemQuestProgress;
 	public bool isItemQuest;
 	public string targetItem;
@@ -50,6 +52,7 @@ public class QuestObjective : MonoBehaviour
 	public void StartQuest ()
 	{
 		questText.text = questString;
+		subQuestText.text = subQuestString;
 		if (isItemQuest)
 		{
 			theQM.numberOfItemsCollected = 0;
