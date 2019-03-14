@@ -13,6 +13,8 @@ public class QTEP2 : MonoBehaviour {
 	public Text QTENum;
 	public TimerScript timerTriggerObj;
 
+	public Mission3 mission3;
+
 
 	private bool started = false;
 
@@ -35,6 +37,7 @@ public class QTEP2 : MonoBehaviour {
 	void Start(){
 		done02 = true;
 		started = false;
+		mission3 = (Mission3)FindObjectOfType<Mission3>();
 	}
 
 	void Update () {
@@ -85,6 +88,9 @@ public class QTEP2 : MonoBehaviour {
 			qteNumObj.SetActive(false);
 			qteKeyObj.SetActive(false);
 			TimerScript.TimerTrigger = false;
+
+			//Start Mission 3
+			mission3.Mission3Start();
 		}
 	}
 
