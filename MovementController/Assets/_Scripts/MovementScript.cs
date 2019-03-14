@@ -23,14 +23,17 @@ public class MovementScript : MonoBehaviour
     protected float ver;
     public AudioClip a_jetpack;
     public AudioSource AS;
-
     public GameObject zeroGIcon;
+    protected float lerpProgress;
+    protected bool isBobbingUp;
 
     // Use this for initialization
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
         isJumping = false;
+        lerpProgress = 0;
+        isBobbingUp = false;
     }
 
     // Update is called once per frame
@@ -79,6 +82,28 @@ public class MovementScript : MonoBehaviour
         // calculate player movement
         hor = moveSpeed * Input.GetAxis("Horizontal");
         ver = moveSpeed * Input.GetAxis("Vertical");
+
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        {
+            cam.transform.localPosition = new Vector3(0, Mathf.Lerp(0.32f, 0.48f, lerpProgress / 2.0f), 0);
+            if (isBobbingUp)
+            {
+                lerpProgress += 0.1f;
+                if (lerpProgress >= 2.0f)
+                {
+                    isBobbingUp = false;
+                }
+            }
+            else if (!isBobbingUp)
+            {
+                lerpProgress -= 0.1f;
+                if (lerpProgress <= 0)
+                {
+                    isBobbingUp = true;
+                }
+            }
+            Debug.Log("Lerp Progress is: " + lerpProgress);
+        }
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
