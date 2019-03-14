@@ -65,6 +65,8 @@ public class Gun : MonoBehaviour
 				hitPoints.transform.localScale = new Vector3(1,1,1);
 				float dmg = Random.Range(0f, 1f);
 				hitPoint.text = dmg.ToString();
+
+				Instantiate(iceBreakParticle, hit.point	, Quaternion.identity);
 				turret.Take_Damage(dmg);
 			}
 			else if(hit.transform.gameObject.tag == "Drone" && Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1)
@@ -82,6 +84,8 @@ public class Gun : MonoBehaviour
 				hitPoints.transform.localScale = new Vector3(1,1,1);
 				float dmg = Random.Range(0f, 1f);
 				hitPoint.text = dmg.ToString();
+
+				Instantiate(iceBreakParticle, hit.point, Quaternion.identity);
 				drone.Take_Damage(dmg);
 			}
 			else if(Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1)
@@ -89,6 +93,8 @@ public class Gun : MonoBehaviour
 				isMeltingIce = false;
 				isShooting = true;
 				gun["Take 001"].speed = 10f;
+
+				Instantiate(iceBreakParticle, hit.point, Quaternion.identity);
 				laser.gameObject.SetActive(true);
 			}
 			else
