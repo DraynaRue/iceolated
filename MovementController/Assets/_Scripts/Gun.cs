@@ -5,16 +5,14 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour 
 {
-
 	public GameObject laser, iceBreakParticle;
 	public Animation gun;
-	Turret turret;
 	public Text hitPoint;
 	public Fuel fuelHolder;
-
 	public static bool isShooting = false;
 	public static bool isMeltingIce = false;
-	
+	protected Turret turret;
+	protected DroneScript drone;
 	void Start(){
 		fuelHolder.GetComponent<Fuel>();
 	}
@@ -68,6 +66,23 @@ public class Gun : MonoBehaviour
 				float dmg = Random.Range(0f, 1f);
 				hitPoint.text = dmg.ToString();
 				turret.Take_Damage(dmg);
+			}
+			else if(hit.transform.gameObject.tag == "Drone" && Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1)
+			{
+				isMeltingIce = false;
+				gun["Take 001"].speed = 10f;
+				//Debug.Log("ok hit turret");
+				laser.gameObject.SetActive(true);
+				drone = hit.transform.gameObject.GetComponent<DroneScript>();
+				
+				Text hitPoints;
+				Transform spawn = hit.transform.GetChild(1);
+				hitPoints = Instantiate(hitPoint, spawn.position, Quaternion.identity);
+				hitPoints.transform.SetParent(spawn.transform);
+				hitPoints.transform.localScale = new Vector3(1,1,1);
+				float dmg = Random.Range(0f, 1f);
+				hitPoint.text = dmg.ToString();
+				drone.Take_Damage(dmg);
 			}
 			else if(Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1)
 			{

@@ -6,6 +6,7 @@ public class MusicManager : MonoBehaviour {
 
 	public AudioClip mainTheme;
 	public AudioClip menuTheme;
+    public AudioClip deathScene;
 
 	private string lastScene;
 	private string currentScene;
@@ -38,8 +39,12 @@ public class MusicManager : MonoBehaviour {
 			AudioManager.Instance.PlayMusic (menuTheme, 0.5f);
 		}
 		else if(lastScene == "Master"){
-			AudioManager.Instance.PlayMusic (mainTheme, 2);
+			AudioManager.Instance.PlayMusic (mainTheme, 0.5f);
 		}
+        else if (lastScene == "Death_Scene")
+        {
+            AudioManager.Instance.PlayMusic(deathScene, 0.5f);
+        }
 	}
 	
 }
