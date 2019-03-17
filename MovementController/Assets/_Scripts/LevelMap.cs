@@ -31,22 +31,6 @@ public class LevelMap : MonoBehaviour {
 			map.SetActive(false);
 		}
 
-		//Journal:
-		journalText.text = qO.subQuestString;
-
-		if(Input.GetKeyDown(KeyCode.J)){
-			if(!journalOpen){
-				journalOpen = true;
-				journal.SetActive(true);
-			}
-		}
-		if(Input.GetKeyDown(KeyCode.J)){
-			if(journalOpen){
-				journalOpen = false;
-				journal.SetActive(false);
-			} 
-		}
-
 	}
 
 	void OnTriggerStay(Collider other){
