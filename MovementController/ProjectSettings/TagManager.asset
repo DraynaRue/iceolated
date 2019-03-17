@@ -39,6 +39,8 @@ TagManager:
   - _conf
   - _capt
   - Drone
+  - Loop1.1
+  - Loop1.2
   layers:
   - Default
   - TransparentFX

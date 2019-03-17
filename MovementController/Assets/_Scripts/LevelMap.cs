@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class LevelMap : MonoBehaviour {
 
@@ -8,8 +10,17 @@ public class LevelMap : MonoBehaviour {
 	public bool mapObtained = false;
 	public bool mapOpen = false;
 
+	public GameObject journal;
+	public bool journalOpen = false;
+	public Text journalText;
+	public QuestObjective qO;
+
 	public GameObject cb, er1, tp1, lq1, lq2, st, er2, c, rr, tp2, gr, aic, cock, conf, capt;
 	public GameObject YAH;
+
+	void Start(){
+		qO = (QuestObjective)FindObjectOfType<QuestObjective>();
+	}
 
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.M) && mapObtained == true && mapOpen == false){
@@ -18,6 +29,22 @@ public class LevelMap : MonoBehaviour {
 		} else if (mapOpen == true && Input.GetKeyDown(KeyCode.M)){
 			mapOpen = false;
 			map.SetActive(false);
+		}
+
+		//Journal:
+		journalText.text = qO.subQuestString;
+
+		if(Input.GetKeyDown(KeyCode.J)){
+			if(!journalOpen){
+				journalOpen = true;
+				journal.SetActive(true);
+			}
+		}
+		if(Input.GetKeyDown(KeyCode.J)){
+			if(journalOpen){
+				journalOpen = false;
+				journal.SetActive(false);
+			} 
 		}
 
 	}
