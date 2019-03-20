@@ -27,7 +27,7 @@ public class DeathScene : MonoBehaviour
 	}
 	public void Credits()
 	{
-		SceneManager.LoadScene ("Credits");
+		SceneManager.LoadScene ("Luke");
 	} 
 	
 }
