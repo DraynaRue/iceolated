@@ -15,12 +15,12 @@ public class Bullet : MonoBehaviour {
 	void Update(){
 		Vector3 targetDir = player.transform.position - transform.position;
 
-		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 4f, 0f);
+		Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 3f, 0f);
 		
 		transform.rotation = Quaternion.LookRotation(newDir);
 
 
-		rb.AddForce(targetDir, ForceMode.Force);
+		rb.AddForce(targetDir * 1f);
 	}
 
 	void OnTriggerEnter(Collider other){

@@ -15,13 +15,10 @@ public class QuestObjective : MonoBehaviour
 	public bool isItemQuest;
 	public string targetItem;
 	public int numberOfItems;
-	// Use this for initialization
-	void Start () 
-	{
-		
-	}
-	
-	// Update is called once per frame
+
+    public GameObject journal;
+	public bool journalOpen;
+
 	void Update () 
 	{
 		if (isItemQuest)
@@ -46,7 +43,15 @@ public class QuestObjective : MonoBehaviour
 		else if (isItemQuest == true)
 		{
 			itemQuestProgress.gameObject.SetActive(false);
-		}	
+		}
+
+		if(Input.GetKeyDown(KeyCode.J) && journalOpen == false){
+			journal.SetActive(true);
+			journalOpen = true;
+		} else if( journalOpen == true && Input.GetKeyDown(KeyCode.J)){
+			journal.SetActive(false); 
+			journalOpen = false;
+		}
 	}
 
 	public void StartQuest ()

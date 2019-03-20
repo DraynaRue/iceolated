@@ -102,7 +102,7 @@ public class MovementScript : MonoBehaviour
                     isBobbingUp = true;
                 }
             }
-            Debug.Log("Lerp Progress is: " + lerpProgress);
+           // Debug.Log("Lerp Progress is: " + lerpProgress);
         }
 
         if (Input.GetKey(KeyCode.LeftShift))

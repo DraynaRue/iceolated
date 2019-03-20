@@ -23,7 +23,9 @@ public class Gun : MonoBehaviour
 		if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity)) 
 		{
 			if(hit.rigidbody && Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1){
-				hit.rigidbody.AddForce(transform.forward * 25f);
+				hit.rigidbody.AddForce(transform.forward * 15f);
+				laser.gameObject.SetActive(true);
+				Instantiate(gunParticles, hit.transform.position, Quaternion.identity);
 			}
 			else if(hit.transform.gameObject.tag == "Ice" && Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1) 
 			{

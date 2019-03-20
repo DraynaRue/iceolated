@@ -122,7 +122,6 @@ public class Terminal : MonoBehaviour
 		}
 
 		server.SimilarityRatingText.text = ("Similarity: " + SimilarityRating);
-		Debug.Log("Similiarity Rating " + SimilarityRating);
 		server.HackingLivesText.text = ("Lives: " + hackingLives);
 
 		if (SimilarityRating == 5 && isHacked == false)
@@ -161,11 +160,9 @@ public class Terminal : MonoBehaviour
 		{
 			if (WordArray[index] == TextArray[i].text)
 			{
-				Debug.Log("Word is invalid!");
 				return false;
 			}
 		}
-		Debug.Log("Word is valid!");
 		return true;
 	}
 }

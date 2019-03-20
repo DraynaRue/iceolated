@@ -72,4 +72,9 @@ public class TerminalUIScript : MonoBehaviour {
 	{
 		server.success = true;
 	}
+
+		public void DisableGravityCanteen()
+	{
+		server.successCanteen = true;
+	}
 }
