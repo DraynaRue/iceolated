@@ -55,7 +55,7 @@ public class Turret : MonoBehaviour
 		isShooting = true;
 		Instantiate(bullet, spawnL.transform.position, Quaternion.identity);
 		Instantiate(bullet, spawnR.transform.position, Quaternion.identity);
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(1f);
 		isShooting = false;
 	}
 }
