@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0056778695, g: 0.0025915978, b: 0.0082389815, a: 1}
+  m_IndirectSpecularColor: {r: 0.005817467, g: 0.0027650206, b: 0.008459937, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -181,7 +181,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Clayton Callis  \nLuke salgado\n\nMika Joel\nMarcus Hill\n  \nMatthew west\n\nUniversity
-    Of Bolton \nJimmy Mullin\nCarrie Warrick\nJo Daly\nAdam Laurie\nTim Ash\n"
+    Of Bolton \nJimmy Mullin\nCarrie Warwick\nJo Daly\nAdam Laurie\nTim Ash\n"
 --- !u!222 &231303371
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -564,6 +564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814889429}
   - component: {fileID: 1814889428}
+  - component: {fileID: 1814889430}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -596,6 +597,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1814889430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814889427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555ee7477c0285a43b4393ddc8f0d70f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1852731816
 GameObject:
   m_ObjectHideFlags: 0
