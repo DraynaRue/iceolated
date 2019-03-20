@@ -55,19 +55,19 @@ MonoBehaviour:
       reflection:
         blendType: 0
         reflectionQuality: 0
-        maxDistance: 100
-        iterationCount: 256
-        stepSize: 6
+        maxDistance: 81
+        iterationCount: 25
+        stepSize: 4
         widthModifier: 10
-        reflectionBlur: 0.1
+        reflectionBlur: 3.11
         reflectBackfaces: 0
       intensity:
-        reflectionMultiplier: 2
-        fadeDistance: 100
+        reflectionMultiplier: 1.24
+        fadeDistance: 0
         fresnelFade: 0
         fresnelFadePower: 0.1
       screenEdgeMask:
-        intensity: 0.03
+        intensity: 0.16
   depthOfField:
     m_Enabled: 0
     m_Settings:
@@ -85,8 +85,8 @@ MonoBehaviour:
   eyeAdaptation:
     m_Enabled: 1
     m_Settings:
-      lowPercent: 40.452435
-      highPercent: 84.085846
+      lowPercent: 54.591576
+      highPercent: 99
       minLuminance: -7.59
       maxLuminance: 6.78
       keyValue: 0.25
@@ -94,38 +94,38 @@ MonoBehaviour:
       adaptationType: 0
       speedUp: 50
       speedDown: 50
-      logMin: -1
-      logMax: 11
+      logMin: -5
+      logMax: 16
   bloom:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.2
-        threshold: 1.3
+        intensity: 0.25
+        threshold: 0.9
         softKnee: 1
         radius: 7
         antiFlicker: 1
       lensDirt:
         texture: {fileID: 2800000, guid: 9c44214678aa18b45982ee8c6d1d3cbd, type: 3}
-        intensity: 3
+        intensity: 0.31
   colorGrading:
     m_Enabled: 1
     m_Settings:
       tonemapping:
         tonemapper: 1
-        neutralBlackIn: 0.02
-        neutralWhiteIn: 10
-        neutralBlackOut: 0
+        neutralBlackIn: 0.035
+        neutralWhiteIn: 10.5
+        neutralBlackOut: -0.004
         neutralWhiteOut: 10
-        neutralWhiteLevel: 5.3
+        neutralWhiteLevel: 12.7
         neutralWhiteClip: 10
       basic:
-        postExposure: -2
-        temperature: 0
+        postExposure: -0.7
+        temperature: -24
         tint: 0
         hueShift: 0
-        saturation: 1.08
-        contrast: 1.18
+        saturation: 1.1
+        contrast: 0.8
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
@@ -135,7 +135,7 @@ MonoBehaviour:
         mode: 1
         log:
           slope: {r: 1, g: 1, b: 1, a: 0}
-          power: {r: 1, g: 1, b: 1, a: 0.13422818}
+          power: {r: 1, g: 1, b: 1, a: 0}
           offset: {r: 1, g: 1, b: 1, a: 0}
         linear:
           lift: {r: 0, g: 0, b: 0, a: 0}
@@ -317,17 +317,17 @@ MonoBehaviour:
       size: 1
       luminanceContribution: 0.8
   vignette:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.133
-      smoothness: 0.2
-      roundness: 1
+      intensity: 0.108
+      smoothness: 1
+      roundness: 0.935
       mask: {fileID: 0}
       opacity: 1
-      rounded: 0
+      rounded: 1
   dithering:
     m_Enabled: 0
   monitors:
