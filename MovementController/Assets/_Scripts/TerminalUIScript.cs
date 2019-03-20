@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class TerminalUIScript : MonoBehaviour {
 	public TerminalController server;
+	public MovementScript movement;
 	// Use this for initialization
 	void Start () {
-		
+		movement = (MovementScript)FindObjectOfType<MovementScript>();
 	}
 	
 	// Update is called once per frame
@@ -75,6 +76,11 @@ public class TerminalUIScript : MonoBehaviour {
 
 		public void DisableGravityCanteen()
 	{
-		server.successCanteen = true;
+		movement.isZeroGravity = true;
+	}
+
+			public void EnableGravityCanteen()
+	{
+		movement.isZeroGravity = false;
 	}
 }

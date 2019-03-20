@@ -19,4 +19,8 @@ public class GravityReturns : MonoBehaviour {
 
 		}
 	}
+
+	void EnableGravity(){
+		GravityControlScript.GR = true;
+	}
 }
