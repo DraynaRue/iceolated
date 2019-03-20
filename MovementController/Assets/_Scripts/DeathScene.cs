@@ -23,11 +23,11 @@ public class DeathScene : MonoBehaviour
 	}
 	public void Retry()
 	{
-		SceneManager.LoadScene ("MainMenu");
+		SceneManager.LoadScene ("Master");
 	}
 	public void Credits()
 	{
-		SceneManager.LoadScene ("Credits");
+		SceneManager.LoadScene ("Luke");
 	} 
 	
 }
