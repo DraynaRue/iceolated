@@ -39,11 +39,11 @@ public class TextClickScript : MonoBehaviour
 
 
             //For every result returned, output the name of the GameObject on the Canvas hit by the Ray
-            
+            Debug.Log("Hit " + Word);
            
 			Word = results[0].gameObject.GetComponent<Text>().text;
 			AudioManager.Instance.PlaySound ("Buttons", transform.position);
-			Debug.Log("Hit " + Word);
+			
         }
     }
 }

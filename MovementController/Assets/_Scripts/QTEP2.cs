@@ -15,6 +15,7 @@ public class QTEP2 : MonoBehaviour {
 
 	public Mission3 mission3;
 
+	public GameObject quest2;
 
 	private bool started = false;
 
