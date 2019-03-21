@@ -7,6 +7,8 @@ public class QuestItem : MonoBehaviour
 	public int questNumber;
 	public QuestManagerIntel theQM;
 	public string itemName;
+
+	private bool got = false;
 	// Use this for initialization
 	void Start () 
 	{
@@ -22,9 +24,10 @@ public class QuestItem : MonoBehaviour
 	{
 		if (other.gameObject.name == "_Player")
 		{
-			if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf)
+			if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf && got == false && Input.GetKeyDown(KeyCode.F))
 			{
 				theQM.itemCollected = itemName;
+				got = true;
 			}
 		}	
 	}

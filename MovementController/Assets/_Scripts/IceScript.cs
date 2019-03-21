@@ -20,7 +20,7 @@ public class IceScript : MonoBehaviour {
 			oldCol = rend.material.color;
 			newCol = Color.red;
 
-			rend.material.SetColor("_EmissionColor", Color.Lerp(oldCol, newCol, currentProgress / 0.5f) * Mathf.Lerp(0.8457f, 80.0f, currentProgress / 1.0f));
+			rend.material.SetColor("_EmissionColor", Color.Lerp(oldCol, newCol, currentProgress / 0.75f) * Mathf.Lerp(0.8457f, 80.0f, currentProgress / 1.0f));
 			currentProgress -= Time.deltaTime;
 		}
 	}

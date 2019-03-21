@@ -16,7 +16,7 @@ public class DroneSightS : MonoBehaviour
 	void OnTriggerExit(Collider other)
 	{
 		if (other.gameObject.tag == "Player") {
-			AudioManager.Instance.PlaySound ("Drone_Seaching", transform.position);
+//			AudioManager.Instance.PlaySound ("Drone_Seaching", transform.position);
 		}
 	}
 }
