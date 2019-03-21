@@ -5,12 +5,12 @@ using UnityEngine;
 public class QuestItem : MonoBehaviour 
 {
 	public int questNumber;
-	public QuestManager theQM;
+	public QuestManagerIntel theQM;
 	public string itemName;
 	// Use this for initialization
 	void Start () 
 	{
-		theQM = FindObjectOfType<QuestManager>();
+		theQM = FindObjectOfType<QuestManagerIntel>();
 	}
 	
 	// Update is called once per frame
@@ -25,7 +25,6 @@ public class QuestItem : MonoBehaviour
 			if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf)
 			{
 				theQM.itemCollected = itemName;
-				gameObject.SetActive(false);
 			}
 		}	
 	}

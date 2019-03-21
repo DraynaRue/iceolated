@@ -15,7 +15,7 @@ public class DialougeIntro : MonoBehaviour {
 	private bool partActivated;
 	private bool partFinished;
 
-	private string intro_MissionBrief = "A Pirate Mining Ship has crashed into an asteroid.\n We need you to enter the ship through the cargo bay and \n search for intel which can tell us more about this ship.\n Any survivors on the ship may be hostile so be careful!\n We also need you to deactivate the engines before they explode.\n Some areas of the ship may not be accessible on foot,\n so you must activate the teleportation system.\n Try checking the communications,\n see if they tried sending for help before they crashed.\n The AI core is corrupt but still active.\n Be aware.\n ~Captain.";
+	private string intro_MissionBrief = "Your mission as Chief Science Officer is to enter and search the crashed pirate mining ship. \n Once you've accessed the ship through the Cargo Bay, you must gather intel in order to understand why the ship \n crashed and what happened to the crew. We've detected movement inside but no living life forms. \n We are also detecting extreme toxisity in parts of the ship so be careful where you tread. \n I'll be watching you and observing the status of the ship. \n Your first objective will be to disable both engines before they overheat and explode. \n Time is running out, act fast. \n ~Captain.";
 
 	public CAM cam;
 	private bool doneDialog = false;
