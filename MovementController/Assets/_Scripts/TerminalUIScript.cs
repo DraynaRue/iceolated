@@ -27,7 +27,7 @@ public class TerminalUIScript : MonoBehaviour {
 
 			server.usernameField.text = "";
 			server.passwordField.text = "";
-
+			AudioManager.Instance.PlaySound("Buttons", transform.position);
 			server.loginScreen.SetActive(false);
 			server.terminalMenu.SetActive(true);
 		}
@@ -37,7 +37,7 @@ public class TerminalUIScript : MonoBehaviour {
 		server.terminalMenu.SetActive(false);
 		server.loginScreen.SetActive(true);
 		server.terminalInterface.SetActive(false);
-
+		AudioManager.Instance.PlaySound("Buttons", transform.position);
 		server.camScript.enabled = true;
 		server.movScript.enabled = true;
 		Cursor.lockState = CursorLockMode.Confined;
@@ -67,20 +67,24 @@ public class TerminalUIScript : MonoBehaviour {
 		GameObject Screen = ScreenImageArray[1].gameObject;
 		Debug.Log(Screen.name);
 		Screen.SetActive(false);
+		AudioManager.Instance.PlaySound("Buttons", transform.position);
 		server.terminalMenu.SetActive(true);
 	}
 	public void EnableGravity()
 	{
 		server.success = true;
+		AudioManager.Instance.PlaySound("Buttons", transform.position);
 	}
 
 		public void DisableGravityCanteen()
 	{
 		movement.isZeroGravity = true;
+		AudioManager.Instance.PlaySound("Buttons", transform.position);
 	}
 
 			public void EnableGravityCanteen()
 	{
 		movement.isZeroGravity = false;
+		AudioManager.Instance.PlaySound("Buttons", transform.position);
 	}
 }

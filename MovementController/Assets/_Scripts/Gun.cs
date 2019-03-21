@@ -49,6 +49,7 @@ public class Gun : MonoBehaviour
 				if (currentProgress >= 1.0f)
 				{
 					Instantiate(iceBreakParticle, hit.transform.position, Quaternion.identity);
+					AudioManager.Instance.PlaySound("Ice_Break", transform.position);
 					Destroy(hit.transform.gameObject);
 				}
 			} 

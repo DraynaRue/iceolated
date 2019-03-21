@@ -89,7 +89,7 @@ public class QTEP2 : MonoBehaviour {
 			qteNumObj.SetActive(false);
 			qteKeyObj.SetActive(false);
 			TimerScript.TimerTrigger = false;
-
+			AudioManager.Instance.PlaySound("Engine_Off", transform.position);
 			//Start Mission 3
 			mission3.Mission3Start();
 		}

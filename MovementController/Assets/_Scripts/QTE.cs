@@ -81,6 +81,7 @@ public class QTE : MonoBehaviour {
 			player.enabled = true;
 			qteNumObj.SetActive(false);
 			qteKeyObj.SetActive(false);
+			AudioManager.Instance.PlaySound("Engine_Off", transform.position);
 			Destroy(thisGen);
 		}
 	}

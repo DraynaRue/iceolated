@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.005656473, g: 0.0025525051, b: 0.0081450045, a: 1}
+  m_IndirectSpecularColor: {r: 0.005729252, g: 0.002602831, b: 0.008147992, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4948,6 +4948,21 @@ MonoBehaviour:
     - {fileID: 8300000, guid: f38faf6613c4226459159c9fb2f1ec86, type: 3}
     - {fileID: 8300000, guid: 35a021b175c7ea84190c30f8970436b7, type: 3}
     - {fileID: 8300000, guid: 084f10c6e02380c449389423022eb31a, type: 3}
+  - groupID: Enemy_Laser
+    group:
+    - {fileID: 8300000, guid: cd5ac5eb600901942b6837985793e8bb, type: 3}
+  - groupID: Jump_Scare
+    group:
+    - {fileID: 8300000, guid: 213207dd044ad7b4a97ea58e975deecb, type: 3}
+  - groupID: Ice_Break
+    group:
+    - {fileID: 8300000, guid: e91f37476e871bb4c89aa2b342a2a5a2, type: 3}
+  - groupID: Engine_Off
+    group:
+    - {fileID: 8300000, guid: feedf4fc547f3d44a912ad62997671f3, type: 3}
+  - groupID: Enemy_Damage
+    group:
+    - {fileID: 8300000, guid: 30ac00ecfc3d783439063fa31e8e8890, type: 3}
 --- !u!114 &1577876121
 MonoBehaviour:
   m_ObjectHideFlags: 0
