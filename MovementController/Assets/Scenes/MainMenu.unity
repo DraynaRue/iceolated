@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.005731716, g: 0.0026277846, b: 0.008219041, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056360047, g: 0.0025178702, b: 0.008058144, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4963,6 +4963,9 @@ MonoBehaviour:
   - groupID: Enemy_Damage
     group:
     - {fileID: 8300000, guid: 30ac00ecfc3d783439063fa31e8e8890, type: 3}
+  - groupID: IceRoom
+    group:
+    - {fileID: 8300000, guid: 81b6d292e35340e478c067761e55169c, type: 3}
 --- !u!114 &1577876121
 MonoBehaviour:
   m_ObjectHideFlags: 0
