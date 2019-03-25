@@ -12,6 +12,7 @@ public class JumpScare : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             anim.SetTrigger("Scare");
+            AudioManager.Instance.PlaySound ("Jump_Scare", transform.position);
         }
     }
 

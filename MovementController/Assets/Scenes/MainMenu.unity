@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.005729252, g: 0.002602831, b: 0.008147992, a: 1}
+  m_IndirectSpecularColor: {r: 0.0056360047, g: 0.0025178702, b: 0.008058144, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4963,6 +4963,9 @@ MonoBehaviour:
   - groupID: Enemy_Damage
     group:
     - {fileID: 8300000, guid: 30ac00ecfc3d783439063fa31e8e8890, type: 3}
+  - groupID: IceRoom
+    group:
+    - {fileID: 8300000, guid: 81b6d292e35340e478c067761e55169c, type: 3}
 --- !u!114 &1577876121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4975,7 +4978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainTheme: {fileID: 8300000, guid: 64f1ef600536a5646b9576797beabf57, type: 3}
-  menuTheme: {fileID: 8300000, guid: fe39afe1e47bb984781ef67aa6aafbd1, type: 3}
+  menuTheme: {fileID: 8300000, guid: a07761222e9f79e4c947044ac1b49dd0, type: 3}
   deathScene: {fileID: 8300000, guid: 19344858a09874b4480e34c986c8cc66, type: 3}
 --- !u!114 &1577876122
 MonoBehaviour:
