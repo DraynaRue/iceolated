@@ -21,7 +21,7 @@ public class Pause : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.P)) {
 			pauseMenu.SetActive (true);
 			Time.timeScale = 0f;
-			pController.enabled = false;
+			//pController.enabled = false;
 			cScript.enabled = false;
 			Cursor.lockState = CursorLockMode.None;
 			Cursor.visible = true;
@@ -31,11 +31,15 @@ public class Pause : MonoBehaviour {
 	public void Resumegame(){
 		pauseMenu.SetActive (false);
 		Time.timeScale = 1f;
-		pController.enabled = true;
+		//pController.enabled = true;
 		Cursor.visible = false;
 		cScript.enabled = true;
 	}
 	public void ReturnMenu(){
-		SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
+        //pController.enabled = true;
+        Cursor.visible = false;
+        cScript.enabled = true;
+        SceneManager.LoadScene("MainMenu");
 	}
 }
