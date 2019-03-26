@@ -59,26 +59,28 @@ public class liftScript : MonoBehaviour
 			}
 		}
 	}
-	private void OnTriggerStay(Collider other) {
-		if (Input.GetButtonDown("Interact") == true)
-		{
-			movScript.enabled = false;
-			if (atTop == false)
-			{
-				startTime = Time.time;
-        		journeyLength = Vector3.Distance(transform.position, finishLoc.transform.position);
+    private void OnTriggerStay(Collider other) {
+        if (other.gameObject.tag == "Player"){ 
+         if (Input.GetButtonDown("Interact") == true)
+            {
+             movScript.enabled = false;
+                if (atTop == false)
+                {
+                    startTime = Time.time;
+                    journeyLength = Vector3.Distance(transform.position, finishLoc.transform.position);
 
-				movingUp = true;
-				movingDown = false;
-			}
-			else if (atTop == true)
-			{
-				startTime = Time.time;
-        		journeyLength = Vector3.Distance(transform.position, startLoc.transform.position);
+                 movingUp = true;
+                 movingDown = false;
+             }
+                else if (atTop == true)
+             {
+                  startTime = Time.time;
+                  journeyLength = Vector3.Distance(transform.position, startLoc.transform.position);
 
-				movingUp = false;
-				movingDown = true;
-			}
-		}
-	}
+                  movingUp = false;
+                 movingDown = true;
+             }
+            }
+         }
+    }
 }
