@@ -42,6 +42,7 @@ TagManager:
   - Loop1.1
   - Loop1.2
   - Words
+  - Ship-Waypoint
   layers:
   - Default
   - TransparentFX
