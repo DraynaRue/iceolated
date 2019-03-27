@@ -37,13 +37,14 @@ public class TextClickScript : MonoBehaviour
             //Raycast using the Graphics Raycaster and mouse click position
             m_Raycaster.Raycast(m_PointerEventData, results);
 
-
-            //For every result returned, output the name of the GameObject on the Canvas hit by the Ray
-            Debug.Log("Hit " + Word);
+            if (results[0].gameObject.tag == "Words")
+            {
+                //For every result returned, output the name of the GameObject on the Canvas hit by the Ray
+                Debug.Log("Hit " + Word);
            
-			Word = results[0].gameObject.GetComponent<Text>().text;
-			AudioManager.Instance.PlaySound ("Buttons", transform.position);
-			
+			    Word = results[0].gameObject.GetComponent<Text>().text;
+		    	AudioManager.Instance.PlaySound ("Buttons", transform.position);
+            }
         }
     }
 }
