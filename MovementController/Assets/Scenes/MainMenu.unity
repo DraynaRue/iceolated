@@ -4962,10 +4962,25 @@ MonoBehaviour:
     - {fileID: 8300000, guid: feedf4fc547f3d44a912ad62997671f3, type: 3}
   - groupID: Enemy_Damage
     group:
-    - {fileID: 8300000, guid: 30ac00ecfc3d783439063fa31e8e8890, type: 3}
+    - {fileID: 8300000, guid: 9525d8a5efb11834c8e409c0deabceff, type: 3}
   - groupID: IceRoom
     group:
     - {fileID: 8300000, guid: 81b6d292e35340e478c067761e55169c, type: 3}
+  - groupID: Ice_Creaking
+    group:
+    - {fileID: 8300000, guid: 92ed39f1d00fee04b8db65547be97496, type: 3}
+  - groupID: Damage
+    group:
+    - {fileID: 8300000, guid: 812178bc4753d5e4a8dec62834eb97b0, type: 3}
+  - groupID: MetalCreaking
+    group:
+    - {fileID: 8300000, guid: 142a88bc162774a4ebfd5de394496417, type: 3}
+  - groupID: Whispering
+    group:
+    - {fileID: 8300000, guid: 753cb41800952d34f90c7be90c33b910, type: 3}
+  - groupID: Generator Sounds
+    group:
+    - {fileID: 8300000, guid: 5f123278743b67742881ab888bc172e7, type: 3}
 --- !u!114 &1577876121
 MonoBehaviour:
   m_ObjectHideFlags: 0
