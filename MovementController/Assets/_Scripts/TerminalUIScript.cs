@@ -35,6 +35,7 @@ public class TerminalUIScript : MonoBehaviour {
 	public void Logout()
 	{
 		server.terminalMenu.SetActive(false);
+		server.bypassScreen.SetActive(false);
 		server.loginScreen.SetActive(true);
 		server.terminalInterface.SetActive(false);
 		server.camScript.enabled = true;

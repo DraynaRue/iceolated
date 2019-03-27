@@ -41,6 +41,7 @@ TagManager:
   - Drone
   - Loop1.1
   - Loop1.2
+  - Words
   layers:
   - Default
   - TransparentFX
