@@ -8,6 +8,7 @@ public class Audio_Logs : MonoBehaviour
 	public GameObject Log_Audio;
 	public Animator anim;
 	public float timer;
+	public GameObject interactUI;
  
 	private bool started = false;
 
@@ -26,12 +27,16 @@ public class Audio_Logs : MonoBehaviour
 			timer -= Time.deltaTime;
 	}
 
+	void OnTriggerEnter(Collider other) {
+		interactUI.SetActive(true);
+	}
+
 	void OnTriggerStay (Collider other)
 	{
 		if (other.gameObject.tag == "Player")
 		{
 			
-			if (Input.GetKeyDown (KeyCode.F)) 
+			if (Input.GetAxis("Interact") > 0) 
 			{
 				audioLog.Play ();
 				anim.SetTrigger ("isOn");
@@ -41,4 +46,7 @@ public class Audio_Logs : MonoBehaviour
 		}
 	}
 
+	void OnTriggerExit(Collider other) {
+		interactUI.SetActive(false);
+	}
 }

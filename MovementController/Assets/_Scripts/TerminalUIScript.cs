@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class TerminalUIScript : MonoBehaviour {
 	public TerminalController server;
 	public MovementScript movement;
+	public liftScript lift;
+
 	// Use this for initialization
 	void Start () {
 		movement = (MovementScript)FindObjectOfType<MovementScript>();
@@ -77,13 +79,13 @@ public class TerminalUIScript : MonoBehaviour {
 		AudioManager.Instance.PlaySound("Buttons", transform.position);
 	}
 
-		public void DisableGravityCanteen()
+	public void DisableGravityCanteen()
 	{
 		movement.isZeroGravity = true;
 		AudioManager.Instance.PlaySound("Buttons", transform.position);
 	}
 
-			public void EnableGravityCanteen()
+	public void EnableGravityCanteen()
 	{
 		movement.isZeroGravity = false;
 		AudioManager.Instance.PlaySound("Buttons", transform.position);
