@@ -8,6 +8,8 @@ public class Mission3 : MonoBehaviour {
 	public GameObject pos1, pos2;
 	public bool mission3 = false;
 	public GameObject quest2;
+	public GameObject quest1End;
+	public GameObject teleporterCanvas;
 
 	public float currentProgress = 0.0f;
 
@@ -22,7 +24,9 @@ public class Mission3 : MonoBehaviour {
 	}
 	public void Mission3Start(){
 		turrets.SetActive(true);
-		mission3 = true;
 		quest2.SetActive(true);
+		quest1End.SetActive(true);
+		teleporterCanvas.SetActive(true);
+		mission3 = true;
 	}
 }

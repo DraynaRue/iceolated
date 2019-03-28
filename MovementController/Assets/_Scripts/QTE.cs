@@ -170,7 +170,7 @@ public class QTE : MonoBehaviour {
 
 		if(QTE5 <= 0f){
 			QTEKey.text = "Fail, try again... Press 'F'";
-			if(Input.GetKeyDown(KeyCode.F)){
+			if(Input.GetKeyDown(KeyCode.E)){
 				Restart();
 			}
 		}
@@ -214,7 +214,7 @@ public class QTE : MonoBehaviour {
 	public void OnTriggerStay(Collider other){
 		if(other.gameObject.tag == "Player"){
 
-			if(Input.GetKeyDown(KeyCode.F)){
+			if(Input.GetKeyDown(KeyCode.E)){
 					interactUI.SetActive(false);
 					Restart();
             }
