@@ -63,7 +63,7 @@ public class liftScript : MonoBehaviour
 	}
 	void OnTriggerEnter(Collider other) 
 	{
-		if (server.success == true)
+		if (server.success == true && other.tag == "Player")
 		{
 			interactUI.SetActive(true);
 		}
@@ -96,7 +96,7 @@ public class liftScript : MonoBehaviour
     }
 	void OnTriggerExit(Collider other) 
 	{
-		if (server.success == true)
+		if (server.success == true && other.tag == "Player")
 		{
 			interactUI.SetActive(false);
 		}

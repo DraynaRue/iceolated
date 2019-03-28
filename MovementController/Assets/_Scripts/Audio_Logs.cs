@@ -27,8 +27,12 @@ public class Audio_Logs : MonoBehaviour
 			timer -= Time.deltaTime;
 	}
 
-	void OnTriggerEnter(Collider other) {
-		interactUI.SetActive(true);
+	void OnTriggerEnter(Collider other) 
+	{
+		if (other.tag == "Player")
+		{
+			interactUI.SetActive(true);
+		}
 	}
 
 	void OnTriggerStay (Collider other)
@@ -46,7 +50,11 @@ public class Audio_Logs : MonoBehaviour
 		}
 	}
 
-	void OnTriggerExit(Collider other) {
-		interactUI.SetActive(false);
+	void OnTriggerExit(Collider other) 
+	{
+		if (other.tag == "Player")
+		{
+			interactUI.SetActive(false);
+		}
 	}
 }
