@@ -91,7 +91,8 @@ public class QTEP2 : MonoBehaviour {
 			TimerScript.TimerTrigger = false;
 			//Start Mission 3
 			mission3.Mission3Start();
-            AudioManager.Instance.PlaySound("Engine_Off", transform.position);
+			Destroy(this.gameObject);
+			AudioManager.Instance.PlaySound("Engine_Off", transform.position);
 		}
 	}
 
@@ -111,7 +112,7 @@ public class QTEP2 : MonoBehaviour {
 		
 		if(QTE12 <= 0f){ //Fail
 			QTEKey.text = "Fail, try again... Press 'F'";
-			if(Input.GetKeyDown(KeyCode.F)){
+			if(Input.GetKeyDown(KeyCode.E)){
 				Restart();
 			}
 		}	
@@ -224,7 +225,7 @@ public class QTEP2 : MonoBehaviour {
 	public void OnTriggerStay(Collider other){
 		if(other.gameObject.tag == "Player"){
 
-			if(Input.GetKeyDown(KeyCode.F)){
+			if(Input.GetKeyDown(KeyCode.E)){
 					Debug.Log("Ok Pressed");
 					interactUI.SetActive(false);
 					Restart();
