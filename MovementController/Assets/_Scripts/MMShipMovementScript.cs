@@ -5,14 +5,14 @@ using UnityEngine;
 public class MMShipMovementScript : MonoBehaviour 
 {
 	public float MoveSpeed = 0.5f;
+	public GameObject[] waypointArray;
 	protected GameObject Ship;
-	protected GameObject[] waypointArray;
 	public int nextWaypointIndex;
 	// Use this for initialization
 	void Start () 
 	{
 		Ship = GameObject.Find("Ship_Pod_low");
-		waypointArray = GameObject.FindGameObjectsWithTag("Ship-Waypoint");
+		//waypointArray = GameObject.FindGameObjectsWithTag("Ship-Waypoint");
 		nextWaypointIndex = 0;
 	}
 	
