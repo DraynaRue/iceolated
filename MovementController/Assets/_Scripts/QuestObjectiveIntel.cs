@@ -12,6 +12,8 @@ public class QuestObjectiveIntel : MonoBehaviour
 	public string targetItem;
 	public int numberOfItems;
 
+	public Mission4 mission4;
+
 	void Update () 
 	{
 		if (isItemQuest)
@@ -55,7 +57,16 @@ public class QuestObjectiveIntel : MonoBehaviour
 			itemQuestProgress.text = "";
 			itemQuestProgress.gameObject.SetActive(false);
 		}
+		mission4.Mission4Start();
+		Debug.Log("MISSION 4");
 		theQM.questCompleted[questNumber] = true;
+		
+
+		//Start Mission 4
+		
+
 		gameObject.SetActive(false);
+
+		
 	}
 }

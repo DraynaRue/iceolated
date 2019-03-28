@@ -39,42 +39,42 @@ public class QTE : MonoBehaviour {
 
 		if(done0 == false){
 			E1();
-			QTE1 -= 0.9f * Time.deltaTime;
+			QTE1 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done1 == true){
 			E2();
-			QTE2 -= 0.9f * Time.deltaTime;
+			QTE2 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done2 == true){
 			done1 = false;
 			E3();
-			QTE3 -= 0.9f * Time.deltaTime;
+			QTE3 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done3 == true){
 			done2 = false;
 			E4();
-			QTE4 -= 0.9f * Time.deltaTime;
+			QTE4 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done4 == true){
 			done3 = false;
 			E5();
-			QTE5 -= 0.9f * Time.deltaTime;
+			QTE5 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done5 == true){
 			done4 = false;
 			E6();
-			QTE6 -= 0.9f * Time.deltaTime;
+			QTE6 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done6 == true){
 			done5 = false;
 			E7();
-			QTE7 -= 0.9f * Time.deltaTime;
+			QTE7 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done7 == true){

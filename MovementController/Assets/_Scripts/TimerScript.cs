@@ -30,7 +30,7 @@ public class TimerScript : MonoBehaviour
 			timeLeft -= 1 * Time.deltaTime;
 
 			if(timeLeft <= 0){
-				Debug.Log("Engines Blew Up!");
+				//Death
 			}
 			if(!TimerTrigger){
 				timerObj.SetActive(false);

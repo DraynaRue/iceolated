@@ -14,8 +14,11 @@ public class PlayerHealth : MonoBehaviour {
 		health = 100;
 	}
 	void Update(){
-		tHealth.text = health.ToString() + " / 100";
+		tHealth.text = health.ToString("F1") + " / 100".;
 		sHealth.value = health;
+
+		if(health < 100)
+			health += 1f * Time.deltaTime;
 				
 		if(health <= 0){
 			SceneManager.LoadScene("Death_Scene");
@@ -24,7 +27,7 @@ public class PlayerHealth : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other){
 		if(other.gameObject.tag == "Ice"){
-			health -= 25f;
+			health -= 5f;
 		}
 	}
 }
