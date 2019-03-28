@@ -7,7 +7,6 @@ public class QuestItem : MonoBehaviour
 	public int questNumber;
 	public QuestManagerIntel theQM;
 	public string itemName;
-
 	private bool got = false;
 	public bool greg = false;
 	// Use this for initialization
@@ -19,11 +18,14 @@ public class QuestItem : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf && got == false && Input.GetKeyDown(KeyCode.F) && greg == true)
+		if (theQM != null)
+		{
+			if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf && got == false && Input.GetAxis("Interact") > 0 && greg == true)
 			{
 				theQM.itemCollected = itemName;
 				got = true;
 			}
+		}
 	}
 	private void OnTriggerEnter(Collider other) 
 	{
