@@ -1925,6 +1925,8 @@ MonoBehaviour:
   finishLoc: {fileID: 1587775165}
   player: {fileID: 0}
   movScript: {fileID: 0}
+  server: {fileID: 339163780}
+  interactUI: {fileID: 1904285074}
   speed: 1
 --- !u!65 &287188288
 BoxCollider:
@@ -3246,6 +3248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   server: {fileID: 339163780}
   movement: {fileID: 0}
+  lift: {fileID: 0}
 --- !u!114 &603017163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10505,7 +10508,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press F to interact!
+  m_Text: Press E to interact!
 --- !u!222 &1904285076
 CanvasRenderer:
   m_ObjectHideFlags: 0
