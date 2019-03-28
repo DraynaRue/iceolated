@@ -41,8 +41,8 @@ public class Turret : MonoBehaviour
 
 		if(turretHealth <= 0f)
 		{
-			AudioManager.Instance.PlaySound("Enemy_Damage", transform.position);
 			Destroy(this.gameObject);
+            AudioManager.Instance.PlaySound("Enemy_Damage", transform.position);
 		}
 	}
 

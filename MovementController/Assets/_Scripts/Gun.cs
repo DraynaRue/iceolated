@@ -49,8 +49,8 @@ public class Gun : MonoBehaviour
 				if (currentProgress >= 1.0f)
 				{
 					Instantiate(iceBreakParticle, hit.transform.position, Quaternion.identity);
-					AudioManager.Instance.PlaySound("Ice_Break", transform.position);
 					Destroy(hit.transform.gameObject);
+                    AudioManager.Instance.PlaySound("Ice_Break", transform.position);
 				}
 			} 
 			else if(hit.transform.gameObject.tag == "Turret" && Input.GetMouseButton(0) && fuelHolder.fuelPercentage > 1)

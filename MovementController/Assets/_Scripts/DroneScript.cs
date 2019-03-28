@@ -32,8 +32,8 @@ public class DroneScript : MonoBehaviour
 
 		if(droneHealth <= 0f)
 		{
-			AudioManager.Instance.PlaySound("Enemy_Damage", transform.position);
 			Destroy(this.gameObject);
+            AudioManager.Instance.PlaySound("Enemy_Damage", transform.position);
 		}
 
 		Vector3 targetDir = Target.transform.position - transform.position;
