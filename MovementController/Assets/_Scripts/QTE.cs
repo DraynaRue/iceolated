@@ -81,8 +81,8 @@ public class QTE : MonoBehaviour {
 			player.enabled = true;
 			qteNumObj.SetActive(false);
 			qteKeyObj.SetActive(false);
-			AudioManager.Instance.PlaySound("Engine_Off", transform.position);
 			Destroy(thisGen);
+            AudioManager.Instance.PlaySound("Engine_Off", transform.position);
 		}
 	}
 
@@ -169,8 +169,8 @@ public class QTE : MonoBehaviour {
 		}
 
 		if(QTE5 <= 0f){
-			QTEKey.text = "Fail, try again... Press 'E'";
-			if(Input.GetKeyDown(KeyCode.E)){
+			QTEKey.text = "Fail, try again... Press 'F'";
+			if(Input.GetKeyDown(KeyCode.F)){
 				Restart();
 			}
 		}

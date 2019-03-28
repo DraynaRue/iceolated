@@ -89,9 +89,9 @@ public class QTEP2 : MonoBehaviour {
 			qteNumObj.SetActive(false);
 			qteKeyObj.SetActive(false);
 			TimerScript.TimerTrigger = false;
-			AudioManager.Instance.PlaySound("Engine_Off", transform.position);
 			//Start Mission 3
 			mission3.Mission3Start();
+            AudioManager.Instance.PlaySound("Engine_Off", transform.position);
 		}
 	}
 
@@ -110,8 +110,8 @@ public class QTEP2 : MonoBehaviour {
 		} 
 		
 		if(QTE12 <= 0f){ //Fail
-			QTEKey.text = "Fail, try again... Press 'E'";
-			if(Input.GetKeyDown(KeyCode.E)){
+			QTEKey.text = "Fail, try again... Press 'F'";
+			if(Input.GetKeyDown(KeyCode.F)){
 				Restart();
 			}
 		}	
