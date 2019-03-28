@@ -45,43 +45,43 @@ public class QTEP2 : MonoBehaviour {
 
 		if(done02 == false){
 			E12();
-			QTE12 -= 0.9f * Time.deltaTime;
+			QTE12 -= 0.5f * Time.deltaTime;
 			Debug.Log("in update");
 		}
 
 		if(done12 == true){
 			E22();
-			QTE22 -= 0.9f * Time.deltaTime;
+			QTE22 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done22 == true){
 			done12 = false;
 			E32();
-			QTE32 -= 0.9f * Time.deltaTime;
+			QTE32 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done32 == true){
 			done22 = false;
 			E42();
-			QTE42 -= 0.9f * Time.deltaTime;
+			QTE42 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done42 == true){
 			done32 = false;
 			E52();
-			QTE52 -= 0.9f * Time.deltaTime;
+			QTE52 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done52 == true){
 			done42 = false;
 			E62();
-			QTE62 -= 0.9f * Time.deltaTime;
+			QTE62 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done62 == true){
 			done52 = false;
 			E72();
-			QTE72 -= 0.9f * Time.deltaTime;
+			QTE72 -= 0.5f * Time.deltaTime;
 		}
 
 		if(done72 == true){
