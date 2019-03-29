@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Threading;
+using UnityEngine.SceneManagement;
 
 public class TimerScript : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class TimerScript : MonoBehaviour
 	public static bool TimerTrigger;
 
 	void Start(){
-		timeLeft = 80f;
+		timeLeft = 160f;
 		TimerTrigger = false;
 		timerObj.SetActive(false);
 	}
@@ -30,7 +31,7 @@ public class TimerScript : MonoBehaviour
 			timeLeft -= 1 * Time.deltaTime;
 
 			if(timeLeft <= 0){
-				//Death
+                SceneManager.LoadScene("Death");
 			}
 			if(!TimerTrigger){
 				timerObj.SetActive(false);

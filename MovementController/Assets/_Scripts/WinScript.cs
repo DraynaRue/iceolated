@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WinScript : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class WinScript : MonoBehaviour
 				if (ServerInvIcon.gameObject.activeSelf == true)
 				{
 					Debug.Log("Congratulations you have completed the game! Thanks for playing!");
+                    SceneManager.LoadScene("Luke");
 					if (InteractUI != null)
 					{
 						InteractUI.SetActive(false);

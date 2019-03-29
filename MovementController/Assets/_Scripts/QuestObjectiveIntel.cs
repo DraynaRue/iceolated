@@ -5,25 +5,25 @@ using UnityEngine.UI;
 
 public class QuestObjectiveIntel : MonoBehaviour 
 {
-	public int questNumber;
-	public QuestManagerIntel theQM;
-	public Text itemQuestProgress;
-	public bool isItemQuest;
-	public string targetItem;
-	public int numberOfItems;
+	public int questNumber; //current quest
+	public QuestManagerIntel theQM; //reference script
+	public Text itemQuestProgress; //text for UI
+	public bool isItemQuest; //Is this an item quest
+	public string targetItem; //Name of items
+	public int numberOfItems; //number of items to collect
+	public Mission4 mission4; //reference to script
 
-	public Mission4 mission4;
 
 	void Update () 
 	{
-		if (isItemQuest)
+		if (isItemQuest) //if there are items to be collected{
 		{
-			if (itemQuestProgress.gameObject.activeSelf == false)
+			if (itemQuestProgress.gameObject.activeSelf == false) //if the ui for quest progress is inactive, set it to active;
 			{
 				itemQuestProgress.gameObject.SetActive(true);
 			}
 
-			itemQuestProgress.text = theQM.numberOfItemsCollected + "/" + numberOfItems;
+			itemQuestProgress.text = theQM.numberOfItemsCollected + "/" + numberOfItems; //UI displays the quest managers 
 
 			if (theQM.itemCollected == targetItem)
 			{

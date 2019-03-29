@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 114396076633391834}
   - {fileID: 114691181644414874}
   - {fileID: 114532239972178618}
+  - {fileID: 114571503969073988}
 --- !u!114 &114035064726376664
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -34,16 +35,16 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 7
+    value: 5
   threshold:
     overrideState: 1
-    value: 2
+    value: 1.77
   softKnee:
     overrideState: 1
     value: 1
   clamp:
     overrideState: 1
-    value: 1.3
+    value: 1.73
   diffusion:
     overrideState: 1
     value: 10
@@ -52,7 +53,7 @@ MonoBehaviour:
     value: -1
   color:
     overrideState: 1
-    value: {r: 0.052643314, g: 0.8584906, b: 0.8509853, a: 1}
+    value: {r: 1, g: 1, b: 1, a: 1}
   fastMode:
     overrideState: 1
     value: 0
@@ -163,7 +164,7 @@ MonoBehaviour:
     defaultState: 1
   tonemapper:
     overrideState: 1
-    value: 0
+    value: 1
   toneCurveToeStrength:
     overrideState: 1
     value: 0
@@ -191,19 +192,19 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: -12
+    value: -10
   tint:
     overrideState: 1
     value: 0
   colorFilter:
     overrideState: 1
-    value: {r: 1, g: 1, b: 1, a: 1}
+    value: {r: 0.8915094, g: 0.97985953, b: 1, a: 1}
   hueShift:
     overrideState: 1
     value: 0
   saturation:
     overrideState: 1
-    value: 27
+    value: 5
   brightness:
     overrideState: 1
     value: 0
@@ -212,10 +213,10 @@ MonoBehaviour:
     value: 0
   contrast:
     overrideState: 1
-    value: -1
+    value: 0
   mixerRedOutRedIn:
     overrideState: 1
-    value: 89
+    value: 100
   mixerRedOutGreenIn:
     overrideState: 1
     value: 0
@@ -1449,6 +1450,45 @@ MonoBehaviour:
       - 0.5
       - 0.5
       - 0.5
+--- !u!114 &114571503969073988
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d855211644836f4782ecd611ffbc36f, type: 3}
+  m_Name: EdgeDetectPostProcessing
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 1
+  sensitivityDepth:
+    overrideState: 1
+    value: 1
+  sensitivityNormals:
+    overrideState: 1
+    value: 1
+  lumThreshold:
+    overrideState: 1
+    value: 0.2
+  edgeExp:
+    overrideState: 1
+    value: 1
+  sampleDist:
+    overrideState: 1
+    value: 1
+  edgesOnly:
+    overrideState: 1
+    value: 0
+  edgesOnlyBgColor:
+    overrideState: 1
+    value: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &114691181644414874
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1466,22 +1506,22 @@ MonoBehaviour:
     value: 1
   filtering:
     overrideState: 1
-    value: {x: 50.616505, y: 99}
+    value: {x: 45.646084, y: 95.98419}
   minLuminance:
     overrideState: 1
-    value: -3.2
+    value: -2.6
   maxLuminance:
     overrideState: 1
-    value: -2.2
+    value: 0
   keyValue:
     overrideState: 1
-    value: 1
+    value: 0.72
   eyeAdaptation:
     overrideState: 1
     value: 0
   speedUp:
     overrideState: 1
-    value: 2
+    value: 0.09
   speedDown:
     overrideState: 1
-    value: 1
+    value: 0.06

@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour {
 		health = 100;
 	}
 	void Update(){
-		tHealth.text = health.ToString("F1") + " / 100".;
+		tHealth.text = health.ToString("F1") + " / 100";
 		sHealth.value = health;
 
 		if(health < 100)
