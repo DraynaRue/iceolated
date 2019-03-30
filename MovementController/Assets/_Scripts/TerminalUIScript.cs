@@ -53,22 +53,18 @@ public class TerminalUIScript : MonoBehaviour {
 		for (int i = 0; i < ScreenImageArrayOn.Length; i++)
 		{
 			GameObject Screen = ScreenImageArrayOn[i].gameObject;
-			Debug.Log("Found: " + ScreenImageArrayOn[i].gameObject.name);
 			if (Screen.gameObject.name == ScreenName)
 			{
-				Debug.Log("Turning On: " + Screen);
 				Screen.SetActive(true);
 			}
 		}
 		Image[] ScreenImageArrayOff = server.terminalInterface.GetComponentsInChildren<Image>(false);
-		Debug.Log("Turning Off: " + ScreenImageArrayOff[1].gameObject.name);
 		ScreenImageArrayOff[1].gameObject.SetActive(false);
 	}
 	public void BackToMenu()
 	{
 		Image[] ScreenImageArray = server.terminalInterface.GetComponentsInChildren<Image>(false);
 		GameObject Screen = ScreenImageArray[1].gameObject;
-		Debug.Log(Screen.name);
 		Screen.SetActive(false);
 		server.terminalMenu.SetActive(true);
 		AudioManager.Instance.PlaySound("Buttons", transform.position);

@@ -43,6 +43,8 @@ TagManager:
   - Loop1.2
   - Words
   - Ship-Waypoint
+  - TP3
+  - TP4
   layers:
   - Default
   - TransparentFX
