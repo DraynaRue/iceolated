@@ -59,6 +59,11 @@ public class MovementScript : MonoBehaviour
         }
     }
 
+    void LateUpdate()
+    {
+        _rb.transform.rotation = cam.transform.rotation;
+    }
+
     private void OnCollisionEnter(Collision other)
     {
         // check if player is on the ground
@@ -101,7 +106,7 @@ public class MovementScript : MonoBehaviour
                 {
                     isBobbingUp = true;
                 }
-            }
+            } 
            // Debug.Log("Lerp Progress is: " + lerpProgress);
         }
 
@@ -133,8 +138,6 @@ public class MovementScript : MonoBehaviour
 
     private void ZeroGravityMovement()
     {
-        _rb.transform.rotation = cam.transform.rotation;
-
         //Make the collider a ball and move cam to center
         CapsuleCollider col = GetComponent<CapsuleCollider>();
         col.height = 0.75f;
