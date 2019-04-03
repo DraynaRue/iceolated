@@ -60,8 +60,10 @@ public class MovementScript : MonoBehaviour
     }
 
     void LateUpdate()
-    {
+    {if (isZeroGravity == true)
+        {   
         _rb.transform.rotation = cam.transform.rotation;
+        }
     }
 
     private void OnCollisionEnter(Collision other)
