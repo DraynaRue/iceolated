@@ -36,6 +36,7 @@ public class liftScript : MonoBehaviour
        		float fracJourney = distCovered / journeyLength;
 
 			transform.position = Vector3.Lerp(transform.position, finishLoc.transform.position, Time.deltaTime);
+			player.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 1f, this.transform.position.z);
 
 			if (fracJourney >= 1)
 			{

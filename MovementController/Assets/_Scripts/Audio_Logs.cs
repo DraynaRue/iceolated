@@ -35,6 +35,14 @@ public class Audio_Logs : MonoBehaviour
 		}
 	}
 
+		void OnTriggerExit(Collider other) 
+	{
+		if (other.tag == "Player")
+		{
+			interactUI.SetActive(false);
+		}
+	}
+
 	void OnTriggerStay (Collider other)
 	{
 		if (other.gameObject.tag == "Player")
