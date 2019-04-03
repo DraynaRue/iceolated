@@ -73,7 +73,7 @@ public class MovementScript : MonoBehaviour
     {
 
         // rotate the player
-        //_rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
+        _rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
 
         CapsuleCollider col = GetComponent<CapsuleCollider>();
         col.height = 1.4f;
