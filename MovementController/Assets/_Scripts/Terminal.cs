@@ -87,7 +87,7 @@ public class Terminal : MonoBehaviour
 				targetWord = WordArray[Random.Range(0, WordArray.Count)];
 				Debug.Log("Target word is " + targetWord + "!!");
 			}
-		}
+		
 
 		if (selectedWord != server.txtScript.Word && isHacked == false)
 		{
@@ -139,6 +139,7 @@ public class Terminal : MonoBehaviour
 		{
 			server.terminalMenu.SetActive(true);
 			server.bypassScreen.SetActive(false);
+		}
 		}
 	}
 
