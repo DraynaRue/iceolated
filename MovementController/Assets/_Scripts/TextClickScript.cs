@@ -43,7 +43,7 @@ public class TextClickScript : MonoBehaviour
                 Debug.Log("Hit " + Word);
            
 			    Word = results[0].gameObject.GetComponent<Text>().text;
-		    	AudioManager.Instance.PlaySound ("Buttons", transform.position);
+		    	//AudioManager.Instance.PlaySound ("Buttons", transform.position);
             }
         }
     }

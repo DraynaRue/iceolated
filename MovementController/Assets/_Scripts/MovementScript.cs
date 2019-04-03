@@ -60,7 +60,8 @@ public class MovementScript : MonoBehaviour
     }
 
     void LateUpdate()
-    {if (isZeroGravity == true)
+    {
+        if (isZeroGravity == true)
         {   
         _rb.transform.rotation = cam.transform.rotation;
         }
@@ -80,7 +81,12 @@ public class MovementScript : MonoBehaviour
     {
 
         // rotate the player
-        _rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
+        //transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
+        //Quaternion rotY = Quaternion.AngleAxis(cam.transform.rotation.y, Vector3.up);
+        //Quaternion rotX = Quaternion.AngleAxis(transform.rotation.x, Vector3.right);
+        //Quaternion rotZ = Quaternion.AngleAxis(transform.rotation.z, Vector3.forward);
+        //transform.rotation = rotX * rotY * rotZ;
+        transform.rotation = Quaternion.Euler(0,cam.transform.eulerAngles.y,0);
 
         CapsuleCollider col = GetComponent<CapsuleCollider>();
         col.height = 1.4f;
@@ -92,23 +98,23 @@ public class MovementScript : MonoBehaviour
 
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
-            cam.transform.localPosition = new Vector3(0, Mathf.Lerp(0.32f, 0.48f, lerpProgress / 2.0f), 0);
-            if (isBobbingUp)
-            {
-                lerpProgress += 0.1f;
-                if (lerpProgress >= 2.0f)
-                {
-                    isBobbingUp = false;
-                }
-            }
-            else if (!isBobbingUp)
-            {
-                lerpProgress -= 0.1f;
-                if (lerpProgress <= 0)
-                {
-                    isBobbingUp = true;
-                }
-            } 
+            //cam.transform.localPosition = new Vector3(0, Mathf.Lerp(0.32f, 0.48f, lerpProgress / 2.0f), 0);
+            //if (isBobbingUp)
+            //{
+            //    lerpProgress += 0.1f;
+            //    if (lerpProgress >= 2.0f)
+            //    {
+            //        isBobbingUp = false;
+            //    }
+            //}
+            //else if (!isBobbingUp)
+            //{
+            //    lerpProgress -= 0.1f;
+            //    if (lerpProgress <= 0)
+            //    {
+            //        isBobbingUp = true;
+            //    }
+            //} 
            // Debug.Log("Lerp Progress is: " + lerpProgress);
         }
 
