@@ -73,7 +73,7 @@ public class MovementScript : MonoBehaviour
     {
 
         // rotate the player
-        _rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
+        //_rb.transform.eulerAngles = new Vector3(0, cam.transform.eulerAngles.y, 0);
 
         CapsuleCollider col = GetComponent<CapsuleCollider>();
         col.height = 1.4f;
@@ -137,7 +137,7 @@ public class MovementScript : MonoBehaviour
 
         //Make the collider a ball and move cam to center
         CapsuleCollider col = GetComponent<CapsuleCollider>();
-        col.height = 0.5f;
+        col.height = 0.75f;
         cam.transform.position = Vector3.Lerp(cam.transform.position, this.transform.position, 1f);
 
         // moving forwards
