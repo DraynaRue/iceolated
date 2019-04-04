@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: a411750c2fe1d1e4aa5cc2f910bdba1a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: A_low
+    100002: D_low
+    100004: E_low
+    100006: F_low
+    100008: G_low
+    100010: H_low
+    100012: I_low
+    100014: J_low
+    100016: K_low
+    100018: //RootNode
+    100020: O_low
+    100022: P_low
+    100024: Q_low
+    100026: R_low
+    100028: S_low
+    100030: T_low
+    100032: U_low
+    100034: W_low
+    100036: Y_low
+    400000: A_low
+    400002: D_low
+    400004: E_low
+    400006: F_low
+    400008: G_low
+    400010: H_low
+    400012: I_low
+    400014: J_low
+    400016: K_low
+    400018: //RootNode
+    400020: O_low
+    400022: P_low
+    400024: Q_low
+    400026: R_low
+    400028: S_low
+    400030: T_low
+    400032: U_low
+    400034: W_low
+    400036: Y_low
+    2100000: lambert3
+    2300000: A_low
+    2300002: D_low
+    2300004: E_low
+    2300006: F_low
+    2300008: G_low
+    2300010: H_low
+    2300012: I_low
+    2300014: J_low
+    2300016: K_low
+    2300018: O_low
+    2300020: P_low
+    2300022: Q_low
+    2300024: R_low
+    2300026: S_low
+    2300028: T_low
+    2300030: U_low
+    2300032: W_low
+    2300034: Y_low
+    3300000: A_low
+    3300002: D_low
+    3300004: E_low
+    3300006: F_low
+    3300008: G_low
+    3300010: H_low
+    3300012: I_low
+    3300014: J_low
+    3300016: K_low
+    3300018: O_low
+    3300020: P_low
+    3300022: Q_low
+    3300024: R_low
+    3300026: S_low
+    3300028: T_low
+    3300030: U_low
+    3300032: W_low
+    3300034: Y_low
+    4300000: Q_low
+    4300002: W_low
+    4300004: E_low
+    4300006: R_low
+    4300008: T_low
+    4300010: Y_low
+    4300012: U_low
+    4300014: I_low
+    4300016: O_low
+    4300018: P_low
+    4300020: A_low
+    4300022: S_low
+    4300024: D_low
+    4300026: F_low
+    4300028: G_low
+    4300030: H_low
+    4300032: J_low
+    4300034: K_low
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
