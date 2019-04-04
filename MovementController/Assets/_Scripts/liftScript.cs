@@ -75,7 +75,7 @@ public class liftScript : MonoBehaviour
 		{ 
         	if (Input.GetButtonDown("Interact") == true)
         	{
-        		movScript.enabled = false;
+        		//movScript.enabled = false;
 				if (atTop == false)
            		{
                 	startTime = Time.time;
