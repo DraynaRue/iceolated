@@ -12,13 +12,14 @@ public class QuestItem : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		theQM = FindObjectOfType<QuestManagerIntel>();
+        
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (theQM != null)
+       // theQM = (QuestManagerIntel)FindObjectOfType(typeof(QuestManagerIntel));
+        if (theQM != null)
 		{
 			if (!theQM.questCompleted[questNumber] && theQM.quests[questNumber].gameObject.activeSelf && got == false && Input.GetAxis("Interact") > 0 && greg == true)
 			{
